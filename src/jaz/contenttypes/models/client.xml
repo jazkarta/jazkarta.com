@@ -1,0 +1,101 @@
+ <model xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        xmlns:security="http://namespaces.plone.org/supermodel/security"
+        xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
+        xmlns:form="http://namespaces.plone.org/supermodel/form"
+        xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="title" type="zope.schema.TextLine">
+      <description/>
+      <title>Title</title>
+    </field>
+    <field name="description" type="zope.schema.Text">
+      <description/>
+      <required>False</required>
+      <title>Description</title>
+    </field>
+    <field name="body_text" type="plone.app.textfield.RichText">
+      <description/>
+      <required>False</required>
+      <title>Body Text</title>
+    </field>
+    <field name="image" type="plone.namedfile.field.NamedBlobImage">
+      <description/>
+      <title>Image</title>
+    </field>
+    <field name="image_caption" type="zope.schema.Text">
+      <description/>
+      <required>False</required>
+      <title>Image Caption</title>
+    </field>
+    <field name="site_url" type="zope.schema.TextLine">
+      <description/>
+      <title>Site URL</title>
+    </field>
+    <field name="address" type="zope.schema.TextLine">
+      <description>City and State</description>
+      <title>Address</title>
+    </field>
+    <field name="industry" type="zope.schema.Choice">
+      <description/>
+      <title>Industry</title>
+      <source>jaz.contenttypes.vocabularies.industries</source>
+    </field>
+    <field name="technology" type="zope.schema.Set">
+      <description/>
+      <title>Technology</title>
+      <value_type type="zope.schema.Choice">
+        <source>jaz.contenttypes.vocabularies.technologies</source>
+      </value_type>
+    </field>
+    <field name="team" type="zope.schema.Set">
+      <description>Members of the development and support team.</description>
+      <required>False</required>
+      <title>Team</title>
+      <value_type type="zope.schema.Choice">
+        <values/>
+      </value_type>
+    </field>
+    <field name="launch_date" type="zope.schema.Date">
+      <description>Date the site launched.</description>
+      <required>False</required>
+      <title>Launch Date</title>
+    </field>
+    <field name="testimonial" type="plone.app.textfield.RichText">
+      <description>Enter a single testimonial quote</description>
+      <required>False</required>
+      <title>Testimonial</title>
+    </field>
+    <field name="testimonial_source" type="zope.schema.TextLine">
+      <description>The name of the person quoted.  Must have permission to use name and quote.</description>
+      <required>False</required>
+      <title>Testimonial Source</title>
+    </field>
+    <field name="tags" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Tags</title>
+    </field>
+    <field name="related_items" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Related Items</title>
+    </field>
+    <field name="location" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Location</title>
+    </field>
+    <field name="allow_comments" type="zope.schema.Bool">
+      <description/>
+      <required>False</required>
+      <title>Allow comments</title>
+      <form:widget type="z3c.form.browser.radio.RadioFieldWidget"/>
+    </field>
+    <field name="exclude_from_navigation" type="zope.schema.Bool">
+      <description/>
+      <required>False</required>
+      <title>Exclude from navigation</title>
+      <form:widget type="z3c.form.browser.radio.RadioFieldWidget"/>
+    </field>
+  </schema>
+</model>

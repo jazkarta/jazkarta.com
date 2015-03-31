@@ -1,0 +1,19 @@
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="jaz.contenttypes">
+
+  <records interface="jaz.contenttypes.interfaces.IJazSettings">
+    <value key="technologies" purge='False'>
+      <element>Plone</element>
+      <element>Pyramid</element>
+      <element>Python</element>
+      <element>Django</element>
+      <element>EdX</element>
+    </value>
+    <value key="industries" purge='False'>
+      <element>Non-Profit</element>
+      <element>Education</element>
+      <element>Government</element>
+      <element>Business</element>
+    </value>
+  </records>
+</registry>

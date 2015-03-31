@@ -1,0 +1,46 @@
+<model xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+       xmlns:security="http://namespaces.plone.org/supermodel/security"
+       xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
+       xmlns:form="http://namespaces.plone.org/supermodel/form"
+       xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="title" type="zope.schema.TextLine">
+      <description/>
+      <title>Name</title>
+    </field>
+    <field name="highlight" type="zope.schema.Text">
+      <description/>
+      <required>False</required>
+      <title>Highlight</title>
+    </field>
+    <field name="bio" type="plone.app.textfield.RichText">
+      <description>About yourself and your expertise.</description>
+      <required>False</required>
+      <title>Bio</title>
+    </field>
+    <field name="image" type="plone.namedfile.field.NamedBlobImage">
+      <description/>
+      <title>Image</title>
+    </field>
+    <field name="site_url" type="zope.schema.TextLine">
+      <description>URL of your blog or website</description>
+      <required>False</required>
+      <title>Site URL</title>
+    </field>
+    <field name="address" type="zope.schema.TextLine">
+      <description>City and State</description>
+      <title>Address</title>
+    </field>
+    <field name="technology" type="zope.schema.Set">
+      <description/>
+      <title>Technology</title>
+      <value_type type="zope.schema.Choice">
+        <source>jaz.contenttypes.vocabularies.technologies</source>
+      </value_type>
+    </field>
+    <field name="location" type="zope.schema.TextLine">
+      <description/>
+      <title>Location</title>
+    </field>
+  </schema>
+</model>
