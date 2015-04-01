@@ -38,6 +38,7 @@ setup(name='jaz.contenttypes',
       install_requires=[
           'setuptools',
           'plone.app.dexterity',
+          'plone.app.registry',
           'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
       ],

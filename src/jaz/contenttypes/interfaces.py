@@ -15,3 +15,9 @@ class IJazSettings(Interface):
         description=u'Enter possible areas of client insutry',
         value_type=schema.TextLine()
         )
+
+    team_members = schema.List(
+        title=u'Team Members',
+        description=u'Enter project team members',
+        value_type=schema.TextLine()
+        )

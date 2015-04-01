@@ -52,7 +52,7 @@
       <required>False</required>
       <title>Team</title>
       <value_type type="zope.schema.Choice">
-        <values/>
+        <source>jaz.contenttypes.vocabularies.team_members</source>
       </value_type>
     </field>
     <field name="launch_date" type="zope.schema.Date">
