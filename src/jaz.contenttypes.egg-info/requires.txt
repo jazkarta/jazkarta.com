@@ -1,7 +1,0 @@
-setuptools
-plone.app.dexterity
-plone.app.registry
-plone.namedfile [blobs]
-
-[test]
-plone.app.testing

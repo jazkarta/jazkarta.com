@@ -1,1 +1,2 @@
 .eggs/*
+src/*.egg-info
