@@ -38,9 +38,5 @@
         <source>jaz.contenttypes.vocabularies.technologies</source>
       </value_type>
     </field>
-    <field name="location" type="zope.schema.TextLine">
-      <description/>
-      <title>Location</title>
-    </field>
   </schema>
 </model>

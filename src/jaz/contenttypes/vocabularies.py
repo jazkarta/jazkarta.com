@@ -34,7 +34,6 @@ alsoProvides(industries, IContextSourceBinder)
 
 
 def team_members(context):
-    import pdb; pdb.set_trace()
     catalog = getToolByName(context, 'portal_catalog')
     team_member_brains = catalog(portal_type='jaz.team_member')
     terms = []
