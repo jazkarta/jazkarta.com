@@ -5,7 +5,7 @@ from zope.interface import alsoProvides
 from zope.schema.interfaces import IContextSourceBinder
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-from jaz.contenttypes.interfaces import IJazSettings
+from jazkarta.contenttypes.interfaces import IJazSettings
 
 
 def technologies(context):

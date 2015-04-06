@@ -15,22 +15,22 @@ class JazcontenttypesLayer(PloneSandboxLayer):
 
     def setUpZope(self, app, configurationContext):
         # Load ZCML
-        import jaz.contenttypes
+        import jazkarta.contenttypes
         xmlconfig.file(
             'configure.zcml',
-            jaz.contenttypes,
+            jazkarta.contenttypes,
             context=configurationContext
         )
 
         # Install products that use an old-style initialize() function
-        #z2.installProduct(app, 'Products.PloneFormGen')
+        # z2.installProduct(app, 'Products.PloneFormGen')
 
 #    def tearDownZope(self, app):
 #        # Uninstall products installed above
 #        z2.uninstallProduct(app, 'Products.PloneFormGen')
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'jaz.contenttypes:default')
+        applyProfile(portal, 'jazkarta.contenttypes:default')
 
 JAZ_CONTENTTYPES_FIXTURE = JazcontenttypesLayer()
 JAZ_CONTENTTYPES_INTEGRATION_TESTING = IntegrationTesting(

@@ -2,7 +2,7 @@ import unittest2 as unittest
 
 from Products.CMFCore.utils import getToolByName
 
-from jaz.contenttypes.testing import \
+from jazkarta.contenttypes.testing import \
     JAZ_CONTENTTYPES_INTEGRATION_TESTING
 
 
@@ -19,7 +19,7 @@ class TestExample(unittest.TestCase):
         """ Validate that our products GS profile has been run and the product
             installed
         """
-        pid = 'jaz.contenttypes'
+        pid = 'jazkarta.contenttypes'
         installed = [p['id'] for p in self.qi_tool.listInstalledProducts()]
         self.assertTrue(pid in installed,
                         'package appears not to have been installed')

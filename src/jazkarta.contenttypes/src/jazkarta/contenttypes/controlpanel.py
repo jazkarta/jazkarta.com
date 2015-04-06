@@ -1,6 +1,6 @@
 from plone.app.registry.browser import controlpanel
 
-from jaz.contenttypes.interfaces import IJazSettings
+from jazkarta.contenttypes.interfaces import IJazSettings
 
 
 class JazSettingsEditForm(controlpanel.RegistryEditForm):

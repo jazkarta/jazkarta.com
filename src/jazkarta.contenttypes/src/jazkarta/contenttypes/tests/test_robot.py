@@ -1,4 +1,4 @@
-from  jaz.contenttypes.testing import JAZ_CONTENTTYPES_FUNCTIONAL_TESTING
+from jazkarta.contenttypes.testing import JAZ_CONTENTTYPES_FUNCTIONAL_TESTING
 from plone.testing import layered
 import robotsuite
 import unittest
