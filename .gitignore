@@ -1,5 +1,5 @@
 eggs
-src/*.egg-info
+*.egg-info
 *.pyo
 *.pyc
 downloads/*
