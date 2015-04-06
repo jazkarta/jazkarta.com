@@ -38,13 +38,13 @@
     <field name="industry" type="zope.schema.Choice">
       <description/>
       <title>Industry</title>
-      <source>jaz.contenttypes.vocabularies.industries</source>
+      <source>jazkarta.contenttypes.vocabularies.industries</source>
     </field>
     <field name="technology" type="zope.schema.Set">
       <description/>
       <title>Technology</title>
       <value_type type="zope.schema.Choice">
-        <source>jaz.contenttypes.vocabularies.technologies</source>
+        <source>jazkarta.contenttypes.vocabularies.technologies</source>
       </value_type>
     </field>
     <field name="team" type="zope.schema.Set">
@@ -52,7 +52,7 @@
       <required>False</required>
       <title>Team</title>
       <value_type type="zope.schema.Choice">
-        <source>jaz.contenttypes.vocabularies.team_members</source>
+        <source>jazkarta.contenttypes.vocabularies.team_members</source>
       </value_type>
     </field>
     <field name="launch_date" type="zope.schema.Date">

@@ -35,7 +35,7 @@
       <description/>
       <title>Technology</title>
       <value_type type="zope.schema.Choice">
-        <source>jaz.contenttypes.vocabularies.technologies</source>
+        <source>jazkarta.contenttypes.vocabularies.technologies</source>
       </value_type>
     </field>
   </schema>
