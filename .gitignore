@@ -1,6 +1,13 @@
-eggs/*
+eggs
 src/*.egg-info
 *.pyo
 *.pyc
 downloads/*
 extends/*
+bin
+develop-eggs
+parts
+var
+.installed.cfg
+.mr.developer.cfg
+
