@@ -1,0 +1,80 @@
+/* Include Barceloneta LESS */
+@import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/master/plonetheme/barceloneta/theme/less/barceloneta.plone.local.less");
+
+
+/* colors */
+@jazkarta-highlight-color:					#ee4623;
+@plone-link-color:							@jazkarta-highlight-color;
+@plone-link-color-on-dark:					@jazkarta-highlight-color;
+@plone-default-published-color:				#007bb3; //published and external same color
+@plone-body-bg:								#fff;
+@plone-footer-bg:							#231f20;
+@plone-text-color:							#231f20;
+@plone-sitenav-link-hover-bg:				@plone-link-color;
+@plone-sitenav-bg:							transparent;
+@plone-sitenav-hover-bg:					transparent;
+
+
+/* Override typography */
+@import "../fonts/source-sans-pro.css";
+@plone-font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@plone-font-family-condensed:   "Roboto Condensed", "Arial Narrow", sans-serif; //just on toolbar
+@plone-font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@plone-font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+/* other overrides */
+@plone-sitenav-padding-horizontal:			30px;
+@plone-sitenav-link-padding:				10px 30px;
+
+
+/* logo & nav */
+#portal-logo {
+	float: left;
+}
+.plone-navbar {
+	float: right;
+	background: none;
+	box-shadow: none;
+	margin-top: 20px;
+	font: 600 .8rem/2rem @plone-font-family-sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	> li > a {
+		color: #000;
+	}
+	.plone-navbar-nav {
+		> .selected > a, > .selected > a:hover, > .selected > a:focus {
+			background: none;
+			color: @plone-link-color;
+		}
+	}
+	.plone-nav {
+		> li > a {
+			color: #000;		
+		}
+		> li > a:hover, > li > a:focus {
+			background: none;
+			color: @plone-link-color;			
+		}
+	}
+}
+
+/* homepage hero */
+.principal {
+	background: #1f1f1f;
+	color: #fff;
+	font: 400 2.4rem/4.8rem @plone-font-family-sans-serif;
+	a {
+		font-weight: 600;
+	}
+	.button {
+		background: #fff;
+		padding: 0 1em;
+		border-radius: 5px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 1em;
+		display: inline-block;
+	}
+}
