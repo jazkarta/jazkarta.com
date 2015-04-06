@@ -1,3 +1,6 @@
-.eggs/*
+eggs/*
 src/*.egg-info
 *.pyo
+*.pyc
+downloads/*
+extends/*
