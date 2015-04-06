@@ -1,2 +1,3 @@
 .eggs/*
 src/*.egg-info
+*.pyo
