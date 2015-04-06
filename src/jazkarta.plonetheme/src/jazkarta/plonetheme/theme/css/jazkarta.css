@@ -4340,10 +4340,12 @@ body.template-logged_out #content-core .portletFooter {
   float: right;
   background: none;
   box-shadow: none;
-  margin-top: 20px;
   font: 600 0.8rem/2rem "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: .5px;
+}
+.plone-navbar > .container {
+  display: inline;
 }
 .plone-navbar > li > a {
   color: #000;
@@ -4379,5 +4381,30 @@ body.template-logged_out #content-core .portletFooter {
   text-transform: uppercase;
   margin-top: 1em;
   display: inline-block;
+}
+/* fix grid */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+/* footer */
+#portal-footer-wrapper {
+  height: auto;
+  text-align: left;
+  font: 400 16px/20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+#portal-footer-wrapper h2 {
+  font: 700 20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+#portal-footer-wrapper p {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */

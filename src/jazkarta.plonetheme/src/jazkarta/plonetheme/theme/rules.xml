@@ -5,7 +5,7 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <theme href="/++theme++barceloneta/index.html"/>
+  <theme href="/++theme++jazkarta.plonetheme/index.html"/>
   <notheme css:if-not-content="#visual-portal-wrapper" />
 
   <rules if-content="//*[@id='portal-top']">
@@ -21,6 +21,9 @@
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
     <!-- CSS -->
+    <replace theme="/html/head/link">
+      <link rel="stylesheet" type="text/css" href="++theme++jazkarta.plonetheme/css/jazkarta.css" />
+    </replace>
     <after theme-children="/html/head" content="/html/head/link" />
     <!-- Script -->
     <after theme-children="/html/head" content="/html/head/script" />
@@ -92,9 +95,6 @@
         </div>
     </replace>
   </rules>
-
-  <!-- Content header -->
-  <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
 
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>

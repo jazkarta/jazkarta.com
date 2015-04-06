@@ -1,4 +1,5 @@
 eggs
+.Python
 *.egg-info
 *.pyo
 *.pyc
@@ -6,8 +7,10 @@ downloads/*
 extends/*
 bin
 develop-eggs
+include
+lib
 parts
 var
 .installed.cfg
 .mr.developer.cfg
-
+*.map
