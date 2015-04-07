@@ -14,5 +14,7 @@ var
 .installed.cfg
 .mr.developer.cfg
 *.map
-src/collective.newrelic
 *sublime-*
+
+src/collective.newrelic
+src/collective.geolocationbehavior
