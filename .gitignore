@@ -18,3 +18,4 @@ var
 
 src/collective.newrelic
 src/collective.geolocationbehavior
+src/plone.formwidget.geolocation
