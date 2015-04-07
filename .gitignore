@@ -14,3 +14,5 @@ var
 .installed.cfg
 .mr.developer.cfg
 *.map
+src/collective.newrelic
+*sublime-*

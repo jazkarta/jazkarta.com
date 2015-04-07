@@ -70,27 +70,5 @@
       <required>False</required>
       <title>Testimonial Source</title>
     </field>
-    <field name="tags" type="zope.schema.TextLine">
-      <description/>
-      <required>False</required>
-      <title>Tags</title>
-    </field>
-    <field name="related_items" type="zope.schema.TextLine">
-      <description/>
-      <required>False</required>
-      <title>Related Items</title>
-    </field>
-    <field name="allow_comments" type="zope.schema.Bool">
-      <description/>
-      <required>False</required>
-      <title>Allow comments</title>
-      <form:widget type="z3c.form.browser.radio.RadioFieldWidget"/>
-    </field>
-    <field name="exclude_from_navigation" type="zope.schema.Bool">
-      <description/>
-      <required>False</required>
-      <title>Exclude from navigation</title>
-      <form:widget type="z3c.form.browser.radio.RadioFieldWidget"/>
-    </field>
   </schema>
 </model>
