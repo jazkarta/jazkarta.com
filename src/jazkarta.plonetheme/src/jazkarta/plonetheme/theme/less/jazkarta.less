@@ -17,15 +17,29 @@
 
 /* Override typography */
 @import "../fonts/source-sans-pro.css";
+@plone-font-size-base:          18px;
 @plone-font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @plone-font-family-condensed:   "Roboto Condensed", "Arial Narrow", sans-serif; //just on toolbar
 @plone-font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @plone-font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@plone-headings-font-weight:    600;
 
 
 /* other overrides */
 @plone-sitenav-padding-horizontal:			30px;
 @plone-sitenav-link-padding:				10px 30px;
+
+
+/* base styles */
+body {
+	font-weight: 300;
+}
+
+h1 {
+	font-weight: 900;
+	color: @jazkarta-highlight-color;
+	text-transform: uppercase;
+}
 
 
 /* logo & nav */
@@ -36,7 +50,6 @@
 	float: right;
 	background: none;
 	box-shadow: none;
-	font: 600 .8rem/2rem @plone-font-family-sans-serif;
 	text-transform: uppercase;
 	letter-spacing: .5px;
 	position: inherit;
@@ -55,6 +68,7 @@
 	.plone-nav {
 		> li > a {
 			color: #000;		
+			font: 600 16px/20px @plone-font-family-sans-serif;
 		}
 		> li > a:hover, > li > a:focus {
 			background: none;
@@ -96,6 +110,11 @@
 		padding: 15px;
 		background: #fff;
 	}
+}
+
+/* breadcrumbs */
+#portal-breadcrumbs {
+	display: none;
 }
 
 /* homepage hero */
@@ -140,5 +159,32 @@
 	p {
 		border-bottom: none;
 		padding-bottom: 0;
+	}
+}
+
+/* portlets */
+.portlet {
+	border: none;
+	box-shadow: none;
+	.portletHeader {
+		border: none;
+		background: none;
+		padding: 0;
+		font: 700 20px @plone-font-family-sans-serif;
+		color: @plone-text-color;
+		text-transform: uppercase;
+		box-shadow: none;
+	}
+	.portletContent {
+		border-top: none;
+		> * {
+			padding: 10px 0;
+		}
+	}
+	.portletFooter {
+		border: none;
+		background: none;
+		padding: 0;
+		box-shadow: none;
 	}
 }
