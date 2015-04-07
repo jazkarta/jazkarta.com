@@ -47,7 +47,7 @@ module.exports = function (grunt) {
                 options: {
                     watchTask: true,
                     debugInfo: true,
-                    proxy: "localhost:8080"
+                    proxy: "localhost:8081"
                 }
             }
         }
