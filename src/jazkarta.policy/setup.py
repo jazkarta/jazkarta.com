@@ -43,6 +43,7 @@ setup(
     install_requires=[
         'plone.api',
         'setuptools',
+        'collective.cover',
         'jazkarta.contenttypes',
         'jazkarta.plonetheme',
     ],
