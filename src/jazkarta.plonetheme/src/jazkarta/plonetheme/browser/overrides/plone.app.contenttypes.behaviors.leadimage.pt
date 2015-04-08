@@ -1,9 +1,9 @@
-<tal:b condition="view/available"
-	   tal:define="(width, height) context/image/getImageSize;
+<tal:b tal:define="(width, height) context/image/getImageSize;
 	               aspect_ratio python:width / float(height);
 	               scales context/@@images;
 	               scale python:scales.tag('image')"
-	   tal:condition="python:view.available and scale">
+	   tal:condition="python:view.available and context.image"
+	   tal:on-error="nothing">
 	<div tal:condition="python:aspect_ratio > 1.5" id="banner-image">
 	 	<img tal:replace="structure scale" />
 	</div>
