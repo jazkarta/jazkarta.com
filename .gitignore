@@ -16,6 +16,10 @@ var
 *.map
 *sublime-*
 
+src/collective.cover
+src/collective.js.jqueryui
 src/collective.newrelic
 src/collective.geolocationbehavior
+src/plone.app.stagingbehavior
 src/plone.formwidget.geolocation
+src/plonetheme.barceloneta

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="collective.cover.controlpanel.ICoverSettings" />
+
+  <record field="layouts"
+          interface="collective.cover.controlpanel.ICoverSettings"
+          name="collective.cover.controlpanel.ICoverSettings.layouts">
+    <value>
+      <element key="Empty layout">[{"type": "row", "class": "row", "children": [{"type": "group", "data":{"column-size":12, "layout-type":"column"}, "roles": ["Manager"]}]}]</element>
+    </value>
+  </record>
+
+  <record
+      field="styles"
+      interface="collective.cover.controlpanel.ICoverSettings"
+      name="collective.cover.controlpanel.ICoverSettings.styles">
+    <value>
+      <element>-Default-|tile-default</element>
+      <element>Full width banner|tile-fullwidth</element>
+    </value>
+  </record>
+
+  <record name="plone.app.tiles">
+    <value purge="false">
+      <element>plonetheme.jazkarta.banner</element>
+    </value>
+  </record>
+
+  <record field="available_tiles"
+      interface="collective.cover.controlpanel.ICoverSettings"
+      name="collective.cover.controlpanel.ICoverSettings.available_tiles">
+    <value>
+      <element>jazkarta.plonetheme.banner</element>
+      <element>collective.cover.basic</element>
+      <element>collective.cover.collection</element>
+      <element>collective.cover.contentbody</element>
+      <element>collective.cover.embed</element>
+      <element>collective.cover.file</element>
+      <element>collective.cover.list</element>
+      <element>collective.cover.richtext</element>
+    </value>
+  </record>
+
+</registry>

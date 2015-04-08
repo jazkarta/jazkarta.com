@@ -93,4 +93,12 @@
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
 
+  <!-- cover -->
+  <after css:theme="#above-content-wrapper" if="//div[@class='row'][.//div[@class='cell col-md-16 ']/div[contains(@class, 'tile-fullwidth')]]">
+    <div id="banner-image">
+      <xsl:apply-templates select="//div[@class='row'][.//div[@class='cell col-md-16 ']/div[contains(@class, 'tile-fullwidth')]]" mode="raw" />
+    </div>
+  </after>
+  <drop content="//div[@class='row'][.//div[@class='cell col-md-16 ']/div[contains(@class, 'tile-fullwidth')]]" />
+
 </rules>

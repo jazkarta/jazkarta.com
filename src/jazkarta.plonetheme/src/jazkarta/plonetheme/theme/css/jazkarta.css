@@ -4368,6 +4368,16 @@ h1 {
   color: #ee4623;
   text-transform: uppercase;
 }
+/* button */
+a.button {
+  background: #fff;
+  padding: 0 1em;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 1em;
+  display: inline-block;
+}
 /* logo & nav */
 #portal-logo {
   float: left;
@@ -4437,30 +4447,6 @@ h1 {
 /* breadcrumbs */
 #portal-breadcrumbs {
   display: none;
-}
-/* homepage hero */
-.principal {
-  background: #1f1f1f;
-  color: #fff;
-  font: 400 2.4rem/4.8rem "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.principal a {
-  font-weight: 600;
-}
-.principal .button {
-  background: #fff;
-  padding: 0 1em;
-  border-radius: 5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 1em;
-  display: inline-block;
-}
-@media (max-width: 768px) {
-  .principal {
-    font-size: 1.2rem;
-    line-height: 2.4rem;
-  }
 }
 /* fix grid */
 .row:before,
@@ -4546,5 +4532,33 @@ h1 {
   .col-sm-9 > #content {
     padding-left: 0;
   }
+}
+/* cover */
+.tile:before,
+.tile:after {
+  content: " ";
+  display: table;
+}
+.tile:after {
+  clear: both;
+}
+.tile img {
+  max-width: 100%;
+  height: auto;
+}
+.tile.tile-fullwidth .tile-content {
+  position: relative;
+  background: #1f1f1f;
+  color: #fff;
+  font: 400 2.4vw/3vw "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+.tile.tile-fullwidth .tile-content .banner-text {
+  position: absolute;
+  top: 2em;
+  left: 3em;
+}
+.tile.tile-fullwidth .tile-content a {
+  font-weight: 600;
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */

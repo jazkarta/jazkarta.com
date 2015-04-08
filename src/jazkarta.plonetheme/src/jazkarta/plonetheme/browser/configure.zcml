@@ -11,10 +11,18 @@
         layer="jazkarta.plonetheme.interfaces.IJazkartaPlonethemeLayer"
         />
 
-    <!-- Publish static files -->
-    <browser:resourceDirectory
-        name="jazkarta.plonetheme"
-        directory="static"
+    <!-- banner tile -->
+    <plone:tile
+        name="jazkarta.plonetheme.banner"
+        title="Banner Tile"
+        description="A tile that shows a full-width image with rich text."
+        icon="++resource++collective.cover/tile-banner.png"
+        add_permission="cmf.ModifyPortalContent"
+        schema=".tiles.banner.IBannerTile"
+        class=".tiles.banner.BannerTile"
+        permission="zope2.View"
+        for="*"
         />
+
 
 </configure>
