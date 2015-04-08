@@ -40,10 +40,6 @@ setup(name='jazkarta.contenttypes',
           'plone.app.dexterity',
           'plone.app.registry',
           'plone.namedfile [blobs]',
-          'plone.formwidget.geolocation',
-          'collective.geolocationbehavior',
-          'Products.Maps',
-          # 'collective.geo.behaviour',
           # -*- Extra requirements: -*-
       ],
       extras_require={

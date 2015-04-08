@@ -22,7 +22,6 @@
   <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
   <element value="plone.app.dexterity.behaviors.metadata.ICategorization"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
-  <element value="collective.geolocationbehavior.geolocation.IGeolocatable"/>
  </property>
  <property name="schema">jazkarta.contenttypes.team_member.ITeamMember</property>
  <alias from="(Default)" to="(dynamic view)"/>
