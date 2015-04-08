@@ -51,25 +51,17 @@
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
 
-  <replace css:theme="#content-container" method="raw">
+  <replace css:theme="#content-container">
       <div class="{$central}">
-<!--           <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p> -->
-          <div class="row">
-            <div class="col-xs-12 col-sm-12">
-               <xsl:copy-of select="//article[@id='content']"/>
-               <!-- Just in case for legacy templates -->
-               <xsl:copy-of select="//div[@id='content']"/>
-            </div>
-          </div>
-          <footer class="row">
-            <div class="col-xs-12 col-sm-12">
-             <xsl:copy-of select="//div[@id='viewlet-below-content']"/>
-            </div>
-          </footer>
-      </div><!--/row-->
+          <xsl:apply-templates select="//article[@id='content']"/>
+          <!-- Just in case for legacy templates -->
+          <xsl:copy-of select="//div[@id='content']"/>
+          <xsl:copy-of select="//div[@id='viewlet-below-content']"/>
+      </div>
   </replace>
+  <drop css:content="#lead-image" />
+  <after css:theme="#above-content-wrapper" css:content="#banner-image" method="raw" />
+  <drop css:content="#banner-image" />
 
   <!-- Alert message -->
   <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
@@ -79,6 +71,7 @@
     <replace css:theme="#column1-container">
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
           <aside id="portal-column-one">
+             <xsl:copy-of select="//*[@id='lead-image']" />
              <xsl:copy-of select="//*[@id='portal-column-one']/*"/>
           </aside>
         </div>
@@ -99,6 +92,5 @@
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
-
 
 </rules>

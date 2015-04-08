@@ -188,3 +188,38 @@ h1 {
 		box-shadow: none;
 	}
 }
+
+/* lead image */
+
+#lead-image {
+	margin-bottom: 30px;
+	text-align: right;
+	img {
+		max-width: 130%;
+		height: auto;
+		margin-left: -30%;
+		display: block;
+	}
+	@media (max-width: @plone-grid-float-breakpoint) {
+		img {
+			max-width: 100%;
+			margin-left: 0;
+		}
+	}
+}
+#banner-image {
+	width: 100%;
+	max-width: 100%;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	margin-bottom: 30px;
+}
+
+.col-sm-9 > #content {
+	padding-left: 30px;
+	@media (max-width: @plone-grid-float-breakpoint) {
+		padding-left: 0;
+	}
+}
