@@ -101,4 +101,7 @@
   </after>
   <drop content="//div[@class='row'][.//div[@class='cell col-md-16 ']/div[contains(@class, 'tile-fullwidth')]]" />
 
+  <!-- footer -->
+  <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
+
 </rules>

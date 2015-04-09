@@ -562,7 +562,8 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
-.row {
+.row,
+#portal-footer {
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -4461,17 +4462,37 @@ a.button {
 #portal-footer-wrapper {
   height: auto;
   text-align: left;
-  font: 400 16px/24px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
-}
-#portal-footer-wrapper h2 {
-  font: 700 20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .5px;
 }
 #portal-footer-wrapper p {
   border-bottom: none;
   padding-bottom: 0;
+}
+#portal-footer-wrapper .portletWrapper:first-child {
+  border-bottom: none;
+  display: inline-block;
+}
+#portal-footer:before,
+#portal-footer:after {
+  content: " ";
+  display: table;
+}
+#portal-footer:after {
+  clear: both;
+}
+#portal-footer .portletWrapper {
+  border-bottom: none;
+}
+#portal-footer .portletWrapper .portletHeader {
+  font: 700 20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  padding-bottom: 15px;
+}
+#portal-footer .portletWrapper .portlet .portletContent {
+  font: 400 16px/24px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#portal-footer .portletWrapper .portlet .portletContent > * {
+  color: #fff;
 }
 /* portlets */
 .portlet {
