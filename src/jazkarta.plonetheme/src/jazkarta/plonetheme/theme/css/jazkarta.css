@@ -4589,6 +4589,7 @@ a.button {
 .tile-mouseover-basic .cover-basic-tile h2 {
   position: absolute;
   bottom: 0;
+  text-transform: uppercase;
 }
 .tile-mouseover-basic .cover-basic-tile .imag img {
   position: absolute;
