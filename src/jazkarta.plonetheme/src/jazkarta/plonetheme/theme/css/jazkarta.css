@@ -1,5 +1,5 @@
-/* Include Barceloneta LESS */
 @import "../fonts/source-sans-pro.css";
+/* Include Barceloneta LESS */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -4560,5 +4560,40 @@ a.button {
 }
 .tile.tile-fullwidth .tile-content a {
   font-weight: 600;
+}
+.tile-mouseover-basic .cover-basic-tile {
+  height: 310px;
+  overflow: hidden;
+}
+.tile-mouseover-basic .cover-basic-tile h2 {
+  position: absolute;
+  bottom: 0;
+}
+.tile-mouseover-basic .cover-basic-tile .imag img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 250px;
+}
+.tile-mouseover-basic .cover-basic-tile p {
+  display: none;
+}
+.tile-mouseover-basic .cover-basic-tile p:first-of-type {
+  color: #ee4623;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 70px;
+}
+.tile-mouseover-basic:hover .cover-basic-tile h2 a {
+  color: #231f20;
+}
+.tile-mouseover-basic:hover .cover-basic-tile .imag img {
+  opacity: 0.1;
+}
+.tile-mouseover-basic:hover .cover-basic-tile p:first-of-type {
+  display: block;
+  z-index: 9999;
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */

@@ -17,12 +17,13 @@
     <value>
       <element>-Default-|tile-default</element>
       <element>Full width banner|tile-fullwidth</element>
+      <element>Image mouseover basic tile|tile-mouseover-basic</element>
     </value>
   </record>
 
   <record name="plone.app.tiles">
     <value purge="false">
-      <element>plonetheme.jazkarta.banner</element>
+      <element>jazkarta.plonetheme.banner</element>
     </value>
   </record>
 

@@ -237,3 +237,45 @@ a.button {
 		}
 	}
 }
+
+.tile-mouseover-basic {
+        .cover-basic-tile {
+                height: 310px;
+                overflow: hidden;
+                h2 {
+                        position: absolute;
+                        bottom: 0;
+                }
+                .imag img {
+                        position: absolute;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        height: 250px;
+                }
+                p {
+                        display: none;
+                        &:first-of-type {
+                                color: @plone-link-color;
+                                text-align: center;
+                                font-size: 1.5em;
+                                font-weight: bold;
+                                margin-top: 70px;
+                        }
+                }
+        }
+        &:hover {
+		.cover-basic-tile {
+			h2 a {
+                                color: @plone-text-color;
+			}
+			.imag img {
+                                opacity: 0.1;
+			}
+			p:first-of-type {
+                                display: block;
+                                z-index: 9999;
+			}
+		}
+        }
+}
