@@ -35,7 +35,7 @@ alsoProvides(industries, IContextSourceBinder)
 
 def team_members(context):
     catalog = getToolByName(context, 'portal_catalog')
-    team_member_brains = catalog(portal_type='jaz.team_member')
+    team_member_brains = catalog(portal_type='jazkarta.team_member')
     terms = []
     for brain in team_member_brains:
         token = brain.getPath()
