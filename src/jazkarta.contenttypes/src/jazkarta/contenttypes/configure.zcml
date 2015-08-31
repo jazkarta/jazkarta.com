@@ -24,11 +24,21 @@
 
   <include package="plone.app.registry" />
 
-    <!-- Control panel -->
-    <browser:page
-        name="jaz-contenttypes-settings"
-        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        class=".controlpanel.JazSettingsControlPanel"
-        permission="cmf.ManagePortal"
-        />
+  <!-- Control panel -->
+  <browser:page
+      name="jaz-contenttypes-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.JazSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      />
+
+  <adapter name="launch_date" factory="jazkarta.contenttypes.client.client_launch_date" />
+
+  <genericsetup:importStep
+      name="jazkarta.contenttypes-postInstall"
+      title="jazkarta.contenttypes post_install import step"
+      description="Post install import step from jazkarta.contenttypes"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
 </configure>
