@@ -41,6 +41,7 @@ setup(name='jazkarta.contenttypes',
           'plone.app.registry',
           'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
+          'plone.app.imagecropping',
       ],
       extras_require={
           'test': [
