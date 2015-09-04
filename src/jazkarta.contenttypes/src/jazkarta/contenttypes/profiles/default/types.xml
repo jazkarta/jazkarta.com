@@ -7,6 +7,6 @@
      which supports Plone's "display" menu.
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
-  <object name="jazkarta.client" meta_type="Dexterity FTI" />
+  <object name="jazkarta.project" meta_type="Dexterity FTI" />
   <object name="jazkarta.team_member" meta_type="Dexterity FTI" />
 </object>

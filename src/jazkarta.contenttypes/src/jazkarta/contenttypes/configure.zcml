@@ -32,7 +32,7 @@
       permission="cmf.ManagePortal"
       />
 
-  <adapter name="launch_date" factory="jazkarta.contenttypes.client.client_launch_date" />
+  <adapter name="launch_date" factory="jazkarta.contenttypes.project.project_launch_date" />
 
   <genericsetup:importStep
       name="jazkarta.contenttypes-postInstall"
