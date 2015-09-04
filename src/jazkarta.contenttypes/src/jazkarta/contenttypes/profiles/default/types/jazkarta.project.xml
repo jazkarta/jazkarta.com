@@ -25,6 +25,7 @@
   <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
   <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
   <element value="plone.app.relationfield.behavior.IRelatedItems"/>
+  <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
  </property>
  <property name="schema">jazkarta.contenttypes.project.IProject</property>
  <alias from="(Default)" to="(dynamic view)"/>
