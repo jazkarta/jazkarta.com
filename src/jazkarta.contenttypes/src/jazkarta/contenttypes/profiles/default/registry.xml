@@ -15,6 +15,17 @@
       <element>Government</element>
       <element>Business</element>
     </value>
+    <value key='services' purge='False'>
+      <element>CMS Implementation</element>
+      <element>Web Application</element>
+      <element>edX Customizations</element>
+      <element>Salesforce Integration</element>
+      <element>Enterprise Search</element>
+      <element>Scholarly Resources</element>
+      <element>Cloud Deployment</element>
+      <element>Training</element>
+      <element>Support</element>
+    </value>
   </records>
 
   <records interface="plone.app.querystring.interfaces.IQueryField"
@@ -35,4 +46,5 @@
     </value>
     <value key="group" i18n:translate="">Dates</value>
   </records>
+
 </registry>

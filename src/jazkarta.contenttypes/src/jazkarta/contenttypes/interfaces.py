@@ -16,8 +16,8 @@ class IJazSettings(Interface):
         value_type=schema.TextLine()
         )
 
-    team_members = schema.List(
-        title=u'Team Members',
-        description=u'Enter project team members',
+    services = schema.List(
+        title=u'Services',
+        description=u'Enter names of services provided by Jazkarta',
         value_type=schema.TextLine()
         )

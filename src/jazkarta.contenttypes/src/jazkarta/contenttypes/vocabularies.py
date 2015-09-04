@@ -1,3 +1,4 @@
+from plone import api
 from plone.registry.interfaces import IRegistry
 from Products.CMFCore.utils import getToolByName
 from zope.component import queryUtility
@@ -16,8 +17,6 @@ def technologies(context):
         terms.append(
             SimpleVocabulary.createTerm(tech, tech.encode('utf-8'), tech))
     return SimpleVocabulary(terms)
-
-
 alsoProvides(technologies, IContextSourceBinder)
 
 
@@ -29,12 +28,25 @@ def industries(context):
         terms.append(
             SimpleVocabulary.createTerm(indst, indst.encode('utf-8'), indst))
     return SimpleVocabulary(terms)
-
 alsoProvides(industries, IContextSourceBinder)
 
 
+def services(context):
+    registry = queryUtility(IRegistry)
+    jaz_settings = registry.forInterface(IJazSettings)
+    terms = []
+    for service in jaz_settings.services:
+        terms.append(
+            SimpleVocabulary.createTerm(
+                service, service.encode('utf-8'), service
+            )
+        )
+    return SimpleVocabulary(terms)
+alsoProvides(services, IContextSourceBinder)
+
+
 def team_members(context):
-    catalog = getToolByName(context, 'portal_catalog')
+    catalog = api.portal.get_tool('portal_catalog')
     team_member_brains = catalog(portal_type='jazkarta.team_member')
     terms = []
     for brain in team_member_brains:
@@ -45,5 +57,19 @@ def team_members(context):
             title=brain.Title.decode('utf8')
             ))
     return SimpleVocabulary(terms)
-
 alsoProvides(team_members, IContextSourceBinder)
+
+
+def case_studies(context):
+    catalog = api.portal.get_tool('portal_catalog')
+    file_brains = catalog(portal_type="File")
+    terms = []
+    for brain in file_brains:
+        token = brain.getPath()
+        terms.append(SimpleTerm(
+            value=brain.UID,
+            token=token,
+            title=brain.Title.decode('utf-8')
+        ))
+    return SimpleVocabulary(terms)
+alsoProvides(case_studies, IContextSourceBinder)

@@ -42,6 +42,7 @@ setup(name='jazkarta.contenttypes',
           'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
           'plone.app.imagecropping',
+          'collective.dexteritytextindexer',
       ],
       extras_require={
           'test': [
