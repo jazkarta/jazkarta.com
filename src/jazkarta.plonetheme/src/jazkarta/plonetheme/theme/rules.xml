@@ -59,7 +59,6 @@
           <xsl:copy-of select="//div[@id='viewlet-below-content']"/>
       </div>
   </replace>
-  <drop css:content="#lead-image" />
   <after css:theme="#above-content-wrapper" css:content="#banner-image" method="raw" />
   <drop css:content="#banner-image" />
 
@@ -71,7 +70,6 @@
     <replace css:theme="#column1-container">
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
           <aside id="portal-column-one">
-             <xsl:copy-of select="//*[@id='lead-image']" />
              <xsl:copy-of select="//*[@id='portal-column-one']/*"/>
           </aside>
         </div>

@@ -4523,19 +4523,14 @@ a.button {
 /* lead image */
 #lead-image {
   margin-bottom: 30px;
+  margin-top: 75px;
   text-align: right;
+  float: right;
 }
 #lead-image img {
-  max-width: 130%;
+  max-width: 100%;
   height: auto;
-  margin-left: -30%;
   display: block;
-}
-@media (max-width: 768px) {
-  #lead-image img {
-    max-width: 100%;
-    margin-left: 0;
-  }
 }
 #banner-image {
   width: 100%;
