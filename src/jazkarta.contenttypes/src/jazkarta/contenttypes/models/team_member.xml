@@ -38,5 +38,10 @@
         <source>jazkarta.contenttypes.vocabularies.technologies</source>
       </value_type>
     </field>
+    <field name="musical_instrument" type="zope.schema.TextLine">
+      <title>Musical Instrument</title>
+      <description>Could be one or a list, or a little joke if you don't play.</description>
+      <required>False</required>
+    </field>
   </schema>
 </model>
