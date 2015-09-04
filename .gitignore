@@ -22,4 +22,4 @@ src/collective.newrelic
 src/collective.geolocationbehavior
 src/plone.app.stagingbehavior
 src/plone.formwidget.geolocation
-src/plonetheme.barceloneta
+src/Products.RedirectionTool

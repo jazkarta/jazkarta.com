@@ -46,6 +46,7 @@ setup(
         'collective.cover',
         'jazkarta.contenttypes',
         'jazkarta.plonetheme',
+        'Products.RedirectionTool',
     ],
     extras_require={
         'test': [
