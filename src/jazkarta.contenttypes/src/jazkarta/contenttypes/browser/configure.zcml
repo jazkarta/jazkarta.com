@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:z3c="http://namespaces.zope.org/z3c">
+
+  <!-- Control panel -->
+  <browser:page
+      name="jaz-contenttypes-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.JazSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="view"
+      for="..project.IProject"
+      template="templates/project.pt"
+      permission="zope2.View"
+      />
+
+</configure>

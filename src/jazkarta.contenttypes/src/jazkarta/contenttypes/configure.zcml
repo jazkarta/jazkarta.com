@@ -24,13 +24,7 @@
 
   <include package="plone.app.registry" />
 
-  <!-- Control panel -->
-  <browser:page
-      name="jaz-contenttypes-settings"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      class=".controlpanel.JazSettingsControlPanel"
-      permission="cmf.ManagePortal"
-      />
+  <include package=".browser" />
 
   <adapter name="launch_date" factory="jazkarta.contenttypes.project.project_launch_date" />
 

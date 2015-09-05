@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master">
+
+    <metal:block fill-slot="content-title" />
+    <metal:block fill-slot="content-description" />
+
+    <metal:block fill-slot="content-core">
+      <div class="container-fluid">
+        <div class="row">
+          <h1>${context/Title}</h1>
+        </div>
+        <div class="row">
+          <div class="row">
+            <div class="row">
+              <div class="col-xs-12 col-sm-9">
+                <div><p>${context/Description}</p></div>
+                <div tal:condition="context/testimonial/output"><blockquote><span tal:replace="structure context/testimonial/output|nothing"></span><footer><em>${context/testimonial_source}</em></footer></blockquote></div>
+                <p>
+                  <button type="button" class="btn btn-warning"><a href="#">Download Case Study</a></button>
+                  <button type="button" class="btn btn-warning"><a href="${context/site_url}">View Website</a></button>
+                </p>
+              </div>
+              <div class="col-xs-6 col-sm-3">
+                <h4>Services</h4>
+                <span tal:repeat="service context/services">
+                  <a href="#">${service}</a><br/></span>
+                <tal:block condition="context/design_credit">
+                  <h4>Design Credit</h4>
+                  <p>${context/design_credit}</p>
+                </tal:block>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img tal:define="scales context/@@images;
+                           scale python:scales.scale('image', scale='large')"
+               tal:condition="scale"
+               tal:replace="structure python:scale.tag(css_class='image-left')" />
+        </div>
+        <div class="row">
+          <div tal:content="structure context/body_text/output|nothing" />
+            <p><button type="button" class="btn btn-warning"><a href="${context/site_url}">View Website</a></button></p>
+        </div>
+      </div>
+    </metal:block>
+
+</html>
