@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master">
+
+    <metal:block fill-slot="content-title" />
+    <metal:block fill-slot="content-description" />
+
+    <metal:block fill-slot="content-core">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-8 col-sm-5">
+            <img tal:define="scales context/@@images;
+                             scale python:scales.scale('image', scale='preview')"
+                 tal:condition="scale"
+                 tal:replace="structure python:scale.tag(css_class='image-left')" />
+          </div>
+          <div class="col-xs-10 col-sm-7">
+            <h1>${context/Title}</h1>
+            <h4>${context/address}</h4>
+            <h4 tal:condition="context/site_url"><a href="${context/site_url}">${context/site_url}</a></h4>
+            <h4 tal:condition="context/musical_instrument">${context/musical_instrument}</h4>
+          </div>
+        </div>
+        <div class="row">
+          <p>${context/highlight}</p>
+        </div>
+        <div class="row">
+          <div tal:content="structure context/bio/output|nothing" />
+        </div>
+      </div>
+    </metal:block>
+
+</html>

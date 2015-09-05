@@ -12,10 +12,27 @@
       permission="cmf.ManagePortal"
       />
 
+  <!-- Project -->
   <browser:page
       name="view"
       for="..project.IProject"
       template="templates/project.pt"
+      permission="zope2.View"
+      />
+
+  <!-- Team Member -->
+  <browser:page
+      name="view"
+      for="..team_member.ITeamMember"
+      template="templates/team_member.pt"
+      permission="zope2.View"
+      />
+
+  <!-- Team Member folder listing -->
+  <browser:page
+      name="member_listing_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      template="templates/member_listing.pt"
       permission="zope2.View"
       />
 
