@@ -2,14 +2,6 @@
 <registry>
   <records interface="collective.cover.controlpanel.ICoverSettings" />
 
-  <record field="layouts"
-          interface="collective.cover.controlpanel.ICoverSettings"
-          name="collective.cover.controlpanel.ICoverSettings.layouts">
-    <value>
-      <element key="Empty layout">[{"type": "row", "class": "row", "children": [{"type": "group", "data":{"column-size":12, "layout-type":"column"}, "roles": ["Manager"]}]}]</element>
-    </value>
-  </record>
-
   <record
       field="styles"
       interface="collective.cover.controlpanel.ICoverSettings"
