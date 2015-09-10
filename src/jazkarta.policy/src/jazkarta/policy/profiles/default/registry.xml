@@ -2,14 +2,6 @@
 <registry>
   <records interface="collective.cover.controlpanel.ICoverSettings" />
 
-  <record field="layouts"
-          interface="collective.cover.controlpanel.ICoverSettings"
-          name="collective.cover.controlpanel.ICoverSettings.layouts">
-    <value>
-      <element key="Empty layout">[{"type": "row", "class": "row", "children": [{"type": "group", "data":{"column-size":12, "layout-type":"column"}, "roles": ["Manager"]}]}]</element>
-    </value>
-  </record>
-
   <record
       field="styles"
       interface="collective.cover.controlpanel.ICoverSettings"
@@ -18,6 +10,19 @@
       <element>-Default-|tile-default</element>
       <element>Full width banner|tile-fullwidth</element>
       <element>Image mouseover basic tile|tile-mouseover-basic</element>
+    </value>
+  </record>
+
+  <record field="layouts"
+          interface="collective.cover.controlpanel.ICoverSettings"
+          name="collective.cover.controlpanel.ICoverSettings.layouts">
+    <field type="plone.registry.field.Dict">
+      <key_type type="plone.registry.field.TextLine"/>
+      <value_type type="plone.registry.field.TextLine"/>
+    </field>
+    <value purge="false">
+      <element key="Jazkarta Cover Layout">[{"css-class": "tile-fullwidth", "type": "row", "children": [{"css-class": "tile-fullwidth", "type": "group", "children": [{"tile-type": "jazkarta.plonetheme.banner", "type": "tile", "id": "c17ddcc7c1e14baea8d365c3ea145389"}], "roles": ["Manager"], "column-size": 16}]}, {"type": "row", "children": [{"type": "group", "children": [{"tile-type": "collective.cover.basic", "type": "tile", "id": "d7fa07e393114b26aacdc2e67423474f"}], "roles": ["Manager"], "column-size": 4}, {"type": "group", "children": [{"tile-type": "collective.cover.basic", "type": "tile", "id": "e4200e02428243cfb1ea7b8e9cbb678b"}], "roles": ["Manager"], "column-size": 4}, {"type": "group", "children": [{"tile-type": "collective.cover.basic", "type": "tile", "id": "ab899ccfb00f451ea54c476fea8f9448"}], "roles": ["Manager"], "column-size": 4}]}, {"type": "row", "children": [{"type": "group", "children": [{"tile-type": "collective.cover.basic", "type": "tile", "id": "bac549e4f93b423295bfe182ffb9e4f6"}], "roles": ["Manager"], "column-size": 4}, {"type": "group", "children": [{"tile-type": "collective.cover.basic", "type": "tile", "id": "ff45909f94994db6a977de405d54ab3e"}], "roles": ["Manager"], "column-size": 4}, {"type": "group", "children": [{"tile-type": "collective.cover.basic", "type": "tile", "id": "aafcf3c5726c4a9698afa605b23e5bbe"}], "roles": ["Manager"], "column-size": 4}]}]</element>
+      <element key="Empty layout">[{"type": "row", "children": [{"type": "group", "column-size": 16, "roles": ["Manager"]}]}]</element>
     </value>
   </record>
 
