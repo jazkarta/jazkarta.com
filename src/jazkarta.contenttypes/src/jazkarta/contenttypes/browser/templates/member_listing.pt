@@ -9,7 +9,7 @@
 
     <metal:block fill-slot="content-core">
       <div class="container-fluid">
-        <h1>Team Members</h1>
+        <h1 tal:content="context/Title">Team Members</h1>
         <div class="row" tal:repeat="member context/objectValues">
           <div class="col-xs-5 col-sm-2">
             <img tal:define="scales member/@@images;
