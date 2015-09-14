@@ -35,4 +35,13 @@
       handler=".setuphandlers.post_install">
   </genericsetup:importStep>
 
+  <genericsetup:upgradeDepends
+      source="3"
+      destination="4"
+      title="update controlpanel"
+      description=""
+      profile="jazkarta.contenttypes:default"
+      import_steps="plone.app.registry"
+      />
+
 </configure>
