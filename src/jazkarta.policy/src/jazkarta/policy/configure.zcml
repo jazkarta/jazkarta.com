@@ -43,4 +43,13 @@
       import_steps="plone.app.registry"
       />
 
+    <gs:upgradeDepends
+      source="1002"
+      destination="1003"
+      title="Update portal transforms"
+      description=""
+      profile="jazkarta.policy:default"
+      import_steps="jazkarta.policy-postInstall"
+      />
+
 </configure>
