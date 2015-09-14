@@ -25,8 +25,9 @@
               </div>
               <div class="col-xs-6 col-sm-3">
                 <h4>Services</h4>
-                <span tal:repeat="service context/services">
-                  <a href="#">${service}</a><br/></span>
+                <span tal:repeat="service view/services">
+                  <a href="#"
+                     tal:attributes="href service/getURL">${service/Title}</a><br/></span>
                 <tal:block condition="context/design_credit">
                   <h4>Design Credit</h4>
                   <p>${context/design_credit}</p>
