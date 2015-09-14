@@ -6,5 +6,6 @@
     <dependency>profile-jazkarta.plonetheme:default</dependency>
     <dependency>profile-jazkarta.contenttypes:default</dependency>
     <dependency>profile-Products.RedirectionTool:default</dependency>
+    <dependency>profile-collective.relatedslider:default</dependency>
   </dependencies>
 </metadata>
