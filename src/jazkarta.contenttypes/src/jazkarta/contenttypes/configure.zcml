@@ -37,6 +37,12 @@
   <adapter name="services" factory="jazkarta.contenttypes.indexers.null_indexer" />
   <adapter name="team" factory="jazkarta.contenttypes.indexers.null_indexer" />
 
+  <!-- named vocabularies -->
+  <utility component=".vocabularies.IndustryVocabularyFactory" name="jazkarta.contenttypes.industries" />
+  <utility component=".vocabularies.TechnologyVocabularyFactory" name="jazkarta.contenttypes.technologies" />
+  <utility component=".vocabularies.ServiceVocabularyFactory" name="jazkarta.contenttypes.services" />
+  <utility component=".vocabularies.TeamVocabularyFactory" name="jazkarta.contenttypes.team" />
+
   <genericsetup:importStep
       name="jazkarta.contenttypes-postInstall"
       title="jazkarta.contenttypes post_install import step"
@@ -60,6 +66,15 @@
       description=""
       profile="jazkarta.contenttypes:default"
       import_steps="typeinfo"
+      />
+
+  <genericsetup:upgradeDepends
+      source="5"
+      destination="6"
+      title="Update collection criteria"
+      description=""
+      profile="jazkarta.contenttypes:default"
+      import_steps="plone.app.registry"
       />
 
 </configure>
