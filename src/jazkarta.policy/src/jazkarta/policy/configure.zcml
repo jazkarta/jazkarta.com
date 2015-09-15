@@ -52,4 +52,13 @@
       import_steps="jazkarta.policy-postInstall"
       />
 
+    <gs:upgradeDepends
+      source="1003"
+      destination="1004"
+      title="Update cover settings"
+      description=""
+      profile="jazkarta.policy:default"
+      import_steps="plone.app.registry"
+      />
+
 </configure>
