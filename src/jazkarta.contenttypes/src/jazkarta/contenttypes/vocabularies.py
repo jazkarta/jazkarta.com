@@ -71,7 +71,7 @@ def services(context):
     # all published documents at the root level in our designated folder
     results = catalog(
         path={'query': search_path, 'depth': 1},
-        portal_type="Document",
+        portal_type="Folder",
         review_state="published"
     )
     for brain in results:
