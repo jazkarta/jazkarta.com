@@ -2,18 +2,22 @@
        xmlns:security="http://namespaces.plone.org/supermodel/security"
        xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
        xmlns:form="http://namespaces.plone.org/supermodel/form"
+       xmlns:indexer="http://namespaces.plone.org/supermodel/indexer"
        xmlns="http://namespaces.plone.org/supermodel/schema">
   <schema>
-    <field name="title" type="zope.schema.TextLine">
+    <field name="title" type="zope.schema.TextLine"
+           indexer:searchable="true">
       <description/>
       <title>Name</title>
     </field>
-    <field name="highlight" type="zope.schema.Text">
+    <field name="highlight" type="zope.schema.Text"
+           indexer:searchable="true">
       <description/>
       <required>False</required>
       <title>Highlight</title>
     </field>
-    <field name="bio" type="plone.app.textfield.RichText">
+    <field name="bio" type="plone.app.textfield.RichText"
+           indexer:searchable="true">
       <description>About yourself and your expertise.</description>
       <required>False</required>
       <title>Bio</title>
@@ -27,7 +31,8 @@
       <required>False</required>
       <title>Site URL</title>
     </field>
-    <field name="address" type="zope.schema.TextLine">
+    <field name="address" type="zope.schema.TextLine"
+           indexer:searchable="true">
       <description>City and State</description>
       <title>Address</title>
     </field>
@@ -38,7 +43,8 @@
         <source>jazkarta.contenttypes.vocabularies.technologies</source>
       </value_type>
     </field>
-    <field name="musical_instrument" type="zope.schema.TextLine">
+    <field name="musical_instrument" type="zope.schema.TextLine"
+           indexer:searchable="true">
       <title>Musical Instrument</title>
       <description>Could be one or a list, or a little joke if you don't play.</description>
       <required>False</required>
