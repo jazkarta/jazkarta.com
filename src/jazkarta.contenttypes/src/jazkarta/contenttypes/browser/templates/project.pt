@@ -18,8 +18,8 @@
               <div class="col-xs-12 col-sm-9">
                 <div><p>${context/Description}</p></div>
                 <div tal:condition="context/testimonial/output|nothing"><blockquote><span tal:replace="structure context/testimonial/output|nothing"></span><footer><em>${context/testimonial_source}</em></footer></blockquote></div>
-                <p>
-                <a tal:condition="context/case_study" class="btn btn-warning" href="${context/case_study}" role="button">Download Case Study</a>
+                <p tal:define="case_study view/case_study">
+                  <a tal:condition="case_study" class="btn btn-warning" href="${case_study/getURL}" role="button">Download Case Study</a>
                   <a tal:condition="context/site_url" class="btn btn-warning" href="${context/site_url}" role="button">View Website</a>
                 </p>
               </div>

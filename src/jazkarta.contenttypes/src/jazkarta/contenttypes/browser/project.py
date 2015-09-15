@@ -11,3 +11,12 @@ class ProjectView(BrowserView):
         uids = self.context.services
         results = catalog(UID=tuple(uids))
         return results
+
+    @lazy_property
+    def case_study(self):
+        catalog = api.portal.get_tool('portal_catalog')
+        uid = self.context.case_study
+        try:
+            return catalog(UID=uid)[0]
+        except IndexError:
+            return None
