@@ -41,7 +41,8 @@
       <description/>
       <title>Organization</title>
     </field>
-    <field name="address" type="zope.schema.TextLine">
+    <field name="address" type="zope.schema.TextLine"
+           indexer:searchable="true">
       <description>City and State</description>
       <title>Address</title>
     </field>
@@ -64,7 +65,8 @@
         <source>jazkarta.contenttypes.vocabularies.services</source>
       </value_type>
     </field>
-    <field name="design_credit" type="zope.schema.TextLine">
+    <field name="design_credit" type="zope.schema.TextLine"
+           indexer:searchable="true">
       <description>Provide the name of the designer, if any</description>
       <title>Design Credit</title>
       <required>False</required>
@@ -88,7 +90,8 @@
       <required>False</required>
       <title>Testimonial</title>
     </field>
-    <field name="testimonial_source" type="zope.schema.TextLine">
+    <field name="testimonial_source" type="zope.schema.TextLine"
+           indexer:searchable="true">
       <description>The name of the person quoted.  Must have permission to use name and quote.</description>
       <required>False</required>
       <title>Testimonial Source</title>

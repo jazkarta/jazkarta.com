@@ -153,10 +153,10 @@ a.button {
 	}
 }
 #portal-footer {
-	&:extend(.row);
 	.clearfix();
 	.portletWrapper {
-		&:extend(.col-sm-4);
+		width: 33%;
+		vertical-align: top;
 		border-bottom: none;
 		.portletHeader {
 			font: 700 20px @plone-font-family-sans-serif;
@@ -203,11 +203,12 @@ a.button {
 
 #lead-image {
 	margin-bottom: 30px;
+	margin-top: 75px;
 	text-align: right;
+	float: right;
 	img {
-		max-width: 130%;
+		max-width: 100%;
 		height: auto;
-		margin-left: -30%;
 		display: block;
 	}
 	@media (max-width: @plone-grid-float-breakpoint) {

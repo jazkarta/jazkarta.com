@@ -26,7 +26,22 @@
 
   <include package=".browser" />
 
-  <adapter name="launch_date" factory="jazkarta.contenttypes.project.project_launch_date" />
+  <!-- catalog indexes -->
+  <adapter name="launch_date" factory="jazkarta.contenttypes.indexers.project_launch_date" />
+  <adapter name="team" factory="jazkarta.contenttypes.indexers.project_team" />
+  <adapter name="technology" factory="jazkarta.contenttypes.indexers.project_technology" />
+  <adapter name="industry" factory="jazkarta.contenttypes.indexers.project_industry" />
+  <adapter name="services" factory="jazkarta.contenttypes.indexers.project_services" />
+  <adapter name="technology" factory="jazkarta.contenttypes.indexers.team_member_technology" />
+  <!-- prevent inadvertent indexing -->
+  <adapter name="services" factory="jazkarta.contenttypes.indexers.null_indexer" />
+  <adapter name="team" factory="jazkarta.contenttypes.indexers.null_indexer" />
+
+  <!-- named vocabularies -->
+  <utility component=".vocabularies.IndustryVocabularyFactory" name="jazkarta.contenttypes.industries" />
+  <utility component=".vocabularies.TechnologyVocabularyFactory" name="jazkarta.contenttypes.technologies" />
+  <utility component=".vocabularies.ServiceVocabularyFactory" name="jazkarta.contenttypes.services" />
+  <utility component=".vocabularies.TeamVocabularyFactory" name="jazkarta.contenttypes.team" />
 
   <genericsetup:importStep
       name="jazkarta.contenttypes-postInstall"
@@ -34,5 +49,32 @@
       description="Post install import step from jazkarta.contenttypes"
       handler=".setuphandlers.post_install">
   </genericsetup:importStep>
+
+  <genericsetup:upgradeDepends
+      source="3"
+      destination="4"
+      title="update controlpanel"
+      description=""
+      profile="jazkarta.contenttypes:default"
+      import_steps="plone.app.registry"
+      />
+
+  <genericsetup:upgradeDepends
+      source="4"
+      destination="5"
+      title="update type definitions"
+      description=""
+      profile="jazkarta.contenttypes:default"
+      import_steps="typeinfo"
+      />
+
+  <genericsetup:upgradeDepends
+      source="5"
+      destination="6"
+      title="Update collection criteria"
+      description=""
+      profile="jazkarta.contenttypes:default"
+      import_steps="plone.app.registry"
+      />
 
 </configure>

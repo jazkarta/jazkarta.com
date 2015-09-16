@@ -16,8 +16,7 @@ class IJazSettings(Interface):
         value_type=schema.TextLine()
         )
 
-    services = schema.List(
-        title=u'Services',
-        description=u'Enter names of services provided by Jazkarta',
-        value_type=schema.TextLine()
-        )
+    services_location = schema.TextLine(
+        title=u'Services Location',
+        description=u'Enter the path from the site root to the folder where service pages are located',
+    )

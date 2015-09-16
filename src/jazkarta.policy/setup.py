@@ -47,6 +47,7 @@ setup(
         'jazkarta.contenttypes',
         'jazkarta.plonetheme',
         'Products.RedirectionTool',
+        'collective.relatedslider',
     ],
     extras_require={
         'test': [

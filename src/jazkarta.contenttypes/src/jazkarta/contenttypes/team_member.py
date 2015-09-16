@@ -1,3 +1,4 @@
+from plone.indexer.decorator import indexer
 from plone.supermodel import model
 
 
