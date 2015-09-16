@@ -1,3 +1,4 @@
+@import "../css/jazkarta-icons.css";
 @import "../fonts/source-sans-pro.css";
 /* Include Barceloneta LESS */
 @font-face {
@@ -4357,6 +4358,7 @@ body.template-logged_out #content-core .portletFooter {
 #viewlet-below-content .reply ~ .reply .loginbutton {
   display: inline-block;
 }
+/* jazkarta fonts */
 /* colors */
 /* Override typography */
 /* other overrides */
