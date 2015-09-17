@@ -4893,6 +4893,14 @@ a.button {
     padding-left: 0;
   }
 }
+/* project */
+dt.label {
+  width: 10em;
+  float: left;
+}
+dl.InfoList dd {
+  display: block;
+}
 /* cover */
 .tile:before,
 .tile:after {
