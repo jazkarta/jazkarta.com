@@ -10,7 +10,7 @@
     <metal:block fill-slot="content-core">
       <div class="container-fluid">
         <h1>${context/Title}</h1>
-        <div class="row" tal:repeat="member context/objectValues">
+        <div class="row" tal:repeat="member python:context.listFolderContents(contentFilter={'portal_type' : 'jazkarta.team_member'})">
           <div class="col-xs-5 col-sm-2">
             <img tal:define="scales member/@@images;
                              scale python:scales.scale('image', scale='thumb')"
