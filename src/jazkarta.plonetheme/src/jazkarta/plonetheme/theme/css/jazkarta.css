@@ -4730,6 +4730,8 @@ a.button {
 /* logo & nav */
 #portal-logo {
   float: left;
+  position: relative;
+  left: -8px;
 }
 .plone-navbar {
   float: right;
@@ -4897,6 +4899,9 @@ a.button {
   width: 100%;
   height: auto;
 }
+.jazkarta-banner-tile {
+  min-height: 11em;
+}
 .col-sm-9 > #content {
   padding-left: 30px;
 }
@@ -4904,6 +4909,14 @@ a.button {
   .col-sm-9 > #content {
     padding-left: 0;
   }
+}
+/* project */
+dt.label {
+  width: 10em;
+  float: left;
+}
+dl.InfoList dd {
+  display: block;
 }
 /* cover */
 .tile:before,
@@ -5001,7 +5014,7 @@ a.button {
   color: white;
   margin: 0;
   position: relative;
-  top: 30%;
+  top: 29%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);

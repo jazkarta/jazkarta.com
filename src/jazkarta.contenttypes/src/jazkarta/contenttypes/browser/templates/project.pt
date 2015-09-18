@@ -14,25 +14,34 @@
         </div>
         <div class="row">
           <div class="row">
-            <div class="row">
-              <div class="col-xs-12 col-sm-9">
-                <div><p>${context/Description}</p></div>
-                <div tal:condition="context/testimonial/output|nothing"><blockquote><span tal:replace="structure context/testimonial/output|nothing"></span><footer><em>${context/testimonial_source}</em></footer></blockquote></div>
-                <p tal:define="case_study view/case_study">
-                  <a tal:condition="case_study" class="btn btn-warning" href="${case_study/getURL}" role="button">Download Case Study</a>
-                  <a tal:condition="context/site_url" class="btn btn-warning" href="${context/site_url}" role="button">View Website</a>
-                </p>
-              </div>
-              <div class="col-xs-6 col-sm-3">
-                <h4>Services</h4>
-                <span tal:repeat="service view/services">
-                  <a href="#"
-                     tal:attributes="href service/getURL">${service/Title}</a><br/></span>
-                <tal:block condition="context/design_credit">
-                  <h4>Design Credit</h4>
-                  <p>${context/design_credit}</p>
-                </tal:block>
-              </div>
+            <div class="col-xs-12 col-sm-9">
+              <div class="ProjectIndustries"
+                   tal:define="industry python:isinstance(context.industry, list) or [context.industry]"
+                   tal:content="python:', '.join(industry)">Industry 1, Industry 2</div>
+              <dl class="InfoList ProjectInfo">
+                <dt class="label">Client:</dt>
+                <dd class="ProjectClient" tal:content="context/organization">Client Name</dd>
+                <dt class="label">Location:</dt>
+                <dd class="ProjectLocation" tal:content="context/address">Location</dd>
+                <dt class="label">Technology:</dt>
+                <dd class="ProjectTech" tal:content="python:', '.join(context.technology)">Tech 1, Tech 2</dd>
+              </dl>
+              <div class="Description"><p>${context/Description}</p></div>
+              <div class="Testimonial" tal:condition="context/testimonial/output|nothing"><blockquote><span tal:replace="structure context/testimonial/output|nothing"></span><footer>&mdash; <em>${context/testimonial_source}</em></footer></blockquote></div>
+              <p tal:define="case_study view/case_study">
+                <a tal:condition="case_study" class="btn btn-warning" href="${case_study/getURL}" role="button">Download Case Study</a>
+                <a tal:condition="context/site_url" class="btn btn-warning" href="${context/site_url}" role="button">View Website</a>
+              </p>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <h4>Services</h4>
+              <span tal:repeat="service view/services">
+                <a href="#"
+                   tal:attributes="href service/getURL">${service/Title}</a><br/></span>
+              <tal:block condition="context/design_credit">
+                <h4>Design Credit</h4>
+                <p>${context/design_credit}</p>
+              </tal:block>
             </div>
           </div>
         </div>
@@ -47,6 +56,7 @@
             <p><a tal:condition="context/site_url" class="btn btn-warning" href="${context/site_url}" role="button">View Website</a></p>
         </div>
       </div>
+      <h4 tal:define="slider context/slider_type|nothing" tal:condition="python:slider != 'disabled'">Similar Projects</h4>
     </metal:block>
 
 </html>

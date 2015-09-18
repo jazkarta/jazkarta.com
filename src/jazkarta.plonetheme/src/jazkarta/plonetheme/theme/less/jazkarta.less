@@ -63,6 +63,8 @@ a.button {
 /* logo & nav */
 #portal-logo {
 	float: left;
+	position: relative;
+	left: -8px;
 }
 .plone-navbar {
 	float: right;
@@ -229,12 +231,26 @@ a.button {
 	}
 	margin-bottom: 30px;
 }
+.jazkarta-banner-tile {
+	min-height: 11em;
+}
 
 .col-sm-9 > #content {
 	padding-left: 30px;
 	@media (max-width: @plone-grid-float-breakpoint) {
 		padding-left: 0;
 	}
+}
+
+/* project */
+
+dt.label {
+	width: 10em;
+	float: left;
+}
+
+dl.InfoList dd {
+	display: block;
 }
 
 /* cover */

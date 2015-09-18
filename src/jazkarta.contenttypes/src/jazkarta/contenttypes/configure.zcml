@@ -77,4 +77,13 @@
       import_steps="plone.app.registry"
       />
 
+  <genericsetup:upgradeDepends
+      source="6"
+      destination="7"
+      title="Update type info to add behaviors"
+      description=""
+      profile="jazkarta.contenttypes:default"
+      import_steps="typeinfo"
+      />
+
 </configure>

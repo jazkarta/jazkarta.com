@@ -17,7 +17,7 @@
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
  <property name="klass">plone.dexterity.content.Item</property>
- <property name="behaviors">
+ <property name="behaviors" purge="False">
   <element value="plone.app.dexterity.behaviors.metadata.IOwnership"/>
   <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
   <element value="plone.app.dexterity.behaviors.metadata.ICategorization"/>
@@ -26,6 +26,8 @@
   <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
   <element value="plone.app.relationfield.behavior.IRelatedItems"/>
   <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
+  <element value="collective.relatedslider.behavior.IRelatedSlider"/>
+  <element value="plone.app.contenttypes.behaviors.collection.ICollection"/>
  </property>
  <property name="schema">jazkarta.contenttypes.project.IProject</property>
  <alias from="(Default)" to="(dynamic view)"/>

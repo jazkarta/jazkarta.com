@@ -43,6 +43,7 @@ setup(name='jazkarta.contenttypes',
           # -*- Extra requirements: -*-
           'plone.app.imagecropping',
           'collective.dexteritytextindexer',
+          'collective.relatedslider',
       ],
       extras_require={
           'test': [
