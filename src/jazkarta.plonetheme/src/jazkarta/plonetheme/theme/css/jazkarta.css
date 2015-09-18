@@ -4930,6 +4930,7 @@ a.button {
 #banner-image img {
   width: 100%;
   height: auto;
+  margin: 0;
 }
 .jazkarta-banner-tile {
   min-height: 2em;
