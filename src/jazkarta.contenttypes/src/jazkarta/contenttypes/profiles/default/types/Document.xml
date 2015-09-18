@@ -3,6 +3,7 @@
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="behaviors" purge="false">
   <element value="collective.relatedslider.behavior.IRelatedSlider"/>
+  <element value="plone.app.contenttypes.behaviors.collection.ICollection"/>
  </property>
 </object>
 
