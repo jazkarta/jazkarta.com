@@ -5114,4 +5114,11 @@ main #related-slider li.slider-item:hover .item-caption {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
 }
+main #related-slider li.slider-item.no-image {
+  height: 154px;
+}
+main #related-slider li.slider-item.no-image .item-caption {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */
