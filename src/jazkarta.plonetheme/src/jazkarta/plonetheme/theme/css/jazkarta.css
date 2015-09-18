@@ -5088,6 +5088,10 @@ dl.InfoList dd {
 #portal-footer-wrapper {
   margin-top: 24px;
 }
+#content-core img {
+  max-width: 100%;
+  height: auto;
+}
 main #related-slider li.slider-item {
   width: 247px;
   position: relative;
