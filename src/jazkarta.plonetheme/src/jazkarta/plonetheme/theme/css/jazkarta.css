@@ -4900,7 +4900,7 @@ a.button {
   height: auto;
 }
 .jazkarta-banner-tile {
-  min-height: 400px;
+  min-height: 11em;
 }
 .col-sm-9 > #content {
   padding-left: 30px;
