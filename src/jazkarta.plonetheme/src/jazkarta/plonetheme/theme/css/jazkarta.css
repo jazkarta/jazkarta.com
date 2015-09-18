@@ -1,6 +1,6 @@
+/* Include Barceloneta LESS */
 @import "../css/jazkarta-icons.css";
 @import "../fonts/source-sans-pro.css";
-/* Include Barceloneta LESS */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -4932,7 +4932,7 @@ a.button {
   height: auto;
 }
 .jazkarta-banner-tile {
-  min-height: 11em;
+  min-height: 2em;
 }
 .col-sm-9 > #content {
   padding-left: 30px;
