@@ -4899,6 +4899,9 @@ a.button {
   width: 100%;
   height: auto;
 }
+.jazkarta-banner-tile {
+  min-height: 400px;
+}
 .col-sm-9 > #content {
   padding-left: 30px;
 }
