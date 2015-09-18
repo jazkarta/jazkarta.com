@@ -26,7 +26,10 @@
         </a>
     </tal:image>
 
-    <div class="banner-text" tal:content="structure view/data/text/output|nothing" />
+    <div class="banner-text"
+         tal:define="text view/data/text/output|nothing"
+         tal:condition="text"
+         tal:content="structure text" />
 
   </div>
 </body>

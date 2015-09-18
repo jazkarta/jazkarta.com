@@ -20,6 +20,7 @@ class IBannerTile(IPersistentCoverTile):
 
     text = RichText(
         title=u'Text',
+        required=False,
     )
 
     image = field.NamedBlobImage(
