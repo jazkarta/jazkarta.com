@@ -10,6 +10,7 @@
       <element>-Default-|tile-default</element>
       <element>Full width banner|tile-fullwidth</element>
       <element>Image mouseover basic tile|tile-mouseover-basic</element>
+      <element>Text mouseover basic tile|tile-mouseover-text</element>
     </value>
   </record>
 

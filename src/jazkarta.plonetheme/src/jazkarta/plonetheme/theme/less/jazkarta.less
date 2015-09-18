@@ -8,6 +8,8 @@
 
 /* colors */
 @jazkarta-highlight-color:					#ee4623;
+@text-tile-background:                      #205c90;
+@text-tile-mouseover-background:            #80c34f;
 @plone-link-color:							@jazkarta-highlight-color;
 @plone-link-color-on-dark:					@jazkarta-highlight-color;
 @plone-default-published-color:				#007bb3; //published and external same color
@@ -291,6 +293,61 @@ a.button {
 		.cover-basic-tile {
 			h2 a {
                                 color: @plone-text-color;
+			}
+			.imag img {
+                                opacity: 0.1;
+			}
+			p:first-of-type {
+                                display: block;
+                                z-index: 9999;
+			}
+		}
+        }
+}
+
+.tile-mouseover-text {
+        .cover-basic-tile {
+                height: 255px;
+                width: 380px;
+                overflow: hidden;
+                text-align: center;
+                color: white;
+                background-color: @text-tile-background;
+                h2 {
+                        text-transform: uppercase;
+                        color: white;
+                }
+                .imag img {
+                        position: absolute;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        height: 255px;
+                }
+                p {
+                        display: none;
+                        &:first-of-type {
+                                color: white;
+                                text-align: center;
+                                font-size: 1.5em;
+                                font-weight: bold;
+                        }
+                }
+                a {
+                        color: white;
+                        margin: 0;
+                        position: relative;
+                        top: 30%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                }
+        }
+        &:hover {
+		.cover-basic-tile {
+            background-color: @text-tile-mouseover-background;
+			h2 {
+                                display: none;
 			}
 			.imag img {
                                 opacity: 0.1;
