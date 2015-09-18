@@ -70,4 +70,13 @@
       import_steps="plone.app.registry"
       />
 
+    <gs:upgradeDepends
+      source="1005"
+      destination="1006"
+      title="Update image scales"
+      description=""
+      profile="jazkarta.policy:default"
+      import_steps="plone.app.registry"
+      />
+
 </configure>

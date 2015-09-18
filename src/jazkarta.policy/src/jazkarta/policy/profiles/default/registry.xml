@@ -48,4 +48,18 @@
     </value>
   </record>
 
+  <record field="allowed_sizes"
+      interface="Products.CMFPlone.interfaces.controlpanel.IImagingSchema"
+      name="plone.allowed_sizes">
+    <value>
+      <element>large 1280:1280</element>
+      <element>preview 380:255</element>
+      <element>mini 300:201</element>
+      <element>thumb 247:154</element>
+      <element>tile 64:64</element>
+      <element>icon 32:32</element>
+      <element>listing 16:16</element>
+    </value>
+  </record>
+
 </registry>

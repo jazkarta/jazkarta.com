@@ -395,3 +395,38 @@ dl.InfoList dd {
         }
     }
 }
+
+/* relatedslider */
+#content {
+    margin-bottom: 24px;
+}
+#portal-footer-wrapper {
+    margin-top: 24px;
+}
+
+main #related-slider li.slider-item {
+    width: 247px;
+    position: relative;
+    height: auto;
+    a.item-caption {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        box-sizing: border-box;
+        padding-top: 60px;
+        left: 0;
+        z-index: -1;
+        color: white;
+        background-color: transparent;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+    }
+    &:hover .item-caption {
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
