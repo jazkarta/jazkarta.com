@@ -375,3 +375,23 @@ dl.InfoList dd {
 		}
         }
 }
+
+/* plone.app.imagecropping improvements */
+#content ul.scales {
+    max-height: 1000px;
+    height: auto;
+    overflow-y: scroll;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #333;
+
+    li {
+        width: 200px;
+        height: 250px;
+        overflow: hidden;
+        float: left;
+
+        img {
+            max-height: 200px;
+        }
+    }
+}

@@ -448,6 +448,7 @@ p {
   font-size: 23px;
   font-weight: 500;
   color: #777777;
+  margin-bottom: 10px;
 }
 small {
   font-size: 85%;
@@ -472,9 +473,6 @@ mark {
   padding-bottom: 11.5px;
   margin: 0 0 12.5px;
   border-bottom: 1px solid #cccccc;
-}
-.tileHeadline {
-  padding-top: 20px;
 }
 ul,
 ol {
@@ -1680,8 +1678,13 @@ label .required:after {
   font-weight: 300;
   color: #696969;
 }
+.ordered-selection-field td {
+  vertical-align: middle;
+  text-align: center;
+}
 .ordered-selection-field td button {
-  margin-left: 5px;
+  float: left;
+  margin-left: 2rem;
 }
 .folder-factories {
   list-style: none;
@@ -2402,6 +2405,17 @@ fieldset[disabled] .link-parent.active {
 .folder-listing .documentByLine {
   font-weight: 300;
   color: #777777;
+}
+.tileImage {
+  padding-right: 5px;
+  float: left;
+}
+.tileImageNoFloat {
+  margin-bottom: 5px;
+}
+.tileFooter {
+  clear: both;
+  margin-top: 5px;
 }
 .photoalbumEntryWrapper {
   display: block;
@@ -3143,6 +3157,13 @@ fieldset[disabled] .link-parent.active {
 .template-usergroup-controlpanel input.quickSearch,
 .template-member-registration input.quickSearch {
   margin-bottom: 0.5em;
+}
+.template-usergroup-groupprefs .listingCheckbox,
+.template-usergroup-userprefs .listingCheckbox,
+.template-usergroup-controlpanel .listingCheckbox,
+.template-member-registration .listingCheckbox {
+  vertical-align: middle;
+  text-align: center;
 }
 .link-category {
   display: inline;
@@ -4546,7 +4567,15 @@ body.template-logged_out #content-core .portletFooter {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
   overflow: hidden;
 }
+.newsImageContainer a {
+  display: table;
+}
+.newsImageContainer a img {
+  display: block;
+}
 .newsImageContainer figcaption {
+  display: table-caption;
+  caption-side: bottom;
   font-size: 16px;
   background: #fcfcfd;
 }
@@ -5014,7 +5043,7 @@ dl.InfoList dd {
   color: white;
   margin: 0;
   position: relative;
-  top: 29%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -5031,5 +5060,22 @@ dl.InfoList dd {
 .tile-mouseover-text:hover .cover-basic-tile p:first-of-type {
   display: block;
   z-index: 9999;
+}
+/* plone.app.imagecropping improvements */
+#content ul.scales {
+  max-height: 1000px;
+  height: auto;
+  overflow-y: scroll;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #333;
+}
+#content ul.scales li {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  float: left;
+}
+#content ul.scales li img {
+  max-height: 200px;
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */
