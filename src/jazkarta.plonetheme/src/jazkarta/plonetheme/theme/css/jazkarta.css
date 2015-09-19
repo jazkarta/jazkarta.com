@@ -1,6 +1,6 @@
-/* Include Barceloneta LESS */
 @import "../css/jazkarta-icons.css";
 @import "../fonts/source-sans-pro.css";
+/* Include Barceloneta LESS */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -5001,6 +5001,10 @@ a.button {
   .col-sm-9 > #content {
     padding-left: 0;
   }
+}
+/* Content area */
+.documentDescription {
+  padding-bottom: 0.8em;
 }
 /* project */
 dt.label {
