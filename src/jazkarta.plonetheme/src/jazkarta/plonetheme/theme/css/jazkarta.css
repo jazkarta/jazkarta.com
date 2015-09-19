@@ -565,17 +565,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 680px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 840px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1000px;
   }
 }
 .container-fluid {
@@ -1242,17 +1242,17 @@ pre code {
 }
 @media (min-width: 768px) {
   #edit-zone.plone-toolbar-top .plone-toolbar-container {
-    width: 750px;
+    width: 680px;
   }
 }
 @media (min-width: 992px) {
   #edit-zone.plone-toolbar-top .plone-toolbar-container {
-    width: 970px;
+    width: 840px;
   }
 }
 @media (min-width: 1200px) {
   #edit-zone.plone-toolbar-top .plone-toolbar-container {
-    width: 1170px;
+    width: 1000px;
   }
 }
 #edit-zone.plone-toolbar-top.compressed .plone-toolbar-container {
@@ -3410,17 +3410,32 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
 }
 @media (min-width: 768px) {
   .plone-modal .plone-modal-content {
-    width: 750px;
+    width: 680px;
   }
 }
 @media (min-width: 992px) {
   .plone-modal .plone-modal-content {
-    width: 970px;
+    width: 840px;
   }
 }
 @media (min-width: 1200px) {
   .plone-modal .plone-modal-content {
-    width: 1170px;
+    width: 1000px;
+  }
+}
+@media (min-width: 768px) {
+  .plone-modal .plone-modal-content {
+    width: 680px;
+  }
+}
+@media (min-width: 992px) {
+  .plone-modal .plone-modal-content {
+    width: 840px;
+  }
+}
+@media (min-width: 1200px) {
+  .plone-modal .plone-modal-content {
+    width: 1000px;
   }
 }
 .plone-modal.fade {
@@ -3949,62 +3964,62 @@ ul.picker__list {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 680px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 840px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1000px;
   }
 }
 @media (min-width: 768px) {
   .plone-toolbar-top-default .container {
-    width: 750px;
+    width: 680px;
   }
 }
 @media (min-width: 828px) {
   .plone-toolbar-left-default .container {
-    width: 750px;
+    width: 680px;
   }
 }
 @media (min-width: 888px) {
   .plone-toolbar-left-expanded .container {
-    width: 750px;
+    width: 680px;
   }
 }
 @media (min-width: 992px) {
   .plone-toolbar-top-default .container {
-    width: 970px;
+    width: 840px;
   }
 }
 @media (min-width: 1052px) {
   .plone-toolbar-left-default .container {
-    width: 970px;
+    width: 840px;
   }
 }
 @media (min-width: 1112px) {
   .plone-toolbar-left-expanded .container {
-    width: 970px;
+    width: 840px;
   }
 }
 @media (min-width: 1200px) {
   .plone-toolbar-top-default .container {
-    width: 1170px;
+    width: 1000px;
   }
 }
 @media (min-width: 1260px) {
   .plone-toolbar-left-default .container {
-    width: 1170px;
+    width: 1000px;
   }
 }
 @media (min-width: 1320px) {
   .plone-toolbar-left-expanded .container {
-    width: 1170px;
+    width: 1000px;
   }
 }
 #portal-footer-wrapper {
@@ -4759,6 +4774,44 @@ a.button {
   margin-top: 1em;
   display: inline-block;
 }
+/* layout */
+@media (min-width: 768px) {
+  .container {
+    width: 680px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 840px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media (min-width: 768px) {
+  header .container,
+  footer .container {
+    width: 765px !important;
+  }
+  header .container .plone-nav > li > a,
+  footer .container .plone-nav > li > a {
+    padding: 10px;
+  }
+}
+@media (min-width: 992px) {
+  header .container,
+  footer .container {
+    width: 940px !important;
+  }
+}
+@media (min-width: 1200px) {
+  header .container,
+  footer .container {
+    width: 1100px !important;
+  }
+}
 /* logo & nav */
 #portal-logo {
   float: left;
@@ -4817,14 +4870,20 @@ a.button {
 .plone-navbar-toggle .icon-bar + .icon-bar + .icon-bar {
   margin-bottom: 3px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px - 1) {
   .plone-navbar-collapse {
     position: absolute;
-    left: 0;
     right: 0;
+    left: 0;
+    box-sizing: border-box;
     width: 100%;
     padding: 15px;
     background: #fff;
+  }
+}
+@media (min-width: 768px) {
+  .plone-navbar-header {
+    display: none;
   }
 }
 /* breadcrumbs */

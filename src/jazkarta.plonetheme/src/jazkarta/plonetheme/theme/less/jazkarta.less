@@ -34,7 +34,12 @@
 /* other overrides */
 @plone-sitenav-padding-horizontal:			30px;
 @plone-sitenav-link-padding:				10px 30px;
-
+@plone-container-lg:                        1000px;
+@plone-container-md:                        840px;
+@plone-container-sm:                        680px;
+@jazkarta-header-width-lg:                  1100px;
+@jazkarta-header-width-md:                  940px;
+@jazkarta-header-width-sm:                  765px;
 
 /* base styles */
 body {
@@ -59,6 +64,36 @@ a.button {
 	display: inline-block;
 }
 
+/* layout */
+
+.container {
+  @media (min-width: @plone-screen-sm-min) {
+    width: @plone-container-sm;
+  }
+  @media (min-width: @plone-screen-md-min) {
+    width: @plone-container-md;
+  }
+  @media (min-width: @plone-screen-lg-min) {
+    width: @plone-container-lg;
+  }
+}
+
+header, footer {
+    .container {
+        @media (min-width: @plone-screen-sm-min) {
+            width: @jazkarta-header-width-sm !important;
+            .plone-nav > li > a {
+                padding: 10px;
+            }
+        }
+        @media (min-width: @plone-screen-md-min) {
+            width: @jazkarta-header-width-md !important;
+        }
+        @media (min-width: @plone-screen-lg-min) {
+            width: @jazkarta-header-width-lg !important;
+        }
+    }
+}
 
 /* logo & nav */
 #portal-logo {
@@ -122,14 +157,20 @@ a.button {
 	}
 }
 .plone-navbar-collapse {
-	@media (max-width: @plone-grid-float-breakpoint) {
+	@media (max-width: @plone-screen-sm-min - 1) {
 		position: absolute;
-		left: 0;
 		right: 0;
+        left: 0;
+        box-sizing: border-box;
 		width: 100%;
 		padding: 15px;
 		background: #fff;
 	}
+}
+.plone-navbar-header {
+    @media (min-width: @plone-screen-sm-min) {
+        display: none;
+    }
 }
 
 /* breadcrumbs */
