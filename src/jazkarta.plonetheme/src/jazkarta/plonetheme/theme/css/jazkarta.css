@@ -5117,7 +5117,12 @@ dl.InfoList dd {
   color: white;
   text-decoration: none;
 }
-.tile-mouseover-text .cover-basic-tile div {
+.tile-mouseover-text .cover-basic-tile div.basic-tile-link-wrapper {
+  top: 0;
+  margin: 0;
+  height: 255px;
+}
+.tile-mouseover-text .cover-basic-tile div.basic-tile-link-area {
   margin: 0;
   position: relative;
   top: 80%;

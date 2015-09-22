@@ -12,6 +12,7 @@
   <div tal:condition="not: is_empty" class="cover-basic-tile tile-content"
        tal:define="description view/data/description|nothing">
     <a tal:attributes="href view/getURL">
+      <div class="basic-tile-link-wrapper">
       <div class="basic-tile-link-area">
       <tal:fields repeat="field view/get_configured_fields">
 
@@ -66,6 +67,7 @@
           <div class="visualClear"><!-- --></div>
         </tal:last>
       </tal:fields>
+      </div>
       </div>
     </a>
   </div>
