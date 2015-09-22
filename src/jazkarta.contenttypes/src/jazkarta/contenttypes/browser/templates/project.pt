@@ -18,8 +18,7 @@
               <dl class="InfoList ProjectInfo">
                 <dt class="label">Project Type</dt>
                 <dd class="ProjectIndustries"
-                     tal:define="industry python:isinstance(context.industry, list) or [context.industry]"
-                     tal:content="python:', '.join(industry)">Industry 1, Industry 2</dd>
+                     tal:content="python:', '.join(context.industry)">Industry 1, Industry 2</dd>
                 <dt class="label">Client:</dt>
                 <dd class="ProjectClient" tal:content="context/organization">Client Name</dd>
                 <dt class="label">Location:</dt>

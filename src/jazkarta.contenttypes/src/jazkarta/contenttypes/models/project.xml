@@ -46,10 +46,12 @@
       <description>City and State</description>
       <title>Address</title>
     </field>
-    <field name="industry" type="zope.schema.Choice">
+    <field name="industry" type="zope.schema.Set">
       <description/>
       <title>Industry</title>
-      <source>jazkarta.contenttypes.vocabularies.industries</source>
+      <value_type type="zope.schema.Choice">
+        <source>jazkarta.contenttypes.vocabularies.industries</source>
+      </value_type>
     </field>
     <field name="technology" type="zope.schema.Set">
       <description/>
