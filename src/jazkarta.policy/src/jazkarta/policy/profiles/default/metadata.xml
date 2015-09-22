@@ -7,5 +7,6 @@
     <dependency>profile-jazkarta.contenttypes:default</dependency>
     <dependency>profile-Products.RedirectionTool:default</dependency>
     <dependency>profile-collective.relatedslider:default</dependency>
+    <dependency>profile-Products.PloneFormGen:default</dependency>
   </dependencies>
 </metadata>

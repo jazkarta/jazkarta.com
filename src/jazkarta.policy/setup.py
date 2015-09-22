@@ -48,6 +48,7 @@ setup(
         'jazkarta.plonetheme',
         'Products.RedirectionTool',
         'collective.relatedslider',
+        'Products.PloneFormGen',
     ],
     extras_require={
         'test': [
