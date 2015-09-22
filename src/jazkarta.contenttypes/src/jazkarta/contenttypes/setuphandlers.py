@@ -27,7 +27,7 @@ def add_catalog_indexes(context, logger=None):
     # Specify the indexes you want, with ('index_name', 'index_type')
     wanted = (
         ('technology', 'KeywordIndex'),
-        ('industry', 'FieldIndex'),
+        ('industry', 'KeywordIndex'),
         ('services', 'KeywordIndex'),
         ('team', 'KeywordIndex'),
         ('launch_date', 'DateIndex'),
