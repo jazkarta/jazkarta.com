@@ -2636,7 +2636,7 @@ fieldset[disabled] .link-parent.active {
   padding-left: 15px;
   list-style: none;
 }
-.portlet .portletContent > ul time {
+.portlet .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
@@ -2927,7 +2927,7 @@ fieldset[disabled] .link-parent.active {
   padding-left: 15px;
   list-style: none;
 }
-.managedPortlet .portletContent > ul time {
+.managedPortlet .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
@@ -3164,6 +3164,10 @@ fieldset[disabled] .link-parent.active {
 .template-member-registration .listingCheckbox {
   vertical-align: middle;
   text-align: center;
+}
+.template-usergroup-groupprefs form,
+.template-usergroup-userprefs form {
+  overflow: scroll;
 }
 .link-category {
   display: inline;
@@ -4213,8 +4217,8 @@ body.template-logged_out #content-core .portletContent > ul ul {
   padding-left: 15px;
   list-style: none;
 }
-body.template-login_form #content-core .portletContent > ul time,
-body.template-logged_out #content-core .portletContent > ul time {
+body.template-login_form #content-core .portletContent > ul .portletItemDetails,
+body.template-logged_out #content-core .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
@@ -4410,6 +4414,9 @@ body.template-logged_out #content-core .portletFooter {
   color: #a7daf2;
   top: 5px;
   position: relative;
+}
+.vevent span.cal_month {
+  font-size: 1.1em;
 }
 .event.summary {
   font-weight: 300;
@@ -5108,9 +5115,14 @@ dl.InfoList dd {
 }
 .tile-mouseover-text .cover-basic-tile a {
   color: white;
+  text-decoration: none;
+}
+.tile-mouseover-text .cover-basic-tile div {
   margin: 0;
   position: relative;
-  top: 30%;
+  top: 80%;
+  height: 255px;
+  display: inline-block;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -5127,6 +5139,10 @@ dl.InfoList dd {
 .tile-mouseover-text:hover .cover-basic-tile p:first-of-type {
   display: block;
   z-index: 9999;
+}
+.tile-mouseover-text:hover .cover-basic-tile a {
+  color: white;
+  text-decoration: none;
 }
 /* plone.app.imagecropping improvements */
 #content ul.scales {
