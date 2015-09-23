@@ -344,6 +344,14 @@ dl.InfoList dd {
             width: 350px;
         }
     }
+    .plone-toolbar-left-default &, .plone-toolbar-right-default & {
+        @media (min-width: (@plone-screen-lg-min) ) {
+            width: 33.33%;
+        }
+        @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar) ) {
+            width: 350px;
+        }
+    }
 }
 
 .tile {
@@ -410,8 +418,28 @@ dl.InfoList dd {
     @media (min-width: @plone-screen-md-min) {
         .tablet-tile;
     }
+    .plone-toolbar-left-expanded & {
+        @media (min-width: @plone-screen-lg-min) {
+            .tablet-tile;
+        }
+    }
+    .plone-toolbar-left-default & {
+        @media (min-width: @plone-screen-lg-min) {
+            .tablet-tile;
+        }
+    }
     @media (min-width: @plone-screen-lg-min) {
         .desktop-tile;
+    }
+    .plone-toolbar-left-expanded & {
+        @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded)) {
+            .desktop-tile;
+        }
+    }
+    .plone-toolbar-left-default & {
+        @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar)) {
+            .desktop-tile;
+        }
     }
     .cover-richtext-tile {
         width: 100%;
@@ -424,7 +452,7 @@ dl.InfoList dd {
     h1, h2, h3, h4, h5, p {
         margin: 0;
         box-sizing: border-box;
-        padding: 15px;
+        padding: 0 15px 15px 15px;
     }
 }
 
@@ -457,7 +485,7 @@ dl.InfoList dd {
         h2, p {
             margin: 0;
             box-sizing: border-box;
-            padding: 15px;
+            padding: 0 15px 15px 15px;
         }
         h2 {
             text-transform: uppercase;

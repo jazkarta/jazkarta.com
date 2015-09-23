@@ -5058,6 +5058,18 @@ dl.InfoList dd {
     width: 350px;
   }
 }
+@media (min-width: 1200px) {
+  .plone-toolbar-left-default .column.col-md-4,
+  .plone-toolbar-right-default .column.col-md-4 {
+    width: 33.33%;
+  }
+}
+@media (min-width: 1260px) {
+  .plone-toolbar-left-default .column.col-md-4,
+  .plone-toolbar-right-default .column.col-md-4 {
+    width: 350px;
+  }
+}
 .tile {
   color: #205c90;
 }
@@ -5133,7 +5145,31 @@ dl.InfoList dd {
   }
 }
 @media (min-width: 1200px) {
+  .plone-toolbar-left-expanded .tile-centered-text {
+    width: 100%;
+    height: 176px;
+  }
+}
+@media (min-width: 1200px) {
+  .plone-toolbar-left-default .tile-centered-text {
+    width: 100%;
+    height: 176px;
+  }
+}
+@media (min-width: 1200px) {
   .tile-centered-text {
+    width: 100%;
+    height: 235px;
+  }
+}
+@media (min-width: 1320px) {
+  .plone-toolbar-left-expanded .tile-centered-text {
+    width: 100%;
+    height: 235px;
+  }
+}
+@media (min-width: 1260px) {
+  .plone-toolbar-left-default .tile-centered-text {
     width: 100%;
     height: 235px;
   }
@@ -5154,7 +5190,7 @@ dl.InfoList dd {
 .tile-centered-text p {
   margin: 0;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
 }
 .tablet-mouseover-tile {
   width: 100%;
@@ -5194,7 +5230,7 @@ dl.InfoList dd {
 .tile-mouseover-text .cover-basic-tile p {
   margin: 0;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
 }
 .tile-mouseover-basic .cover-basic-tile h2,
 .tile-mouseover-text .cover-basic-tile h2 {
