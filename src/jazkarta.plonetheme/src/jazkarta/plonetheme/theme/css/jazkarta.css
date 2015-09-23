@@ -5060,6 +5060,7 @@ dl.InfoList dd {
   color: white;
   position: absolute;
   top: 20px;
+  width: 100%;
 }
 .tile-mouseover-basic .cover-basic-tile p {
   display: none;
