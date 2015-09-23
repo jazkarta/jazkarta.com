@@ -4851,7 +4851,7 @@ header#content-header {
 .plone-navbar .plone-navbar-nav > .selected > a:hover,
 .plone-navbar .plone-navbar-nav > .selected > a:focus {
   background: none;
-  color: #73ec36;
+  color: #6699cb;
 }
 .plone-navbar .plone-nav > li > a {
   color: white;
@@ -4860,7 +4860,7 @@ header#content-header {
 .plone-navbar .plone-nav > li > a:hover,
 .plone-navbar .plone-nav > li > a:focus {
   background: none;
-  color: #6699cb;
+  color: #73ec36;
 }
 .plone-navbar-toggle {
   margin-top: 0;
