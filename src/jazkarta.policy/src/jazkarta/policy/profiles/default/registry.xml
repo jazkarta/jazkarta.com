@@ -2,19 +2,6 @@
 <registry>
   <records interface="collective.cover.controlpanel.ICoverSettings" />
 
-  <record
-      field="styles"
-      interface="collective.cover.controlpanel.ICoverSettings"
-      name="collective.cover.controlpanel.ICoverSettings.styles">
-    <value>
-      <element>-Default-|tile-default</element>
-      <element>Full width banner|tile-fullwidth</element>
-      <element>Image mouseover basic tile|tile-mouseover-basic</element>
-      <element>Text mouseover basic tile|tile-mouseover-text</element>
-      <element>Vertically Centered Text tile|tile-centered-text</element>
-    </value>
-  </record>
-
   <record field="layouts"
           interface="collective.cover.controlpanel.ICoverSettings"
           name="collective.cover.controlpanel.ICoverSettings.layouts">

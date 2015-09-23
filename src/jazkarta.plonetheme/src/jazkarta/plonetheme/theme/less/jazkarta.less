@@ -52,10 +52,16 @@ body {
 	min-width: 470px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: @jazkarta-highlight-color;
+}
+
 h1 {
 	font-weight: 900;
-	color: @jazkarta-highlight-color;
 	text-transform: uppercase;
+	&.documentFirstHeading {
+		margin-top: 10px;
+	}
 }
 
 a {

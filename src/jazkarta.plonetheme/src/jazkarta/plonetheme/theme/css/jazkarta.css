@@ -4754,10 +4754,20 @@ body {
   font-weight: 300;
   min-width: 470px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #6699cb;
+}
 h1 {
   font-weight: 900;
-  color: #6699cb;
   text-transform: uppercase;
+}
+h1.documentFirstHeading {
+  margin-top: 10px;
 }
 a:hover {
   text-decoration: none;
