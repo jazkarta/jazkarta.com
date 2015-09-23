@@ -11,6 +11,7 @@
       <element>Full width banner|tile-fullwidth</element>
       <element>Image mouseover basic tile|tile-mouseover-basic</element>
       <element>Text mouseover basic tile|tile-mouseover-text</element>
+      <element>Vertically Centered Text tile|tile-centered-text</element>
     </value>
   </record>
 

@@ -79,4 +79,13 @@
       import_steps="plone.app.registry"
       />
 
+    <gs:upgradeDepends
+      source="1006"
+      destination="1007"
+      title="Update cover styles"
+      description=""
+      profile="jazkarta.policy:default"
+      import_steps="plone.app.registry"
+      />
+
 </configure>

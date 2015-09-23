@@ -5056,7 +5056,7 @@ dl.InfoList dd {
   }
 }
 .tile {
-  color: #73ec36;
+  color: #205c90;
 }
 .tile:before,
 .tile:after {
@@ -5095,6 +5095,35 @@ dl.InfoList dd {
 }
 .column.tile-fullwidth .tile-content a {
   font-weight: 600;
+}
+.tile-centered-text {
+  position: relative;
+  top: 0;
+  margin: 30px 15px 0 15px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 255px;
+}
+@media (min-width: 992px) {
+  .tile-centered-text {
+    height: 176px;
+  }
+}
+@media (min-width: 1200px) {
+  .tile-centered-text {
+    height: 235px;
+  }
+}
+.tile-centered-text .cover-richtext-tile {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .tile-mouseover-basic,
 .tile-mouseover-text {
