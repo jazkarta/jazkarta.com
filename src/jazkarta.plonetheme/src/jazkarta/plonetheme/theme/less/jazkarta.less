@@ -48,6 +48,7 @@
 /* base styles */
 body {
 	font-weight: 300;
+	min-width: 470px;
 }
 
 h1 {
@@ -71,6 +72,7 @@ a.button {
 /* layout */
 
 header, footer {
+    min-width: 470px;
     .container {
         @media (min-width: @plone-screen-sm-min) {
             width: @jazkarta-header-width-sm !important;
@@ -202,6 +204,9 @@ header#content-header {
 /* fix grid */
 .row {
 	.clearfix();
+	@media (max-width: @plone-grid-float-breakpoint-max) {
+		margin: 0;
+	}
 }
 
 /* footer */
@@ -232,13 +237,14 @@ header#content-header {
 		.portletHeader {
 			font: 800 20px @plone-font-family-sans-serif;
 			color: #fff;
-			padding-bottom: 15px;
+			padding-bottom: 10px;
 		}
-		.portlet .portletContent {
+		.portlet .portletContent, .portlet .portletContent p {
 			font: 600 15px/22px @plone-font-family-sans-serif;
 		}
 		.portlet .portletContent > * {
 			color: white;
+			font: 600 15px/22px @plone-font-family-sans-serif;
 		}
 	}
 }

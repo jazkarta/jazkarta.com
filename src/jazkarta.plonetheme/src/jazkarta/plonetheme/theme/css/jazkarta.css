@@ -4751,6 +4751,7 @@ body.template-logged_out #content-core .portletFooter {
 /* base styles */
 body {
   font-weight: 300;
+  min-width: 470px;
 }
 h1 {
   font-weight: 900;
@@ -4768,6 +4769,10 @@ a.button {
   display: inline-block;
 }
 /* layout */
+header,
+footer {
+  min-width: 470px;
+}
 @media (min-width: 880px) {
   header .container,
   footer .container {
@@ -4917,6 +4922,11 @@ header#content-header {
 .row:after {
   clear: both;
 }
+@media (max-width: 764px) {
+  .row {
+    margin: 0;
+  }
+}
 /* footer */
 #portal-footer-wrapper {
   height: auto;
@@ -4952,13 +4962,15 @@ header#content-header {
 #portal-footer .portletWrapper .portletHeader {
   font: 800 20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
-#portal-footer .portletWrapper .portlet .portletContent {
+#portal-footer .portletWrapper .portlet .portletContent,
+#portal-footer .portletWrapper .portlet .portletContent p {
   font: 600 15px/22px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #portal-footer .portletWrapper .portlet .portletContent > * {
   color: white;
+  font: 600 15px/22px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* portlets */
 .portlet {

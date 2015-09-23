@@ -1,6 +1,6 @@
 jQuery(function($) {
     function adjust_full_width() {
-        var window_width = $(window).width();
+        var window_width = $('body').width();
         var $rows = $('.row.tile-fullwidth');
         var width = $rows.outerWidth(true);
         var new_margin = -(window_width - width)/2;
