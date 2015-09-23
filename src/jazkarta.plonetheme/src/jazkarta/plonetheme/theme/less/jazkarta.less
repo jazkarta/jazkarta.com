@@ -34,15 +34,16 @@
 
 
 /* other overrides */
+@plone-screen-sm-min:                       880px;
 @plone-sitenav-padding-horizontal:			30px;
 @plone-sitenav-link-padding:				10px 30px;
 @plone-container-lg:                        1050px;
 @plone-container-md:                        880px;
-@plone-container-sm:                        680px;
+@plone-container-sm:                        880px;
 @jazkarta-header-width-lg:                  1100px;
-@jazkarta-header-width-md:                  940px;
+@jazkarta-header-width-md:                  930px;
 @jazkarta-header-width-sm:                  765px;
-@plone-grid-float-breakpoint:               764px;
+@plone-grid-float-breakpoint:               @jazkarta-header-width-sm;
 
 /* base styles */
 body {
@@ -152,6 +153,7 @@ header#content-header {
 }
 
 .plone-navbar-toggle {
+    margin-top: 0;
 	&:hover, &:focus {
 		background: none;
 		box-shadow: none;
@@ -280,7 +282,7 @@ header#content-header {
 		height: auto;
 		display: block;
 	}
-	@media (max-width: @plone-grid-float-breakpoint) {
+	@media (max-width: @plone-grid-float-breakpoint-max) {
 		img {
 			max-width: 100%;
 			margin-left: 0;
@@ -306,7 +308,7 @@ header#content-header {
 
 .col-sm-9 > #content {
 	padding-left: 30px;
-	@media (max-width: @plone-grid-float-breakpoint) {
+	@media (max-width: @plone-grid-float-breakpoint-max) {
 		padding-left: 0;
 	}
 }
@@ -356,7 +358,7 @@ dl.InfoList dd {
 .row.tile-fullwidth {
     margin-left: -90px;
     margin-right: -90px;
-    @media (max-width: @plone-grid-float-breakpoint) {
+    @media (max-width: @plone-grid-float-breakpoint-max) {
         margin-left: -40px;
         margin-right: -40px;
     }
@@ -382,13 +384,13 @@ dl.InfoList dd {
  .tile-centered-text {
     position: relative;
     top: 0;
-    margin: 30px 15px 0 15px;
     width: 100%;
     height: 100%;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     height: 255px;
+    margin: 30px auto 0 auto;
     @media (min-width: @plone-screen-md-min) {
         height: 176px;
     }
@@ -402,6 +404,40 @@ dl.InfoList dd {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+    }
+}
+
+.mobile-tile {
+    height: 255px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+.tablet-tile {
+    width: 100%;
+    height: 176px;
+}
+.tablet-mouseover-tile {
+    .tablet-tile;
+    h2 {
+        font-size: 1.4em;
+    }
+    p:first-of-type {
+        font-size: 1.3em;
+    }
+}
+
+.desktop-tile {
+    width: 100%;
+    height: 235px;
+}
+.desktop-mouseover-tile {
+    .desktop-tile;
+    h2 {
+        font-size: 2em;
+    }
+    p:first-of-type {
+        font-size: 1.8em;
     }
 }
 
@@ -432,26 +468,32 @@ dl.InfoList dd {
         height: 255px;
         width: 380px;
         @media (max-width: (@plone-screen-md-min - 1px)) {
-            margin: 0 auto;
+            .mobile-tile
         }
         @media (min-width: @plone-screen-md-min) {
-            width: 100%;
-            height: 176px;
-            h2 {
-                font-size: 1.4em;
+            .tablet-mouseover-tile;
+        }
+        .plone-toolbar-left-expanded & {
+            @media (min-width: @plone-screen-lg-min) {
+                .tablet-mouseover-tile;
             }
-            p:first-of-type {
-                font-size: 1.3em;
+        }
+        .plone-toolbar-left-default & {
+            @media (min-width: @plone-screen-lg-min) {
+                .tablet-mouseover-tile;
             }
         }
         @media (min-width: @plone-screen-lg-min) {
-            width: 100%;
-            height: 235px;
-            h2 {
-                font-size: 2em;
+            .desktop-mouseover-tile;
+        }
+        .plone-toolbar-left-expanded & {
+            @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded)) {
+                .desktop-mouseover-tile;
             }
-            p:first-of-type {
-                font-size: 1.8em;
+        }
+        .plone-toolbar-left-default & {
+            @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar)) {
+                .desktop-mouseover-tile;
             }
         }
     }
