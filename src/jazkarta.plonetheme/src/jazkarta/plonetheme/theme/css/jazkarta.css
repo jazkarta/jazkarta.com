@@ -4028,7 +4028,7 @@ ul.picker__list {
 }
 #portal-footer-wrapper {
   padding: 30px 15px;
-  background-color: #231f20;
+  background-color: #205c90;
   color: #cccccc;
   text-align: center;
   clear: both;
@@ -4760,6 +4760,7 @@ body.template-logged_out #content-core .portletFooter {
 }
 /* jazkarta fonts */
 /* colors */
+/* #80c34f; */
 /* Override typography */
 /* other overrides */
 /* base styles */
@@ -4819,7 +4820,43 @@ a.button {
     width: 1100px !important;
   }
 }
+header#content-header {
+  background-color: #205c90;
+  border-bottom: 7px solid #73ec36;
+}
+@media (min-width: 992px) {
+  header#content-header {
+    border-bottom: 15px solid #73ec36;
+  }
+}
+@media (min-width: 1200px) {
+  header#content-header {
+    border-bottom: 23px solid #73ec36;
+  }
+}
 /* logo & nav */
+#portal-header {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #portal-header {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  #portal-header {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #portal-header {
+    padding-top: 35px;
+    margin-bottom: 35px;
+  }
+}
 #portal-logo {
   float: left;
   position: relative;
@@ -4832,12 +4869,13 @@ a.button {
   text-transform: uppercase;
   letter-spacing: .5px;
   position: inherit;
+  margin-bottom: 0;
 }
 .plone-navbar > .container {
   display: inline;
 }
 .plone-navbar > li > a {
-  color: #000;
+  color: white;
 }
 .plone-navbar .plone-navbar-nav > .selected > a,
 .plone-navbar .plone-navbar-nav > .selected > a:hover,
@@ -4846,8 +4884,8 @@ a.button {
   color: #ee4623;
 }
 .plone-navbar .plone-nav > li > a {
-  color: #000;
-  font: 600 16px/20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font: 800 16px/20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .plone-navbar .plone-nav > li > a:hover,
 .plone-navbar .plone-nav > li > a:focus {
@@ -4911,6 +4949,11 @@ a.button {
   height: auto;
   text-align: left;
   color: #fff;
+  margin-top: 24px;
+}
+#portal-footer-wrapper a {
+  color: white;
+  font: 600 15px/22px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #portal-footer-wrapper p {
   border-bottom: none;
@@ -4934,15 +4977,15 @@ a.button {
   border-bottom: none;
 }
 #portal-footer .portletWrapper .portletHeader {
-  font: 700 20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 800 20px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   padding-bottom: 15px;
 }
 #portal-footer .portletWrapper .portlet .portletContent {
-  font: 400 16px/24px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 600 15px/22px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #portal-footer .portletWrapper .portlet .portletContent > * {
-  color: #fff;
+  color: white;
 }
 /* portlets */
 .portlet {
@@ -5030,6 +5073,9 @@ dl.InfoList dd {
     width: 350px;
   }
 }
+.tile {
+  color: #73ec36;
+}
 .tile:before,
 .tile:after {
   content: " ";
@@ -5101,8 +5147,8 @@ dl.InfoList dd {
 }
 .tile-mouseover-basic .cover-basic-tile p:first-of-type,
 .tile-mouseover-text .cover-basic-tile p:first-of-type {
-  font-size: 1.4em;
-  font-weight: bold;
+  font-size: 1.8em;
+  font-weight: 400;
 }
 @media (max-width: 992px) {
   .tile-mouseover-basic .cover-basic-tile,
@@ -5122,7 +5168,7 @@ dl.InfoList dd {
   }
   .tile-mouseover-basic .cover-basic-tile p:first-of-type,
   .tile-mouseover-text .cover-basic-tile p:first-of-type {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 @media (min-width: 1200px) {
@@ -5137,7 +5183,7 @@ dl.InfoList dd {
   }
   .tile-mouseover-basic .cover-basic-tile p:first-of-type,
   .tile-mouseover-text .cover-basic-tile p:first-of-type {
-    font-size: 1.4em;
+    font-size: 1.8em;
   }
 }
 .tile-mouseover-basic .basic-tile-link-wrapper,
@@ -5205,7 +5251,7 @@ dl.InfoList dd {
   display: none;
 }
 .tile-mouseover-basic:hover .cover-basic-tile {
-  background-color: #80c34f;
+  background-color: #73ec36;
 }
 .tile-mouseover-basic:hover .cover-basic-tile h2,
 .tile-mouseover-basic:hover .cover-basic-tile h2 a {
@@ -5232,7 +5278,7 @@ dl.InfoList dd {
   transform: translateY(-50%);
 }
 .tile-mouseover-text:hover .cover-basic-tile {
-  background-color: #80c34f;
+  background-color: #73ec36;
 }
 .tile-mouseover-text:hover .cover-basic-tile h2 {
   display: none;
@@ -5257,9 +5303,6 @@ dl.InfoList dd {
 /* relatedslider */
 #content {
   margin-bottom: 24px;
-}
-#portal-footer-wrapper {
-  margin-top: 24px;
 }
 #content-core img {
   max-width: 100%;

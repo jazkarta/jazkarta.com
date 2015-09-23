@@ -9,12 +9,14 @@
 /* colors */
 @jazkarta-highlight-color:					#ee4623;
 @text-tile-background:                      #205c90;
-@text-tile-mouseover-background:            #80c34f;
+@text-tile-mouseover-background:            #73ec36; /* #80c34f; */
+@jazkarta-header-background:                @text-tile-background;
+@jazkarta-spacer-background:                @text-tile-mouseover-background;
 @plone-link-color:							@jazkarta-highlight-color;
 @plone-link-color-on-dark:					@jazkarta-highlight-color;
 @plone-default-published-color:				#007bb3; //published and external same color
 @plone-body-bg:								#fff;
-@plone-footer-bg:							#231f20;
+@plone-footer-bg:							@jazkarta-header-background;
 @plone-text-color:							#231f20;
 @plone-sitenav-link-hover-bg:				@plone-link-color;
 @plone-sitenav-bg:							transparent;
@@ -96,7 +98,34 @@ header, footer {
     }
 }
 
+header#content-header {
+    background-color: @jazkarta-header-background;
+    border-bottom: 7px solid @jazkarta-spacer-background;
+    @media (min-width: @plone-screen-md-min) {
+        border-bottom: 15px solid @jazkarta-spacer-background;
+    }
+    @media (min-width: @plone-screen-lg-min) {
+        border-bottom: 23px solid @jazkarta-spacer-background;
+    }
+}
+
 /* logo & nav */
+#portal-header {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    @media (min-width: @plone-screen-sm-min) {
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    @media (min-width: @plone-screen-md-min) {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    @media (min-width: @plone-screen-lg-min) {
+        padding-top: 35px;
+        margin-bottom: 35px;
+    }
+}
 #portal-logo {
 	float: left;
 	position: relative;
@@ -109,11 +138,12 @@ header, footer {
 	text-transform: uppercase;
 	letter-spacing: .5px;
 	position: inherit;
+    margin-bottom: 0;
 	> .container {
 		display: inline;
 	}
 	> li > a {
-		color: #000;
+		color: white;
 	}
 	.plone-navbar-nav {
 		> .selected > a, > .selected > a:hover, > .selected > a:focus {
@@ -123,8 +153,8 @@ header, footer {
 	}
 	.plone-nav {
 		> li > a {
-			color: #000;		
-			font: 600 16px/20px @plone-font-family-sans-serif;
+			color: white;
+			font: 800 16px/20px @plone-font-family-sans-serif;
 		}
 		> li > a:hover, > li > a:focus {
 			background: none;
@@ -189,6 +219,11 @@ header, footer {
 	height: auto;
 	text-align: left;
 	color: #fff;
+    margin-top: 24px;
+    a {
+        color: white;
+        font: 600 15px/22px @plone-font-family-sans-serif;
+    }
 	p {
 		border-bottom: none;
 		padding-bottom: 0;
@@ -205,15 +240,15 @@ header, footer {
 		vertical-align: top;
 		border-bottom: none;
 		.portletHeader {
-			font: 700 20px @plone-font-family-sans-serif;
+			font: 800 20px @plone-font-family-sans-serif;
 			color: #fff;
 			padding-bottom: 15px;
 		}
 		.portlet .portletContent {
-			font: 400 16px/24px @plone-font-family-sans-serif;
+			font: 600 15px/22px @plone-font-family-sans-serif;
 		}
 		.portlet .portletContent > * {
-			color: #fff;
+			color: white;
 		}
 	}
 }
@@ -319,6 +354,7 @@ dl.InfoList dd {
 		max-width: 100%;
 		height: auto;
 	}
+    color: @text-tile-mouseover-background;
 }
 
 .row.tile-fullwidth {
@@ -367,8 +403,8 @@ dl.InfoList dd {
             color: white;
             text-align: center;
             &:first-of-type {
-                font-size: 1.4em;
-                font-weight: bold;
+                font-size: 1.8em;
+                font-weight: 400;
             }
         }
         height: 255px;
@@ -383,7 +419,7 @@ dl.InfoList dd {
                 font-size: 1.4em;
             }
             p:first-of-type {
-                font-size: 1.2em;
+                font-size: 1.3em;
             }
         }
         @media (min-width: @plone-screen-lg-min) {
@@ -393,7 +429,7 @@ dl.InfoList dd {
                 font-size: 2em;
             }
             p:first-of-type {
-                font-size: 1.4em;
+                font-size: 1.8em;
             }
         }
     }
@@ -516,9 +552,6 @@ dl.InfoList dd {
 /* relatedslider */
 #content {
     margin-bottom: 24px;
-}
-#portal-footer-wrapper {
-    margin-top: 24px;
 }
 
 #content-core img {
