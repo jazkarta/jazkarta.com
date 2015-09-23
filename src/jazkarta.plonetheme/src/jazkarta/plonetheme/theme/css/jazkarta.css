@@ -5193,28 +5193,28 @@ dl.InfoList dd {
   position: relative;
 }
 .tile-mouseover-basic .cover-basic-tile h2 {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  z-index: 10;
-  text-shadow: 1px 1px 2px #000000;
-}
-.tile-mouseover-basic .cover-basic-tile p {
   display: none;
-}
-.tile-mouseover-basic .cover-basic-tile p:first-of-type {
-  width: 100%;
-  color: #ee4623;
   position: absolute;
-  top: 40%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.tile-mouseover-basic .cover-basic-tile p {
+  display: none;
+}
+.tile-mouseover-basic:hover .cover-basic-tile {
+  background-color: #80c34f;
+}
 .tile-mouseover-basic:hover .cover-basic-tile h2,
 .tile-mouseover-basic:hover .cover-basic-tile h2 a {
-  color: #231f20;
-  text-shadow: none;
+  color: white;
+  z-index: 10;
+  display: block;
+}
+.tile-mouseover-basic:hover .cover-basic-tile p:first-of-type {
+  display: none;
 }
 .tile-mouseover-text .cover-basic-tile {
   background-color: #205c90;
