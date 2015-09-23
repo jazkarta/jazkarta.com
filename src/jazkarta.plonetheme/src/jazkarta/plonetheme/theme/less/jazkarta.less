@@ -381,21 +381,37 @@ dl.InfoList dd {
     }
 }
 
- .tile-centered-text {
+.mobile-tile {
+    height: 255px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tablet-tile {
+    width: 100%;
+    height: 176px;
+}
+.desktop-tile {
+    width: 100%;
+    height: 235px;
+}
+
+.tile-centered-text {
     position: relative;
     top: 0;
-    width: 100%;
+    width: 380px;
     height: 100%;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     height: 255px;
-    margin: 30px auto 0 auto;
+    margin-top: 30px;
+    .mobile-tile;
     @media (min-width: @plone-screen-md-min) {
-        height: 176px;
+        .tablet-tile;
     }
     @media (min-width: @plone-screen-lg-min) {
-        height: 235px;
+        .desktop-tile;
     }
     .cover-richtext-tile {
         width: 100%;
@@ -405,18 +421,13 @@ dl.InfoList dd {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
+    h1, h2, h3, h4, h5, p {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 15px;
+    }
 }
 
-.mobile-tile {
-    height: 255px;
-    width: 380px;
-    margin: 0 auto;
-}
-
-.tablet-tile {
-    width: 100%;
-    height: 176px;
-}
 .tablet-mouseover-tile {
     .tablet-tile;
     h2 {
@@ -427,10 +438,6 @@ dl.InfoList dd {
     }
 }
 
-.desktop-tile {
-    width: 100%;
-    height: 235px;
-}
 .desktop-mouseover-tile {
     .desktop-tile;
     h2 {
@@ -450,7 +457,7 @@ dl.InfoList dd {
         h2, p {
             margin: 0;
             box-sizing: border-box;
-            padding: 10px;
+            padding: 15px;
         }
         h2 {
             text-transform: uppercase;
