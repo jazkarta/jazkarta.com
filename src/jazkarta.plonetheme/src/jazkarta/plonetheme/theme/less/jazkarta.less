@@ -69,18 +69,6 @@ a.button {
 
 /* layout */
 
-.container {
-  @media (min-width: @plone-screen-sm-min) {
-    width: @plone-container-sm;
-  }
-  @media (min-width: @plone-screen-md-min) {
-    width: @plone-container-md;
-  }
-  @media (min-width: @plone-screen-lg-min) {
-    width: @plone-container-lg;
-  }
-}
-
 header, footer {
     .container {
         @media (min-width: @plone-screen-sm-min) {
@@ -188,7 +176,7 @@ header#content-header {
 	}
 }
 .plone-navbar-collapse {
-	@media (max-width: @plone-screen-sm-min - 1) {
+	@media (max-width: (@plone-screen-sm-min - 1px)) {
 		position: absolute;
 		right: 0;
         left: 0;
@@ -346,6 +334,14 @@ dl.InfoList dd {
     @media (min-width: @plone-screen-lg-min) {
         width: 350px;
     }
+    .plone-toolbar-left-expanded &, .plone-toolbar-right-expanded & {
+        @media (min-width: (@plone-screen-lg-min) ) {
+            width: 33.33%;
+        }
+        @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded) ) {
+            width: 350px;
+        }
+    }
 }
 
 .tile {
@@ -409,7 +405,7 @@ dl.InfoList dd {
         }
         height: 255px;
         width: 380px;
-        @media (max-width: @plone-screen-md-min) {
+        @media (max-width: (@plone-screen-md-min - 1px)) {
             margin: 0 auto;
         }
         @media (min-width: @plone-screen-md-min) {
