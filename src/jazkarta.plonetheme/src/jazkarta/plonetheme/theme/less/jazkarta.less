@@ -328,18 +328,16 @@ dl.InfoList dd {
 .tile-mouseover-basic {
         .cover-basic-tile {
                 height: 310px;
+                text-align: center;
                 overflow: hidden;
                 h2 {
-                        position: absolute;
-                        bottom: 0;
                         text-transform: uppercase;
-                }
-                .imag img {
+                        display: none;
+                        color: white;
                         position: absolute;
-                        width: 100%;
-                        top: 0;
-                        left: 0;
-                        height: 250px;
+                        top: 20px;
+                }
+                img {
                 }
                 p {
                         display: none;
@@ -351,16 +349,33 @@ dl.InfoList dd {
                                 margin-top: 70px;
                         }
                 }
+                div.basic-tile-link-wrapper {
+                        top: 0;
+                        margin: 0;
+                        height: 310px;
+                }
+                div.basic-tile-link-area {
+                        margin: 0;
+                        position: relative;
+                        top: 80%;
+                        height: 310px;
+                        display: inline-block;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                }
         }
         &:hover {
 		.cover-basic-tile {
-			h2 a {
-                                color: @plone-text-color;
+            background-color: @text-tile-mouseover-background;
+			a {
+                                color: white;
+                                text-decoration: none;
 			}
-			.imag img {
+			img {
                                 opacity: 0.1;
 			}
-			p:first-of-type {
+			h2 {
                                 display: block;
                                 z-index: 9999;
 			}

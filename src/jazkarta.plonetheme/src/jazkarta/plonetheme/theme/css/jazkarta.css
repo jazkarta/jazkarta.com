@@ -5051,19 +5051,15 @@ dl.InfoList dd {
 }
 .tile-mouseover-basic .cover-basic-tile {
   height: 310px;
+  text-align: center;
   overflow: hidden;
 }
 .tile-mouseover-basic .cover-basic-tile h2 {
-  position: absolute;
-  bottom: 0;
   text-transform: uppercase;
-}
-.tile-mouseover-basic .cover-basic-tile .imag img {
+  display: none;
+  color: white;
   position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 250px;
+  top: 20px;
 }
 .tile-mouseover-basic .cover-basic-tile p {
   display: none;
@@ -5075,13 +5071,32 @@ dl.InfoList dd {
   font-weight: bold;
   margin-top: 70px;
 }
-.tile-mouseover-basic:hover .cover-basic-tile h2 a {
-  color: #231f20;
+.tile-mouseover-basic .cover-basic-tile div.basic-tile-link-wrapper {
+  top: 0;
+  margin: 0;
+  height: 310px;
 }
-.tile-mouseover-basic:hover .cover-basic-tile .imag img {
+.tile-mouseover-basic .cover-basic-tile div.basic-tile-link-area {
+  margin: 0;
+  position: relative;
+  top: 80%;
+  height: 310px;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.tile-mouseover-basic:hover .cover-basic-tile {
+  background-color: #80c34f;
+}
+.tile-mouseover-basic:hover .cover-basic-tile a {
+  color: white;
+  text-decoration: none;
+}
+.tile-mouseover-basic:hover .cover-basic-tile img {
   opacity: 0.1;
 }
-.tile-mouseover-basic:hover .cover-basic-tile p:first-of-type {
+.tile-mouseover-basic:hover .cover-basic-tile h2 {
   display: block;
   z-index: 9999;
 }
