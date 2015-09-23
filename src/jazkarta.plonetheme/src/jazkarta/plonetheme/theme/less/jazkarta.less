@@ -7,13 +7,14 @@
 
 
 /* colors */
-@jazkarta-highlight-color:					#ee4623;
+@jazkarta-highlight-color:					#6699cb; /* #ee4623; */
 @text-tile-background:                      #205c90;
 @text-tile-mouseover-background:            #73ec36; /* #80c34f; */
 @jazkarta-header-background:                @text-tile-background;
 @jazkarta-spacer-background:                @text-tile-mouseover-background;
 @plone-link-color:							@jazkarta-highlight-color;
-@plone-link-color-on-dark:					#6699cb;
+@plone-link-hover-color:					@text-tile-mouseover-background;
+@plone-link-color-on-dark:					white;
 @plone-default-published-color:				#007bb3; //published and external same color
 @plone-body-bg:								#fff;
 @plone-footer-bg:							@jazkarta-header-background;
@@ -55,6 +56,12 @@ h1 {
 	font-weight: 900;
 	color: @jazkarta-highlight-color;
 	text-transform: uppercase;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 /* button */
@@ -139,7 +146,7 @@ header#content-header {
 	.plone-navbar-nav {
 		> .selected > a, > .selected > a:hover, > .selected > a:focus {
 			background: none;
-			color: @plone-link-color-on-dark;
+			color: @jazkarta-highlight-color;
 		}
 	}
 	.plone-nav {
@@ -149,7 +156,7 @@ header#content-header {
 		}
 		> li > a:hover, > li > a:focus {
 			background: none;
-			color: @text-tile-mouseover-background;
+			color: @plone-link-hover-color;
 		}
 	}
 }
@@ -214,11 +221,14 @@ header#content-header {
 	height: auto;
 	text-align: left;
 	color: #fff;
-    margin-top: 24px;
-    a {
-        color: white;
-        font: 600 15px/22px @plone-font-family-sans-serif;
-    }
+	margin-top: 24px;
+	a {
+		color: @plone-link-color-on-dark;
+		font: 600 15px/22px @plone-font-family-sans-serif;
+		&:hover {
+			color: @plone-link-color-on-dark;
+		}
+	}
 	p {
 		border-bottom: none;
 		padding-bottom: 0;
