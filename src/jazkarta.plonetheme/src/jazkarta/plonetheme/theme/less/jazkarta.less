@@ -13,7 +13,7 @@
 @jazkarta-header-background:                @text-tile-background;
 @jazkarta-spacer-background:                @text-tile-mouseover-background;
 @plone-link-color:							@jazkarta-highlight-color;
-@plone-link-color-on-dark:					@jazkarta-highlight-color;
+@plone-link-color-on-dark:					#6699cb;
 @plone-default-published-color:				#007bb3; //published and external same color
 @plone-body-bg:								#fff;
 @plone-footer-bg:							@jazkarta-header-background;
@@ -137,7 +137,7 @@ header#content-header {
 	.plone-navbar-nav {
 		> .selected > a, > .selected > a:hover, > .selected > a:focus {
 			background: none;
-			color: @plone-link-color;
+			color: @text-tile-mouseover-background;
 		}
 	}
 	.plone-nav {
@@ -147,7 +147,7 @@ header#content-header {
 		}
 		> li > a:hover, > li > a:focus {
 			background: none;
-			color: @plone-link-color;			
+			color: @plone-link-color-on-dark;
 		}
 	}
 }

@@ -4023,10 +4023,10 @@ ul.picker__list {
   padding-bottom: 28px;
 }
 #portal-footer-wrapper a {
-  color: #ee4623;
+  color: #6699cb;
 }
 #portal-footer-wrapper a:hover {
-  color: #f3826a;
+  color: #9fbfde;
 }
 #portal-footer-wrapper .portletWrapper {
   display: inline-block;
@@ -4851,7 +4851,7 @@ header#content-header {
 .plone-navbar .plone-navbar-nav > .selected > a:hover,
 .plone-navbar .plone-navbar-nav > .selected > a:focus {
   background: none;
-  color: #ee4623;
+  color: #73ec36;
 }
 .plone-navbar .plone-nav > li > a {
   color: white;
@@ -4860,7 +4860,7 @@ header#content-header {
 .plone-navbar .plone-nav > li > a:hover,
 .plone-navbar .plone-nav > li > a:focus {
   background: none;
-  color: #ee4623;
+  color: #6699cb;
 }
 .plone-navbar-toggle {
   margin-top: 0;
