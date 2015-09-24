@@ -3720,7 +3720,7 @@ ul.picker__list {
 #portal-header #portal-searchbox form > div > * {
   font-size: 18px;
 }
-@media (min-width: 765px) {
+@media (min-width: 880px) {
   #portal-header #portal-languageselector {
     float: right;
     clear: none;
@@ -3819,7 +3819,7 @@ ul.picker__list {
 .plone-navbar-header:after {
   clear: both;
 }
-@media (min-width: 765px) {
+@media (min-width: 880px) {
   .plone-navbar-header {
     float: left;
   }
@@ -3837,7 +3837,7 @@ ul.picker__list {
   overflow-y: auto;
   display: block;
 }
-@media (min-width: 765px) {
+@media (min-width: 880px) {
   .plone-navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3903,7 +3903,7 @@ ul.picker__list {
 .plone-navbar-toggle .icon-bar + .icon-bar:after {
   content: "";
 }
-@media (min-width: 765px) {
+@media (min-width: 880px) {
   .plone-navbar-toggle {
     display: none;
   }
@@ -3922,7 +3922,7 @@ ul.picker__list {
   color: white;
   background-color: #6699cb;
 }
-@media (min-width: 765px) {
+@media (min-width: 880px) {
   .plone-navbar-nav {
     float: left;
   }
@@ -4950,7 +4950,7 @@ header#content-header {
 .row:after {
   clear: both;
 }
-@media (max-width: 764px) {
+@media (max-width: 930px) {
   .row {
     margin: 0;
   }
@@ -4986,7 +4986,7 @@ header#content-header {
   clear: both;
 }
 #portal-footer .portletWrapper {
-  width: 33%;
+  width: 32.5%;
   vertical-align: top;
   border-bottom: none;
 }
@@ -5003,7 +5003,7 @@ header#content-header {
   color: white;
   font: 600 15px/22px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@media (max-width: 764px) {
+@media (max-width: 879px) {
   #portal-footer .portletWrapper {
     display: none;
   }
@@ -5050,7 +5050,7 @@ header#content-header {
   height: auto;
   display: block;
 }
-@media (max-width: 764px) {
+@media (max-width: 879px) {
   #lead-image img {
     max-width: 100%;
     margin-left: 0;
@@ -5075,7 +5075,7 @@ header#content-header {
 .col-sm-9 > #content {
   padding-left: 30px;
 }
-@media (max-width: 764px) {
+@media (max-width: 879px) {
   .col-sm-9 > #content {
     padding-left: 0;
   }
@@ -5141,7 +5141,7 @@ dl.InfoList dd {
   margin-left: -90px;
   margin-right: -90px;
 }
-@media (max-width: 764px) {
+@media (max-width: 879px) {
   .row.tile-fullwidth {
     margin-left: -40px;
     margin-right: -40px;

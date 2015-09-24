@@ -44,7 +44,7 @@
 @jazkarta-header-width-lg:                  1100px;
 @jazkarta-header-width-md:                  930px;
 @jazkarta-header-width-sm:                  765px;
-@plone-grid-float-breakpoint:               @jazkarta-header-width-sm;
+@plone-grid-float-breakpoint:               @plone-container-sm;
 
 /* base styles */
 body {
@@ -217,7 +217,7 @@ header#content-header {
 /* fix grid */
 .row {
 	.clearfix();
-	@media (max-width: @plone-grid-float-breakpoint-max) {
+	@media (max-width: @jazkarta-header-width-md) {
 		margin: 0;
 	}
 }
@@ -247,7 +247,7 @@ header#content-header {
 #portal-footer {
 	.clearfix();
 	.portletWrapper {
-		width: 33%;
+		width: 32.5%;
 		vertical-align: top;
 		border-bottom: none;
 		.portletHeader {
