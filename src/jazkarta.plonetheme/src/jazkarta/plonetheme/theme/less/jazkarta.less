@@ -262,6 +262,13 @@ header#content-header {
 			color: white;
 			font: 600 15px/22px @plone-font-family-sans-serif;
 		}
+        @media (max-width: @plone-grid-float-breakpoint-max) {
+            display: none;
+            &:first-child {
+                display: block;
+                width: 100%;
+            }
+        }
 	}
 }
 
@@ -710,6 +717,24 @@ main #related-slider li.slider-item {
         .item-caption {
             z-index: 1;
             background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.container {
+    .field {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    span.not-required::after, span.required::after {
+        font-size: 60%;
+        line-height: 2em;
+        vertical-align: middle;
+    }
+    .pfg-form {
+        .formControls {
+            border: none;
+            padding: 12px 0;
         }
     }
 }
