@@ -5441,7 +5441,7 @@ dl.InfoList dd {
 }
 .tile-mouseover-basic:hover .basic-tile-link-area img,
 .tile-mouseover-text:hover .basic-tile-link-area img {
-  opacity: 0.2;
+  display: none;
 }
 .tile-mouseover-basic:hover .basic-tile-link-area p:first-of-type,
 .tile-mouseover-text:hover .basic-tile-link-area p:first-of-type {
