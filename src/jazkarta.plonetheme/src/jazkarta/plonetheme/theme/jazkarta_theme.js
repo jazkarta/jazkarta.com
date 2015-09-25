@@ -9,7 +9,10 @@ jQuery(function($) {
     adjust_full_width();
     $(window).resize(adjust_full_width);
     // Move two items at a time in scroller
-    var scr_api = $('#related-slider .slider').data('scrollable');
-    $('#related-slider .next').click(scr_api.next);
-    $('#related-slider .prev').click(scr_api.prev);
+    var $related_slider = $('#related-slider .slider');
+    if ($related_slider.length) {
+        var scr_api = $related_slider.data('scrollable');
+        $('#related-slider .next').click(scr_api.next);
+        $('#related-slider .prev').click(scr_api.prev);
+    }
 });
