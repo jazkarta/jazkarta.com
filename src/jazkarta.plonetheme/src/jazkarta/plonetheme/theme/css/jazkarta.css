@@ -5088,6 +5088,12 @@ header#content-header {
   height: auto;
   margin: 0;
 }
+@media (max-width: 879px) {
+  #banner-image .row .column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .jazkarta-banner-tile {
   min-height: 2em;
 }
