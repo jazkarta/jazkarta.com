@@ -89,14 +89,13 @@
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
 
   <!-- cover -->
-  <after css:theme="#above-content-wrapper" if="//div[@class='row'][.//div[@class='column col-md-12 ']/div[contains(@class, 'tile-fullwidth')]]">
-    <div id="banner-image">
-      <xsl:apply-templates select="//div[@class='row'][.//div[@class='column col-md-12 ']/div[contains(@class, 'tile-fullwidth')]]" mode="raw" />
-    </div>
-  </after>
+  <replace css:theme-children="#banner-image" if="//div[@class='row'][.//div[@class='column col-md-12 ']/div[contains(@class, 'tile-fullwidth')]]">
+    <xsl:apply-templates select="//div[@class='row'][.//div[@class='column col-md-12 ']/div[contains(@class, 'tile-fullwidth')]]" mode="raw" />
+  </replace>
   <drop content="//div[@class='row'][.//div[@class='column col-md-12 ']/div[contains(@class, 'tile-fullwidth')]]" />
 
   <!-- footer -->
-  <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
+  <drop css:theme="#portal-footer > div" />
+  <after css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
 
 </rules>
