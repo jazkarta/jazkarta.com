@@ -5789,16 +5789,34 @@ main #related-slider-wrapper {
   background-position: bottom left;
   box-sizing: border-box;
   overflow: hidden;
+  background-size: cover;
+  /*
+    @media (max-width: @plone-grid-float-breakpoint-max) {
+        height: 275px;
+        background-size: 100% 200px;
+        #related-slider .SliderTitle {
+            margin-bottom: 60px;
+        }
+    }
+    @media (min-width: @plone-screen-sm-min) {
+        height: 375px;
+        background-size: 100% 300px;
+    }
+    @media (min-width: @plone-screen-lg-min) {
+        height: 400px;
+        background-size: 100% 325px;
+    }
+    */
 }
 main #related-slider-wrapper #related-slider {
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 main #related-slider-wrapper #related-slider .SliderTitle {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 26px;
   color: white;
-  margin: 25px 0 85px 30px;
+  margin: 20px 0 30px 30px;
 }
 @media (max-width: 879px) {
   main #related-slider-wrapper #related-slider {
@@ -5919,27 +5937,6 @@ main #related-slider-wrapper #related-slider .control-wrapper .control.next {
 main #related-slider-wrapper #related-slider .control-wrapper .control .glyph {
   color: white;
   font-size: 300%;
-}
-@media (max-width: 879px) {
-  main #related-slider-wrapper {
-    height: 275px;
-    background-size: 100% 200px;
-  }
-  main #related-slider-wrapper #related-slider .SliderTitle {
-    margin-bottom: 60px;
-  }
-}
-@media (min-width: 880px) {
-  main #related-slider-wrapper {
-    height: 375px;
-    background-size: 100% 300px;
-  }
-}
-@media (min-width: 1200px) {
-  main #related-slider-wrapper {
-    height: 400px;
-    background-size: 100% 325px;
-  }
 }
 @media (max-width: 879px) {
   main #related-slider-wrapper .slider {
