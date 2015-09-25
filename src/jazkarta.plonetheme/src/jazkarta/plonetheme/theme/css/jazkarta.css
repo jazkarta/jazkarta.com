@@ -4767,6 +4767,7 @@ body.template-logged_out #content-core .portletFooter {
 body {
   font-weight: 300;
   min-width: 470px;
+  line-height: 1.381;
 }
 h1,
 h2 {
