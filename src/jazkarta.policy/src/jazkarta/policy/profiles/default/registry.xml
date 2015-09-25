@@ -50,4 +50,14 @@
     </value>
   </record>
 
+  <record name="plone.types_use_view_action_in_listings">
+    <value purge="False">
+      <element>Image</element>
+      <element>File</element>
+      <element>FormFolder</element>
+      <element>FieldsetFolder</element>
+      <element remove="True">Folder</element>
+    </value>
+  </record>
+
 </registry>
