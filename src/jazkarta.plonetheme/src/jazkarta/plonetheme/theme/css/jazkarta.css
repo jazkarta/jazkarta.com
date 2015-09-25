@@ -5933,8 +5933,8 @@ main #related-slider-wrapper #related-slider .SliderTitle {
 }
 main #related-slider-wrapper #related-slider .control-wrapper .control {
   color: white;
-  font-size: 300%;
-  font-weight: bold;
+  font-size: 45px;
+  font-weight: 600;
 }
 main #related-slider-wrapper #related-slider .control-wrapper .control.prev {
   left: -50px;
