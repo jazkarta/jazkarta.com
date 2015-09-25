@@ -49,6 +49,7 @@ setup(
         'Products.RedirectionTool',
         'collective.relatedslider',
         'Products.PloneFormGen',
+        'collective.isotope',
     ],
     extras_require={
         'test': [
