@@ -54,8 +54,8 @@
     <value purge="False">
       <element>Image</element>
       <element>File</element>
-      <element>FormFolder</element>
-      <element>FieldsetFolder</element>
+      <element remove="True">FormFolder</element>
+      <element remove="True">FieldsetFolder</element>
       <element remove="True">Folder</element>
     </value>
   </record>
