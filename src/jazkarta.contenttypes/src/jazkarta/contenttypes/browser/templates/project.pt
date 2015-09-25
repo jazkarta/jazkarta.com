@@ -28,12 +28,12 @@
               </dl>
               <div class="Description"><p>${context/Description}</p></div>
               <div class="Testimonial" tal:condition="context/testimonial/output|nothing"><blockquote><span tal:replace="structure context/testimonial/output|nothing"></span><footer>&mdash; <em>${context/testimonial_source}</em></footer></blockquote></div>
-              <p tal:define="case_study view/case_study">
-                <a tal:condition="case_study" class="btn btn-warning" href="${case_study/getURL}" role="button">Download Case Study</a>
-                <a tal:condition="context/site_url" class="btn btn-warning" href="${context/site_url}" role="button">View Website</a>
+              <p class="ProjectLinks" tal:define="case_study view/case_study">
+                <a tal:condition="case_study" class="btn" href="${case_study/getURL}" role="button">Download Case Study</a>
+                <a tal:condition="context/site_url" class="btn" href="${context/site_url}" role="button">View Website</a>
               </p>
             </div>
-            <div class="col-xs-6 col-sm-3">
+            <div class="ServiceColumn col-xs-6 col-sm-3">
               <h4>Services</h4>
               <span tal:repeat="service view/services">
                 <a href="#"
@@ -49,14 +49,13 @@
           <img tal:define="scales context/@@images;
                            scale python:scales.scale('image', scale='large')"
                tal:condition="scale"
-               tal:replace="structure python:scale.tag(css_class='image-left')" />
+               tal:replace="structure python:scale.tag(css_class='ProjectImage')" />
         </div>
         <div class="row">
           <div tal:content="structure context/body_text/output|nothing" />
-            <p><a tal:condition="context/site_url" class="btn btn-warning" href="${context/site_url}" role="button">View Website</a></p>
+            <p class="ProjectLinks BottomLinks"><a tal:condition="context/site_url" class="btn" href="${context/site_url}" role="button">View Website</a></p>
         </div>
       </div>
-      <h4 tal:define="slider context/slider_type|nothing" tal:condition="python:slider != 'disabled'">Similar Projects</h4>
     </metal:block>
 
 </html>
