@@ -28,3 +28,4 @@ src/plone.app.z3cform
 src/plone.app.upgrade
 src/plone.app.iterate
 src/plone.app.imagecropping
+src/collective.isotope
