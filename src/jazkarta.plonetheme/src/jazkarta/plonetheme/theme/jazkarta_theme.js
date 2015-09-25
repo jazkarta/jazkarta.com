@@ -8,11 +8,16 @@ jQuery(function($) {
     }
     adjust_full_width();
     $(window).resize(adjust_full_width);
-    // Move two items at a time in scroller
-    var $related_slider = $('#related-slider .slider');
+    var $container = $('#related-slider');
+    var $related_slider = $container.find('.slider');
     if ($related_slider.length) {
+        $container.find('.next, .prev').unbind('click');
         var scr_api = $related_slider.data('scrollable');
-        $('#related-slider .next').click(scr_api.next);
-        $('#related-slider .prev').click(scr_api.prev);
+        $container.find('.next').click(function () {
+            scr_api.move(2);
+        });
+        $container.find('.prev').click(function () {
+            scr_api.move(-2);
+        });
     }
 });
