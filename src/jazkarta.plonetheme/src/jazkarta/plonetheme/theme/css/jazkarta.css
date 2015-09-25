@@ -342,12 +342,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #6699cb;
+  color: #205c90;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #73ec36;
+  color: #80c34f;
   text-decoration: underline;
 }
 a:focus {
@@ -415,7 +415,7 @@ h1 a:focus,
 h2 a:focus,
 h3 a:focus {
   text-decoration: none;
-  border-bottom: 2px #73ec36 solid;
+  border-bottom: 2px #80c34f solid;
 }
 h4,
 h5,
@@ -2259,7 +2259,7 @@ fieldset[disabled] .link-parent.active {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #6699cb;
+  color: #205c90;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   margin-left: -1px;
@@ -2275,7 +2275,7 @@ fieldset[disabled] .link-parent.active {
 }
 .listingBar > li a:hover,
 .listingBar > li a:focus {
-  color: #73ec36;
+  color: #80c34f;
   background-color: #f2f1f1;
   border-color: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -2287,8 +2287,8 @@ fieldset[disabled] .link-parent.active {
   z-index: 2;
   font-weight: 300;
   color: #ffffff;
-  background-color: #6699cb;
-  border-color: #6699cb;
+  background-color: #205c90;
+  border-color: #205c90;
   cursor: default;
 }
 .listingBar > .disabled > a,
@@ -2460,7 +2460,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portalMessage a {
   font-weight: 300;
-  color: #3e7ab6;
+  color: #153c5e;
 }
 .portalMessage > strong:before,
 .portalMessage > dt:before {
@@ -2713,7 +2713,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet .portletContent table .cal_next_month.cal_has_events > a:hover,
 .portlet .portletContent table .cal_prev_month.cal_has_events > a:hover {
-  color: #3a73ab;
+  color: #123451;
 }
 .portlet .portletContent table .cal_next_month.cal_has_events > a:hover:after,
 .portlet .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
@@ -3004,7 +3004,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletContent table .cal_next_month.cal_has_events > a:hover,
 .managedPortlet .portletContent table .cal_prev_month.cal_has_events > a:hover {
-  color: #3a73ab;
+  color: #123451;
 }
 .managedPortlet .portletContent table .cal_next_month.cal_has_events > a:hover:after,
 .managedPortlet .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
@@ -3188,7 +3188,7 @@ fieldset[disabled] .link-parent.active {
 }
 a.link-category:hover,
 a.link-category:focus {
-  color: #6699cb;
+  color: #205c90;
   text-decoration: none;
   cursor: pointer;
 }
@@ -3536,7 +3536,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
 }
 .picker__list-item--highlighted:hover,
 .picker--focused .picker__list-item--highlighted {
-  background: #6699cb;
+  background: #205c90;
   color: #fff;
 }
 li.picker__list-item {
@@ -3590,7 +3590,7 @@ ul.picker__list {
 }
 .picker__day--highlighted:hover,
 .picker__day--highlighted {
-  background: #6699cb;
+  background: #205c90;
   color: #fff;
   font-weight: 600;
 }
@@ -3614,7 +3614,7 @@ ul.picker__list {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.17);
 }
 .pat-tablesorter th:hover {
-  color: #6699cb;
+  color: #205c90;
 }
 .pat-tablesorter .sortdirection {
   font-size: 75%;
@@ -3793,7 +3793,7 @@ ul.picker__list {
 .plone-nav > li > a:hover,
 .plone-nav > li > a:focus {
   text-decoration: none;
-  background-color: #6699cb;
+  background-color: #205c90;
 }
 .plone-navbar {
   background-color: transparent;
@@ -3892,8 +3892,8 @@ ul.picker__list {
   outline: 0;
 }
 .plone-navbar-toggle:hover {
-  background-color: #3a73ab;
-  border-color: #2d5984;
+  background-color: #123451;
+  border-color: #091928;
 }
 .plone-navbar-toggle .icon-bar:after {
   content: "Menu";
@@ -3920,7 +3920,7 @@ ul.picker__list {
 .plone-navbar-nav > .selected > a:hover,
 .plone-navbar-nav > .selected > a:focus {
   color: white;
-  background-color: #6699cb;
+  background-color: #205c90;
 }
 @media (min-width: 880px) {
   .plone-navbar-nav {
@@ -4313,7 +4313,7 @@ body.template-login_form #content-core .portletContent table .cal_next_month.cal
 body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a:hover,
 body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover,
 body.template-logged_out #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover {
-  color: #3a73ab;
+  color: #123451;
 }
 body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a:hover:after,
 body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a:hover:after,
@@ -4452,7 +4452,7 @@ body.template-logged_out #content-core .portletFooter {
   overflow: hidden;
 }
 .cal_month {
-  background: #9fbfde;
+  background: #2e84cf;
   font-weight: 300;
   display: block;
   color: #fff;
@@ -4760,7 +4760,7 @@ body.template-logged_out #content-core .portletFooter {
 /* jazkarta fonts */
 /* colors */
 /* #ee4623; */
-/* #80c34f; */
+/* #73ec36; */
 /* Override typography */
 /* other overrides */
 /* base styles */
@@ -4832,16 +4832,16 @@ footer {
 }
 header#content-header {
   background-color: #205c90;
-  border-bottom: 7px solid #73ec36;
+  border-bottom: 7px solid #80c34f;
 }
 @media (min-width: 992px) {
   header#content-header {
-    border-bottom: 15px solid #73ec36;
+    border-bottom: 15px solid #80c34f;
   }
 }
 @media (min-width: 1200px) {
   header#content-header {
-    border-bottom: 23px solid #73ec36;
+    border-bottom: 23px solid #80c34f;
   }
 }
 /* logo & nav */
@@ -4903,7 +4903,26 @@ header#content-header {
 .plone-navbar .plone-nav > li > a:hover,
 .plone-navbar .plone-nav > li > a:focus {
   background: none;
-  color: #73ec36;
+  color: #80c34f;
+}
+.plone-navbar .plone-nav > li:last-child {
+  margin-left: 1em;
+  margin-top: -10px;
+  text-align: center;
+}
+.plone-navbar .plone-nav > li:last-child > a {
+  display: block;
+  font-size: 22px;
+  line-height: 100%;
+  border: 3px solid #80c34f;
+  color: #80c34f;
+  background-color: white;
+  padding: 15px;
+}
+.plone-navbar .plone-nav > li:last-child > a:hover {
+  background-color: #80c34f;
+  color: white;
+  border-color: white;
 }
 .plone-navbar-toggle {
   margin-top: 0;
@@ -5486,7 +5505,7 @@ dl.InfoList dd {
   display: none;
 }
 .tile-mouseover-basic:hover .cover-basic-tile {
-  background-color: #73ec36;
+  background-color: #80c34f;
 }
 .tile-mouseover-basic:hover .cover-basic-tile h2,
 .tile-mouseover-basic:hover .cover-basic-tile h2 a {
@@ -5513,7 +5532,7 @@ dl.InfoList dd {
   transform: translateY(-50%);
 }
 .tile-mouseover-text:hover .cover-basic-tile {
-  background-color: #73ec36;
+  background-color: #80c34f;
 }
 .tile-mouseover-text:hover .cover-basic-tile h2 {
   display: none;

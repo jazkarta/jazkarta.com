@@ -9,10 +9,10 @@
 /* colors */
 @jazkarta-highlight-color:					#6699cb; /* #ee4623; */
 @text-tile-background:                      #205c90;
-@text-tile-mouseover-background:            #73ec36; /* #80c34f; */
+@text-tile-mouseover-background:            #80c34f; /* #73ec36; */
 @jazkarta-header-background:                @text-tile-background;
 @jazkarta-spacer-background:                @text-tile-mouseover-background;
-@plone-link-color:							@jazkarta-highlight-color;
+@plone-link-color:							@text-tile-background;
 @plone-link-hover-color:					@text-tile-mouseover-background;
 @plone-link-color-on-dark:					white;
 @plone-default-published-color:				#007bb3; //published and external same color
@@ -188,6 +188,25 @@ header#content-header {
 			background: none;
 			color: @plone-link-hover-color;
 		}
+        > li:last-child {
+            margin-left: 1em;
+            margin-top: -10px;
+            text-align: center;
+            > a {
+                display: block;
+                font-size: 22px;
+                line-height: 100%;
+                border: 3px solid @plone-link-hover-color;
+                color: @plone-link-hover-color;
+                background-color: white;
+                padding: 15px;
+                &:hover {
+                    background-color: @plone-link-hover-color;
+                    color: white;
+                    border-color: white;
+                }
+            }
+        }
 	}
 }
 
