@@ -882,28 +882,44 @@ main #related-slider-wrapper {
     background-position: bottom left;
     box-sizing: border-box;
     overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 50px;
     #related-slider {
         .SliderTitle {
             text-transform: uppercase;
             font-weight: bold;
             font-size: 26px;
             color: white;
-            margin: 20px 0 30px 30px;
+            margin: 0 0 0 30px;
         }
-        margin: 0 auto 50px auto;
+        margin: 0 auto;
         .body-width-mixin;
         .control-wrapper {
             .slider-height-mixin;
             .control {
+                color: white;
+                font-size: 300%;
+                font-weight: bold;
                 &.prev {
-                    left: -35px;
+                    left: -50px;
                 }
                 &.next {
-                    right: -35px;
+                    right: -50px;
                 }
-                .glyph {
-                    color: white;
-                    font-size: 300%;
+                @media (max-width: @plone-grid-float-breakpoint-max) {
+                    font-size: 120%;
+                    &.prev {
+                        left: -0.25em;
+                    }
+                    &.next {
+                        right: -0.25em;
+                    }
+                }
+                &:hover {
+                    color: @plone-link-hover-color;
+                }
+                &.disabled, &.disabled:hover {
+                    color: rgba(255, 255, 255, 0.5);
                 }
             }
         }
@@ -927,6 +943,7 @@ main #related-slider-wrapper {
     }
     */
     .slider {
+        margin-top: 30px;
         .slider-height-mixin;    
     }
     li.slider-item {

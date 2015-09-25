@@ -5789,6 +5789,8 @@ main #related-slider-wrapper {
   background-position: bottom left;
   box-sizing: border-box;
   overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 50px;
   background-size: cover;
   /*
     @media (max-width: @plone-grid-float-breakpoint-max) {
@@ -5809,14 +5811,14 @@ main #related-slider-wrapper {
     */
 }
 main #related-slider-wrapper #related-slider {
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
 }
 main #related-slider-wrapper #related-slider .SliderTitle {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 26px;
   color: white;
-  margin: 20px 0 30px 30px;
+  margin: 0 0 0 30px;
 }
 @media (max-width: 879px) {
   main #related-slider-wrapper #related-slider {
@@ -5928,15 +5930,37 @@ main #related-slider-wrapper #related-slider .SliderTitle {
     height: 208px;
   }
 }
-main #related-slider-wrapper #related-slider .control-wrapper .control.prev {
-  left: -35px;
-}
-main #related-slider-wrapper #related-slider .control-wrapper .control.next {
-  right: -35px;
-}
-main #related-slider-wrapper #related-slider .control-wrapper .control .glyph {
+main #related-slider-wrapper #related-slider .control-wrapper .control {
   color: white;
   font-size: 300%;
+  font-weight: bold;
+}
+main #related-slider-wrapper #related-slider .control-wrapper .control.prev {
+  left: -50px;
+}
+main #related-slider-wrapper #related-slider .control-wrapper .control.next {
+  right: -50px;
+}
+@media (max-width: 879px) {
+  main #related-slider-wrapper #related-slider .control-wrapper .control {
+    font-size: 120%;
+  }
+  main #related-slider-wrapper #related-slider .control-wrapper .control.prev {
+    left: -0.25em;
+  }
+  main #related-slider-wrapper #related-slider .control-wrapper .control.next {
+    right: -0.25em;
+  }
+}
+main #related-slider-wrapper #related-slider .control-wrapper .control:hover {
+  color: #80c34f;
+}
+main #related-slider-wrapper #related-slider .control-wrapper .control.disabled,
+main #related-slider-wrapper #related-slider .control-wrapper .control.disabled:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+main #related-slider-wrapper .slider {
+  margin-top: 30px;
 }
 @media (max-width: 879px) {
   main #related-slider-wrapper .slider {
