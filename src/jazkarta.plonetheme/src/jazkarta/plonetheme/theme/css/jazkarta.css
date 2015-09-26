@@ -6444,12 +6444,27 @@ img.ProjectImage {
 }
 #isotope-filters .button-container .isotope-filter-label {
   width: 100px;
+  display: block;
+  float: left;
   text-align: right;
   padding-left: 0.5em;
 }
+@media (max-width: 991px) {
+  #isotope-filters .button-container .isotope-filter-label {
+    float: none;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
 #isotope-filters .button-container .plone-button-group {
   clear: none;
-  display: inline-block;
+  display: block;
+  margin-left: 100px;
+}
+@media (max-width: 991px) {
+  #isotope-filters .button-container .plone-button-group {
+    margin-left: 0;
+  }
 }
 #isotope-filters .button-container .plone-button-group button {
   border: 3px solid #80c34f;
@@ -6461,8 +6476,125 @@ img.ProjectImage {
   background-color: #80c34f;
   color: white;
 }
-#isotope-grid {
-  border: 1px solid red;
-  margin-top: -1em;
+.mobile-isotope-item {
+  height: auto;
+  width: 90%;
+  margin: 4%;
+}
+.tablet-isotope-item {
+  width: 45%;
+  height: auto;
+  margin: 2%;
+}
+.desktop-isotope-item {
+  width: 31%;
+  height: auto;
+  margin: 1%;
+}
+#content-core #isotope-grid {
+  padding: 0;
+}
+#content-core #isotope-grid .isotope-item.horizontal {
+  position: relative;
+  padding: 0em 0em 0em 0em;
+  height: auto;
+  width: 380px;
+  background-color: #205c90;
+  color: white;
+  border: none;
+}
+@media (max-width: 991px) {
+  #content-core #isotope-grid .isotope-item.horizontal {
+    height: auto;
+    width: 90%;
+    margin: 4%;
+  }
+}
+@media (min-width: 992px) {
+  #content-core #isotope-grid .isotope-item.horizontal {
+    width: 45%;
+    height: auto;
+    margin: 2%;
+  }
+}
+@media (min-width: 1200px) {
+  .plone-toolbar-left-expanded #content-core #isotope-grid .isotope-item.horizontal {
+    width: 45%;
+    height: auto;
+    margin: 2%;
+  }
+}
+@media (min-width: 1200px) {
+  .plone-toolbar-left-default #content-core #isotope-grid .isotope-item.horizontal {
+    width: 45%;
+    height: auto;
+    margin: 2%;
+  }
+}
+@media (min-width: 1200px) {
+  #content-core #isotope-grid .isotope-item.horizontal {
+    width: 31%;
+    height: auto;
+    margin: 1%;
+  }
+}
+@media (min-width: 1320px) {
+  .plone-toolbar-left-expanded #content-core #isotope-grid .isotope-item.horizontal {
+    width: 31%;
+    height: auto;
+    margin: 1%;
+  }
+}
+@media (min-width: 1260px) {
+  .plone-toolbar-left-default #content-core #isotope-grid .isotope-item.horizontal {
+    width: 31%;
+    height: auto;
+    margin: 1%;
+  }
+}
+#content-core #isotope-grid .isotope-item.horizontal .isotope-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#content-core #isotope-grid .isotope-item.horizontal h2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  transform: translateY(-75%);
+  text-transform: uppercase;
+  color: white;
+  display: none;
+  z-index: 1000;
+  font-wieght: 700;
+}
+@media (max-width: 991px) {
+  #content-core #isotope-grid .isotope-item.horizontal h2 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 992px) {
+  #content-core #isotope-grid .isotope-item.horizontal h2 {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 1200px) {
+  #content-core #isotope-grid .isotope-item.horizontal h2 {
+    font-size: 1.6em;
+  }
+}
+#content-core #isotope-grid .isotope-item.horizontal:hover {
+  background-color: #80c34f;
+}
+#content-core #isotope-grid .isotope-item.horizontal:hover h2 {
+  width: 100%;
+  display: block;
+}
+#content-core #isotope-grid .isotope-item.horizontal:hover .isotope-image {
+  visibility: hidden;
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */
