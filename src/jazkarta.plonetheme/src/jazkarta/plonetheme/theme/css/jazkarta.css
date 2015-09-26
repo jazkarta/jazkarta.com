@@ -6438,4 +6438,31 @@ img.ProjectImage {
 .BottomLinks a.btn {
   margin-right: 0;
 }
+/* Isotope Views */
+#isotope-filters .button-container {
+  margin-bottom: 5px;
+}
+#isotope-filters .button-container .isotope-filter-label {
+  width: 100px;
+  text-align: right;
+  padding-left: 0.5em;
+}
+#isotope-filters .button-container .plone-button-group {
+  clear: none;
+  display: inline-block;
+}
+#isotope-filters .button-container .plone-button-group button {
+  border: 3px solid #80c34f;
+  color: #80c34f;
+  background-color: white;
+  padding: 5px 10px;
+}
+#isotope-filters .button-container .plone-button-group button:hover {
+  background-color: #80c34f;
+  color: white;
+}
+#isotope-grid {
+  border: 1px solid red;
+  margin-top: -1em;
+}
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */
