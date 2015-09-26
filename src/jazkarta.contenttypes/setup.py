@@ -44,6 +44,7 @@ setup(name='jazkarta.contenttypes',
           'plone.app.imagecropping',
           'collective.dexteritytextindexer',
           'collective.relatedslider',
+          'collective.isotope',
       ],
       extras_require={
           'test': [

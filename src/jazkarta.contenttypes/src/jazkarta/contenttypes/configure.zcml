@@ -43,6 +43,18 @@
   <utility component=".vocabularies.ServiceVocabularyFactory" name="jazkarta.contenttypes.services" />
   <utility component=".vocabularies.TeamVocabularyFactory" name="jazkarta.contenttypes.team" />
 
+  <!-- Isotope converter utilitites -->
+  <utility
+      name="collective.isotope.converter.team"
+      provides="collective.isotope.interfaces.IValueConverter"
+      component="jazkarta.contenttypes.utilities.TeamConverter"
+      />
+  <utility
+      name="collective.isotope.converter.services"
+      provides="collective.isotope.interfaces.IValueConverter"
+      component="jazkarta.contenttypes.utilities.ServicesConverter"
+      />
+
   <genericsetup:importStep
       name="jazkarta.contenttypes-postInstall"
       title="jazkarta.contenttypes post_install import step"
@@ -84,6 +96,15 @@
       description=""
       profile="jazkarta.contenttypes:default"
       import_steps="typeinfo"
+      />
+
+  <genericsetup:upgradeDepends
+      source="7"
+      destination="8"
+      title="Add metadata for Isotope Views"
+      description=""
+      profile="jazkarta.contenttypes:default"
+      import_steps="catalog"
       />
 
 </configure>
