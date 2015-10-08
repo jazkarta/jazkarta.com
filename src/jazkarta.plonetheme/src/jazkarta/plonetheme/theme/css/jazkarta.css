@@ -4875,8 +4875,21 @@ header#content-header {
   position: relative;
   left: -8px;
 }
+@media (max-width: 766px) {
+  #portal-logo {
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 85px;
+  }
+}
 #portal-logo img {
   width: 258px;
+}
+@media (max-width: 766px) {
+  #portal-logo img {
+    width: 70%;
+  }
 }
 .plone-navbar {
   float: right;
@@ -4918,13 +4931,6 @@ header#content-header {
   margin-top: -10px;
   text-align: center;
 }
-@media (max-width: 766px) {
-  .plone-navbar .plone-nav > li:last-child {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-  }
-}
 .plone-navbar .plone-nav > li:last-child > a {
   display: block;
   font-size: 22px;
@@ -4938,6 +4944,18 @@ header#content-header {
   background-color: #80c34f;
   color: white !important;
   border-color: white;
+}
+@media (max-width: 766px) {
+  .plone-navbar .plone-nav > li:last-child {
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+  }
+  .plone-navbar .plone-nav > li:last-child > a {
+    font-size: initial;
+  }
 }
 @media (max-width: 766px) {
   .plone-navbar {
@@ -4986,7 +5004,7 @@ header#content-header {
   }
   .plone-navbar .plone-navbar-collapse.plone-collapse .plone-navbar-nav li a {
     color: white;
-    font-size: 80%;
+    font-size: 2vw/3vw;
     font-weight: 400;
     padding: 5px;
   }

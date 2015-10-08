@@ -159,8 +159,17 @@ header#content-header {
 	float: left;
 	position: relative;
 	left: -8px;
+    @media (max-width: @plone-grid-float-breakpoint-max) {
+        box-sizing: border-box;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 85px;
+    }
     img {
         width: 258px;
+        @media (max-width: @plone-grid-float-breakpoint-max) {
+            width: 70%;
+        }
     }
 }
 .plone-navbar {
@@ -198,11 +207,6 @@ header#content-header {
 			color: @plone-link-hover-color;
 		}
         > li:last-child {
-            @media (max-width: @plone-grid-float-breakpoint-max) {
-                position: absolute;
-                top: 40px;
-                right: 20px;
-            }
             margin-left: 1em;
             margin-top: -10px;
             text-align: center;
@@ -218,6 +222,16 @@ header#content-header {
                     background-color: @plone-link-hover-color;
                     color: white !important;
                     border-color: white;
+                }
+            }
+            @media (max-width: @plone-grid-float-breakpoint-max) {
+                margin-left: 0;
+                margin-top: 0;
+                position: absolute;
+                top: 25px;
+                right: 10px;
+                > a {
+                    font-size: initial;
                 }
             }
         }
@@ -264,7 +278,7 @@ header#content-header {
                     }
                     a {
                         color: white;
-                        font-size: 80%;
+                        font-size: ~"2vw/3vw";
                         font-weight: 400;
                         padding: 5px;
                     }
