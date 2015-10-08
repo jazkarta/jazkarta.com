@@ -5256,10 +5256,30 @@ dl.InfoList dd {
   overflow: hidden;
 }
 .tile-fullwidth .tile-content .banner-text {
+  width: 100%;
+  padding-left: 15px;
   position: absolute;
-  top: 1em;
-  left: 3em;
+  bottom: 2em;
   text-shadow: 1px 1px 2px #000000;
+}
+@media (max-width: 766px) {
+  .tile-fullwidth .tile-content .banner-text {
+    font-size: 150%;
+  }
+}
+@media (min-width: 767px) {
+  .tile-fullwidth .tile-content .banner-text {
+    width: 717px;
+    left: 50%;
+    margin-left: -358.5px;
+  }
+}
+@media (min-width: 1200px) {
+  .tile-fullwidth .tile-content .banner-text {
+    width: 1050px;
+    left: 50%;
+    margin-left: -525px;
+  }
 }
 .tile-fullwidth .tile-content a {
   font-weight: 600;
