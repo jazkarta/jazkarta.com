@@ -35,21 +35,22 @@
 
 
 /* other overrides */
-@plone-screen-sm-min:                       880px;
+@plone-screen-sm-min:                       767px;
+@plone-screen-md-min:                       767px;
 @plone-sitenav-padding-horizontal:			30px;
 @plone-sitenav-link-padding:				10px 30px;
 @plone-container-lg:                        1050px;
-@plone-container-md:                        880px;
-@plone-container-sm:                        880px;
+@plone-container-md:                        717px;
+@plone-container-sm:                        767px;
 @jazkarta-header-width-lg:                  1100px;
-@jazkarta-header-width-md:                  930px;
+@jazkarta-header-width-md:                  767px;
 @jazkarta-header-width-sm:                  765px;
 @plone-grid-float-breakpoint:               @plone-container-sm;
 
 /* base styles */
 body {
 	font-weight: 300;
-	min-width: 470px;
+	min-width: 320px;
 	line-height: 1.381;
 }
 
@@ -103,7 +104,7 @@ a.button {
 
 /* layout */
 header {
-    min-width: 470px;
+    min-width: 320px;
     .container {
         @media (min-width: @plone-screen-sm-min) {
             width: @jazkarta-header-width-sm !important;
@@ -121,7 +122,7 @@ header {
 }
 
 footer {
-    min-width: 470px;
+    min-width: 320px;
 }
 
 header#content-header {
@@ -237,7 +238,7 @@ header#content-header {
 	}
 }
 .plone-navbar-collapse {
-	@media (max-width: (@plone-screen-sm-min - 1px)) {
+	@media (max-width: @plone-grid-float-breakpoint-max) {
 		position: absolute;
 		right: 0;
         left: 0;
@@ -401,6 +402,13 @@ header#content-header {
 	}
 }
 
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    @media (max-width: @plone-grid-float-breakpoint-max) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 /* Content area */
 .documentDescription {
     padding-bottom: 0.8em;
@@ -421,11 +429,16 @@ dl.InfoList dd {
 
 
 .column.col-md-4 {
+    @media (max-width: @plone-grid-float-breakpoint-max) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     @media (min-width: @plone-screen-lg-min) {
         width: 350px;
     }
     .plone-toolbar-left-expanded &, .plone-toolbar-right-expanded & {
-        @media (min-width: (@plone-screen-lg-min) ) {
+        @media (min-width: (@plone-screen-md-min) ) {
             width: 33.33%;
         }
         @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded) ) {
@@ -433,7 +446,7 @@ dl.InfoList dd {
         }
     }
     .plone-toolbar-left-default &, .plone-toolbar-right-default & {
-        @media (min-width: (@plone-screen-lg-min) ) {
+        @media (min-width: (@plone-screen-md-min) ) {
             width: 33.33%;
         }
         @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar) ) {
@@ -477,31 +490,34 @@ dl.InfoList dd {
 }
 
 .mobile-tile {
-    height: 255px;
-    width: 380px;
+    height: 176px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 .tablet-tile {
     width: 100%;
-    height: 176px;
+    height: 138px;
 }
 .desktop-tile {
     width: 100%;
-    height: 235px;
+    height: 215px;
 }
 
 .tile-centered-text {
     position: relative;
     top: 0;
-    width: 380px;
+    width: 350px;
     height: 100%;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    height: 255px;
     margin-top: 30px;
-    .mobile-tile;
+
+    @media (max-width: @plone-grid-float-breakpoint-max) {
+        .mobile-tile;
+        margin-top: 15px;
+    }
     @media (min-width: @plone-screen-md-min) {
         .tablet-tile;
     }
@@ -565,6 +581,9 @@ dl.InfoList dd {
 
 .tile-mouseover-basic, .tile-mouseover-text {
     margin-top: 30px;
+    @media (max-width: @plone-grid-float-breakpoint-max) {
+        margin-top: 15px;
+    }
     .cover-basic-tile {
         overflow: hidden;
         text-align: center;
@@ -589,7 +608,7 @@ dl.InfoList dd {
         }
         height: 255px;
         width: 380px;
-        @media (max-width: (@plone-screen-md-min - 1px)) {
+        @media (max-width: @plone-grid-float-breakpoint-max) {
             .mobile-tile
         }
         @media (min-width: @plone-screen-md-min) {
@@ -637,7 +656,7 @@ dl.InfoList dd {
             height: auto;
             margin: 0 !important;
             @media (min-width: @plone-screen-sm-min) {
-                width: 380px;
+                width: 100%;
             }
             @media (min-width: @plone-screen-md-min) {
                 width: 263px;
@@ -738,6 +757,9 @@ dl.InfoList dd {
 /* relatedslider */
 #content {
     margin-bottom: 30px;
+    @media (max-width: @plone-grid-float-breakpoint-max) {
+        margin-bottom: 15px;
+    }
 }
 
 #content-core img {
@@ -747,14 +769,14 @@ dl.InfoList dd {
 
 .body-width-mixin {
     @media (max-width: @plone-grid-float-breakpoint-max) {
-        width: 470px;
+        width: 320px;
     }
     @media (min-width: @plone-screen-sm-min) {
         width: @plone-container-md;
     }
     .plone-toolbar-left-expanded & {
         @media (min-width: (@plone-screen-sm-min)) {
-            width: 470px;
+            width: 320px;
         }
         @media (min-width: (@plone-screen-sm-min + @plone-left-toolbar-expanded)) {
             width: @plone-container-md;
@@ -762,7 +784,7 @@ dl.InfoList dd {
     }
     .plone-toolbar-left-default & {
         @media (min-width: (@plone-screen-sm-min)) {
-            width: 470px;
+            width: 320px;
         }
         @media (min-width: (@plone-screen-sm-min + @plone-left-toolbar)) {
             width: @plone-container-md;
@@ -935,7 +957,7 @@ main #related-slider-wrapper {
         }
     }
     @media (min-width: @plone-screen-sm-min) {
-        height: 375px;
+        height: 320px;
         background-size: 100% 300px;
     }
     @media (min-width: @plone-screen-lg-min) {
@@ -1058,7 +1080,7 @@ img.ProjectImage {
             float: left;
             text-align: right;
             padding-left: 0.5em;
-            @media (max-width: (@plone-screen-md-min - 1px)) {
+            @media (max-width: @plone-grid-float-breakpoint-max) {
                 float: none;
                 text-align: left;
                 padding-left: 10px;
@@ -1068,7 +1090,7 @@ img.ProjectImage {
             clear: none;
             display: block;
             margin-left: 100px;
-            @media (max-width: (@plone-screen-md-min - 1px)) {
+            @media (max-width: @plone-grid-float-breakpoint-max) {
                 margin-left: 0;
             }
             button {
@@ -1112,7 +1134,7 @@ img.ProjectImage {
             background-color: @text-tile-background;
             color: white;
             border: none;
-            @media (max-width: (@plone-screen-md-min - 1px)) {
+            @media (max-width: @plone-grid-float-breakpoint-max) {
                 .mobile-isotope-item;
             }
             @media (min-width: @plone-screen-md-min) {
@@ -1160,7 +1182,7 @@ img.ProjectImage {
                 display: none;
                 z-index: 1000;
                 font-wieght: 700;
-                @media (max-width: (@plone-screen-md-min - 1px)) {
+                @media (max-width: @plone-grid-float-breakpoint-max) {
                     font-size: 2em;
                 }
                 @media (min-width: @plone-screen-md-min) {

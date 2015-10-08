@@ -33,13 +33,15 @@
         handler=".setuphandlers.post_install">
     </genericsetup:importStep>
 
-    <genericsetup:upgradeDepends
-        source="1000"
-        destination="1001"
-        title="Update cover and tinymce styles."
-        description=""
+    <genericsetup:upgradeSteps
         profile="jazkarta.plonetheme:default"
-        import_steps="plone.app.registry"
-        />
+        source="1000"
+        destination="1001">
+        <upgradeDepends
+            title="Update cover and tinymce styles."
+            description=""
+            import_steps="plone.app.registry"
+            />
+    </genericsetup:upgradeSteps>
 
 </configure>
