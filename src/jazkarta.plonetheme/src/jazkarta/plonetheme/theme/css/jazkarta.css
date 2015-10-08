@@ -4955,24 +4955,26 @@ header#content-header {
     overflow: hidden;
   }
   .plone-navbar .plone-navbar-collapse.plone-collapse {
+    display: table !important;
+    width: 100%;
+    margin: 0;
     border: none;
     box-shadow: none;
     position: static;
-    display: block !important;
     padding: 0;
-    margin: 0 auto;
     overflow: hidden;
     background-color: transparent;
     text-align: center;
   }
   .plone-navbar .plone-navbar-collapse.plone-collapse .plone-navbar-nav {
-    height: 30px;
+    display: table-row;
     overflow: hidden;
     background-color: transparent;
     margin: 0;
   }
   .plone-navbar .plone-navbar-collapse.plone-collapse .plone-navbar-nav li {
-    float: left;
+    display: table-cell;
+    width: auto;
     background-color: #80c34f;
     border-right: 1px solid white;
   }
@@ -4986,7 +4988,7 @@ header#content-header {
     color: white;
     font-size: 80%;
     font-weight: 400;
-    padding: 5px 10px;
+    padding: 5px;
   }
 }
 .plone-navbar-toggle {
@@ -5318,6 +5320,7 @@ dl.InfoList dd {
 @media (max-width: 766px) {
   .tile-fullwidth .tile-content .banner-text {
     font-size: 150%;
+    bottom: 0;
   }
 }
 @media (min-width: 767px) {
