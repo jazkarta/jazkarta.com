@@ -38,8 +38,12 @@
     <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
   </xsl:variable>
 
+  <!-- get rid of title attr to avoid mouseover text -->
+  <drop attributes="title" css:content="a" />
+  <drop attributes="title" css:content="img" />
+
   <!-- move global nav -->
-  <replace css:theme="#portal-globalnav-wrapper" css:content-children="#portal-mainnavigation" method="raw" />
+  <replace css:theme="#portal-globalnav-wrapper" css:content-children="#portal-mainnavigation" />
 
   <!-- hero unit on homepage only -->
   <drop css:if-not-content="body.template-document_view.section-front-page"
