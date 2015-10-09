@@ -6609,42 +6609,71 @@ img.ProjectImage {
   margin-right: 0;
 }
 /* Isotope Views */
-#isotope-filters .button-container {
-  margin-bottom: 5px;
+.mobile-isotope-filter {
+  width: 95%;
+  margin: 1px 2%;
 }
-#isotope-filters .button-container .isotope-filter-label {
-  width: 100px;
+.tablet-isotope-filter {
+  width: 45%;
+  margin: 1px 1%;
+}
+.desktop-isotope-filter {
+  width: 22%;
+  margin: 1px 1%;
+}
+#isotope-filters {
+  text-align: center;
+}
+#isotope-filters .isotope-filter {
+  text-align: left;
+  width: 22%;
+  margin: 1em 1%;
+  display: inline-block;
+}
+#isotope-filters .isotope-filter label {
   display: block;
-  float: left;
-  text-align: right;
-  padding-left: 0.5em;
 }
 @media (max-width: 766px) {
-  #isotope-filters .button-container .isotope-filter-label {
-    float: none;
-    text-align: left;
-    padding-left: 10px;
+  #isotope-filters .isotope-filter {
+    width: 95%;
+    margin: 1px 2%;
   }
 }
-#isotope-filters .button-container .plone-button-group {
-  clear: none;
-  display: block;
-  margin-left: 100px;
-}
-@media (max-width: 766px) {
-  #isotope-filters .button-container .plone-button-group {
-    margin-left: 0;
+@media (min-width: 767px) {
+  #isotope-filters .isotope-filter {
+    width: 45%;
+    margin: 1px 1%;
   }
 }
-#isotope-filters .button-container .plone-button-group button {
-  border: 3px solid #80c34f;
-  color: #80c34f;
-  background-color: white;
-  padding: 5px 10px;
+@media (min-width: 1200px) {
+  .plone-toolbar-left-expanded #isotope-filters .isotope-filter {
+    width: 45%;
+    margin: 1px 1%;
+  }
 }
-#isotope-filters .button-container .plone-button-group button:hover {
-  background-color: #80c34f;
-  color: white;
+@media (min-width: 1200px) {
+  .plone-toolbar-left-default #isotope-filters .isotope-filter {
+    width: 45%;
+    margin: 1px 1%;
+  }
+}
+@media (min-width: 1200px) {
+  #isotope-filters .isotope-filter {
+    width: 22%;
+    margin: 1px 1%;
+  }
+}
+@media (min-width: 1320px) {
+  .plone-toolbar-left-expanded #isotope-filters .isotope-filter {
+    width: 22%;
+    margin: 1px 1%;
+  }
+}
+@media (min-width: 1260px) {
+  .plone-toolbar-left-default #isotope-filters .isotope-filter {
+    width: 22%;
+    margin: 1px 1%;
+  }
 }
 .mobile-isotope-item {
   height: auto;
@@ -6671,7 +6700,7 @@ img.ProjectImage {
   width: 380px;
   background-color: #205c90;
   color: white;
-  border: none;
+  border: 1px solid #cccccc;
 }
 @media (max-width: 766px) {
   #content-core #isotope-grid .isotope-item.horizontal {
@@ -6731,40 +6760,6 @@ img.ProjectImage {
   display: block;
 }
 #content-core #isotope-grid .isotope-item.horizontal h2 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-75%);
-  -ms-transform: translateY(-75%);
-  transform: translateY(-75%);
-  text-transform: uppercase;
-  color: white;
   display: none;
-  z-index: 1000;
-  font-wieght: 700;
-}
-@media (max-width: 766px) {
-  #content-core #isotope-grid .isotope-item.horizontal h2 {
-    font-size: 2em;
-  }
-}
-@media (min-width: 767px) {
-  #content-core #isotope-grid .isotope-item.horizontal h2 {
-    font-size: 1.6em;
-  }
-}
-@media (min-width: 1200px) {
-  #content-core #isotope-grid .isotope-item.horizontal h2 {
-    font-size: 1.6em;
-  }
-}
-#content-core #isotope-grid .isotope-item.horizontal:hover {
-  background-color: #80c34f;
-}
-#content-core #isotope-grid .isotope-item.horizontal:hover h2 {
-  width: 100%;
-  display: block;
-}
-#content-core #isotope-grid .isotope-item.horizontal:hover .isotope-image {
-  visibility: hidden;
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */

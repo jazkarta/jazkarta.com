@@ -1152,37 +1152,56 @@ img.ProjectImage {
 
 /* Isotope Views */
 
+.mobile-isotope-filter {
+    width: 95%;
+    margin: 1px 2%;
+}
+.tablet-isotope-filter {
+    width: 45%;
+    margin: 1px 1%;
+}
+.desktop-isotope-filter {
+    width: 22%;
+    margin: 1px 1%;
+}
+
 #isotope-filters {
-    .button-container {
-        margin-bottom: 5px;
-        .isotope-filter-label {
-            width: 100px;
+    text-align: center;
+    .isotope-filter {
+        text-align: left;
+        width: 22%;
+        margin: 1em 1%;
+        display: inline-block;
+        label {
             display: block;
-            float: left;
-            text-align: right;
-            padding-left: 0.5em;
-            @media (max-width: @plone-grid-float-breakpoint-max) {
-                float: none;
-                text-align: left;
-                padding-left: 10px;
+        }
+        @media (max-width: @plone-grid-float-breakpoint-max) {
+            .mobile-isotope-filter;
+        }
+        @media (min-width: @plone-screen-md-min) {
+            .tablet-isotope-filter;
+        }
+        .plone-toolbar-left-expanded & {
+            @media (min-width: @plone-screen-lg-min) {
+                .tablet-isotope-filter;
             }
         }
-        .plone-button-group {
-            clear: none;
-            display: block;
-            margin-left: 100px;
-            @media (max-width: @plone-grid-float-breakpoint-max) {
-                margin-left: 0;
+        .plone-toolbar-left-default & {
+            @media (min-width: @plone-screen-lg-min) {
+                .tablet-isotope-filter;
             }
-            button {
-                border: 3px solid @plone-link-hover-color;
-                color: @plone-link-hover-color;
-                background-color: white;
-                padding: 5px 10px;
-                &:hover {
-                    background-color: @plone-link-hover-color;
-                    color: white;
-                }
+        }
+        @media (min-width: @plone-screen-lg-min) {
+            .desktop-isotope-filter;
+        }
+        .plone-toolbar-left-expanded & {
+            @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded)) {
+                .desktop-isotope-filter;
+            }
+        }
+        .plone-toolbar-left-default & {
+            @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar)) {
+                .desktop-isotope-filter;
             }
         }
     }
@@ -1214,7 +1233,7 @@ img.ProjectImage {
             width: 380px;
             background-color: @text-tile-background;
             color: white;
-            border: none;
+            border: 1px solid @plone-gray-lighter;
             @media (max-width: @plone-grid-float-breakpoint-max) {
                 .mobile-isotope-item;
             }
@@ -1253,35 +1272,7 @@ img.ProjectImage {
                 display: block;
             }
             h2 {
-                position: absolute;
-                top: 50%;
-                -webkit-transform: translateY(-75%);
-                -ms-transform: translateY(-75%);
-                transform: translateY(-75%);
-                text-transform: uppercase;
-                color: white;
                 display: none;
-                z-index: 1000;
-                font-wieght: 700;
-                @media (max-width: @plone-grid-float-breakpoint-max) {
-                    font-size: 2em;
-                }
-                @media (min-width: @plone-screen-md-min) {
-                    font-size: 1.6em;
-                }
-                @media (min-width: @plone-screen-lg-min) {
-                    font-size: 1.6em;
-                }
-            }
-            &:hover {
-                background-color: @text-tile-mouseover-background;
-                h2 {
-                    width: 100%;
-                    display: block;
-                }
-                .isotope-image {
-                    visibility: hidden;
-                }
             }
         }
     }
