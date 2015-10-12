@@ -6603,7 +6603,7 @@ img.ProjectImage {
   color: #205c90;
 }
 .BottomLinks {
-  float: right;
+  float: left;
 }
 .BottomLinks a.btn {
   margin-right: 0;
