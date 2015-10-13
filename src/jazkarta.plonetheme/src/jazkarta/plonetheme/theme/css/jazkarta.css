@@ -5493,7 +5493,7 @@ dl.InfoList dd {
 }
 .tile-mouseover-basic .cover-basic-tile h2,
 .tile-mouseover-text .cover-basic-tile h2 {
-  text-transform: uppercase;
+  text-transform: none;
   color: white;
 }
 .tile-mouseover-basic .cover-basic-tile p,
