@@ -3035,7 +3035,10 @@ fieldset[disabled] .link-parent.active {
   font-weight: 300;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
-.managedPortlet .portletHeader {
+.managedPortlet header,
+.managedPortlet .portletHeader,
+.managedPortlet header.portletHeader {
+  min-width: initial;
   border: none;
   background: none;
   padding: 0;
@@ -4351,8 +4354,13 @@ body.template-logged_out #content-core .portletFooter {
   font-weight: 300;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
+body.template-login_form #content-core header,
+body.template-logged_out #content-core header,
 body.template-login_form #content-core .portletHeader,
-body.template-logged_out #content-core .portletHeader {
+body.template-logged_out #content-core .portletHeader,
+body.template-login_form #content-core header.portletHeader,
+body.template-logged_out #content-core header.portletHeader {
+  min-width: initial;
   border: none;
   background: none;
   padding: 0;
@@ -5134,7 +5142,10 @@ header#content-header {
   border: none;
   box-shadow: none;
 }
-.portlet .portletHeader {
+.portlet header,
+.portlet .portletHeader,
+.portlet header.portletHeader {
+  min-width: initial;
   border: none;
   background: none;
   padding: 0;
