@@ -5111,7 +5111,7 @@ header#content-header {
   clear: both;
 }
 #portal-footer .portletWrapper {
-  width: 30%;
+  width: 28%;
   vertical-align: top;
   border-bottom: none;
 }
@@ -5127,6 +5127,10 @@ header#content-header {
 #portal-footer .portletWrapper .portlet .portletContent > * {
   color: white;
   font: 600 15px/22px "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#portal-footer .portletWrapper .portlet .portletContent #copyright p {
+  font-size: 12px;
+  font-weight: 400;
 }
 @media (max-width: 766px) {
   #portal-footer .portletWrapper {
