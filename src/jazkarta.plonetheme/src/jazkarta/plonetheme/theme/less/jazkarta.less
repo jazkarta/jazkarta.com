@@ -13,7 +13,7 @@
 @jazkarta-header-background:                @text-tile-background;
 @jazkarta-spacer-background:                @text-tile-mouseover-background;
 @plone-link-color:							@text-tile-background;
-@plone-link-hover-color:					@text-tile-mouseover-background;
+@plone-link-hover-color:					@jazkarta-highlight-color;
 @plone-link-color-on-dark:					white;
 @plone-default-published-color:				#007bb3; //published and external same color
 @plone-body-bg:								#fff;
@@ -210,6 +210,7 @@ header#content-header {
             margin-left: 1em;
             margin-top: -10px;
             text-align: center;
+            border-right: none;
             > a {
                 display: block;
                 font-size: 22px;
@@ -272,6 +273,9 @@ header#content-header {
                     border-right: 1px solid white;
                     &:nth-last-child(2) {
                         border: none;
+                    }
+                    &:last-child {
+                        border-right: none;
                     }
                     &:hover {
                         background-color: @jazkarta-highlight-color;
@@ -354,6 +358,7 @@ header#content-header {
 		border-bottom: none;
 		display: inline-block;
         margin-top: 80px;
+        width: 40%
 	}
     #portal-footer {
         position: relative;
@@ -367,7 +372,7 @@ header#content-header {
 #portal-footer {
 	.clearfix();
 	.portletWrapper {
-		width: 32.5%;
+		width: 28%;
 		vertical-align: top;
 		border-bottom: none;
 		.portletHeader {
@@ -382,6 +387,10 @@ header#content-header {
 			color: white;
 			font: 600 15px/22px @plone-font-family-sans-serif;
 		}
+        .portlet .portletContent #copyright p {
+            font-size: 12px;
+            font-weight: 400;
+        }
         @media (max-width: @plone-grid-float-breakpoint-max) {
             display: none;
             &:first-child {
@@ -396,7 +405,8 @@ header#content-header {
 .portlet {
 	border: none;
 	box-shadow: none;
-	.portletHeader {
+	header, .portletHeader, header.portletHeader {
+        min-width: initial;
 		border: none;
 		background: none;
 		padding: 0;
@@ -550,6 +560,10 @@ dl.InfoList dd {
         position: absolute;
         bottom: 2em;
         text-shadow: 1px 1px 2px #000000;
+        line-height: 150%;
+        h3 {
+            line-height: 150%;
+        }
         @media (max-width: @plone-grid-float-breakpoint-max) {
             font-size: 150%;
             bottom: 0;
@@ -893,25 +907,25 @@ dl.InfoList dd {
 }
 .slider-height-mixin {
     @media (max-width: @plone-grid-float-breakpoint-max) {
-        height: 128px;
+        height: 80px;
     } 
     @media (min-width: @plone-screen-sm-min) {
-        height: 170px;
+        height: 135px;
     } 
     .plone-toolbar-left-expanded & {
         @media (min-width: (@plone-screen-sm-min)) {
-            height: 128px;
+            height: 80px;
         }
         @media (min-width: (@plone-screen-sm-min + @plone-left-toolbar-expanded)) {
-            height: 170px;
+            height: 135px;
         }
     }
     .plone-toolbar-left-default & {
         @media (min-width: (@plone-screen-sm-min)) {
-            height: 128px;
+            height: 80px;
         }
         @media (min-width: (@plone-screen-sm-min + @plone-left-toolbar)) {
-            height: 170px;
+            height: 135px;
         }
     }
     @media (min-width: @plone-screen-lg-min) {
@@ -919,7 +933,7 @@ dl.InfoList dd {
     }
     .plone-toolbar-left-expanded & {
         @media (min-width: (@plone-screen-lg-min)) {
-            height: 170px;
+            height: 135px;
         }
         @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded)) {
             height: 208px;
@@ -927,7 +941,7 @@ dl.InfoList dd {
     }
     .plone-toolbar-left-default & {
         @media (min-width: (@plone-screen-lg-min)) {
-            height: 170px;
+            height: 135px;
         }
         @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar)) {
             height: 208px;
@@ -937,25 +951,25 @@ dl.InfoList dd {
 .slider-item-mixin {
     .slider-height-mixin;
     @media (max-width: @plone-grid-float-breakpoint-max) {
-        width: 190px;
+        width: 120px;
     } 
     @media (min-width: @plone-screen-sm-min) {
-        width: 253px;
+        width: 200px;
     } 
     .plone-toolbar-left-expanded & {
         @media (min-width: (@plone-screen-sm-min)) {
-            width: 190px;
+            width: 120px;
         }
         @media (min-width: (@plone-screen-sm-min + @plone-left-toolbar-expanded)) {
-            width: 253px;
+            width: 200px;
         }
     }
     .plone-toolbar-left-default & {
         @media (min-width: (@plone-screen-sm-min)) {
-            width: 190px;
+            width: 120px;
         }
         @media (min-width: (@plone-screen-sm-min + @plone-left-toolbar)) {
-            width: 253px;
+            width: 200px;
         }
     }
     @media (min-width: @plone-screen-lg-min) {
@@ -963,7 +977,7 @@ dl.InfoList dd {
     }    
     .plone-toolbar-left-expanded & {
         @media (min-width: (@plone-screen-lg-min)) {
-            width: 253px;
+            width: 200px;
         }
         @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded)) {
             width: 310px;
@@ -971,7 +985,7 @@ dl.InfoList dd {
     }
     .plone-toolbar-left-default & {
         @media (min-width: (@plone-screen-lg-min)) {
-            width: 247px;
+            width: 200px;
         }
         @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar)) {
             width: 310px;
@@ -1126,6 +1140,9 @@ img.ProjectImage {
     blockquote {
         font-weight: normal;
         margin: 0 10px;
+        footer {
+            min-width: initial;
+        }
     }
 }
 .ServiceColumn h4{

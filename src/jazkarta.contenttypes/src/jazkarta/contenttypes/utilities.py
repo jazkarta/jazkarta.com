@@ -26,6 +26,10 @@ class VocabConverter(object):
             return term.title or term.value
         except (AttributeError, TypeError):
             return value
+        except LookupError:
+            # the provided value may be private or otherwise unreachable,
+            # protect by returning None.
+            return None
 
 TeamConverter = VocabConverter('jazkarta.contenttypes.team')
 ServicesConverter = VocabConverter('jazkarta.contenttypes.services')
