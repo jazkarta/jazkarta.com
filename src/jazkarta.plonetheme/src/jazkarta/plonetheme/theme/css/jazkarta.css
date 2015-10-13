@@ -4930,6 +4930,7 @@ header#content-header {
   margin-left: 1em;
   margin-top: -10px;
   text-align: center;
+  border-right: none;
 }
 .plone-navbar .plone-nav > li:last-child > a {
   display: block;
@@ -4998,6 +4999,9 @@ header#content-header {
   }
   .plone-navbar .plone-navbar-collapse.plone-collapse .plone-navbar-nav li:nth-last-child(2) {
     border: none;
+  }
+  .plone-navbar .plone-navbar-collapse.plone-collapse .plone-navbar-nav li:last-child {
+    border-right: none;
   }
   .plone-navbar .plone-navbar-collapse.plone-collapse .plone-navbar-nav li:hover {
     background-color: #6699cb;
@@ -6591,6 +6595,9 @@ img.ProjectImage {
 .Testimonial blockquote {
   font-weight: normal;
   margin: 0 10px;
+}
+.Testimonial blockquote footer {
+  min-width: initial;
 }
 .ServiceColumn h4 {
   color: #205c90;
