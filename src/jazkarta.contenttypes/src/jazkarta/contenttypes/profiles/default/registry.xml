@@ -93,4 +93,21 @@
      <value key="group" i18n:translate="">Text</value>
   </records>
 
+  <record name="plone.app.caching.interfaces.IPloneCacheSettings.purgedContentTypes">
+    <value purge="False">
+      <element>Document</element>
+      <element>Image</element>
+      <element>File</element>
+      <element>Event</element>
+      <element>NewsItem</element>
+      <element>Folder</element>
+      <element>FormFolder</element>
+      <element>FormThanksPage</element>
+      <element>Link</element>
+      <element>collective.cover.content</element>
+      <element>jazkarta.project</element>
+      <element>jazkarta.team_member</element>
+    </value>
+  </record>
+
 </registry>

@@ -107,4 +107,13 @@
       import_steps="catalog"
       />
 
+  <genericsetup:upgradeDepends
+      source="8"
+      destination="9"
+      title="Update cache purge configuration"
+      description=""
+      profile="jazkarta.contenttypes:default"
+      import_steps="plone.app.registry"
+      />
+
 </configure>
