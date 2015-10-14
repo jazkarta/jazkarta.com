@@ -4953,13 +4953,13 @@ header#content-header {
   display: block;
   font-size: 22px;
   line-height: 100%;
-  border: 3px solid #6699cb;
-  color: #6699cb !important;
+  border: 3px solid #80c34f;
+  color: #80c34f !important;
   background-color: white;
   padding: 15px;
 }
 .plone-navbar .plone-nav > li:last-child > a:hover {
-  background-color: #6699cb;
+  background-color: #80c34f;
   color: white !important;
   border-color: white;
 }
@@ -5283,6 +5283,9 @@ header#content-header {
 /* Content area */
 .documentDescription {
   padding-bottom: 0.8em;
+}
+.row.documentDescription {
+  padding-bottom: 0;
 }
 /* project */
 dt.label {

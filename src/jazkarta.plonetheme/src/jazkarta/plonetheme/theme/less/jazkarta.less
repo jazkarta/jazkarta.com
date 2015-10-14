@@ -222,12 +222,12 @@ header#content-header {
                 display: block;
                 font-size: 22px;
                 line-height: 100%;
-                border: 3px solid @plone-link-hover-color;
-                color: @plone-link-hover-color !important;
+                border: 3px solid @text-tile-mouseover-background;
+                color: @text-tile-mouseover-background !important;
                 background-color: white;
                 padding: 15px;
                 &:hover {
-                    background-color: @plone-link-hover-color;
+                    background-color: @text-tile-mouseover-background;
                     color: white !important;
                     border-color: white;
                 }
@@ -495,6 +495,10 @@ header#content-header {
 /* Content area */
 .documentDescription {
     padding-bottom: 0.8em;
+}
+
+.row.documentDescription {
+    padding-bottom: 0;
 }
 
 /* project */

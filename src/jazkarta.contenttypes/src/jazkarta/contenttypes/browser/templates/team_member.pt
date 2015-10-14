@@ -23,7 +23,7 @@
             <h4 tal:condition="context/musical_instrument">${context/musical_instrument}</h4>
           </div>
         </div>
-        <div class="row">
+        <div class="row documentDescription">
           <p>${context/highlight}</p>
         </div>
         <div class="row">
