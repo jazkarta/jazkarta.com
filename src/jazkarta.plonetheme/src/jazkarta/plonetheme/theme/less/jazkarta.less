@@ -840,6 +840,75 @@ dl.InfoList dd {
     }
 }
 
+.cover-collection-tile {
+    border: 1px solid @plone-gray-dark;
+    margin-top: @plone-line-height-computed;
+    .tile-header {
+        background-color: @plone-gray-darker;
+        color: @plone-link-color;
+        padding-left: 0.25em;
+        h1 {
+            margin: 0px;
+        }
+    }
+    .tile-footer {
+        font-size: 90%;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+    .collection-wrapper {
+        padding: 5px 5px 0px 5px;
+        overflow-y: scroll;
+        margin-top: 0px;
+        @media (max-width: @plone-grid-float-breakpoint-max) {
+            .mobile-tile;
+        }
+        @media (min-width: @plone-screen-md-min) {
+            .tablet-tile;
+        }
+        .plone-toolbar-left-expanded & {
+            @media (min-width: @plone-screen-lg-min) {
+                .tablet-tile;
+            }
+        }
+        .plone-toolbar-left-default & {
+            @media (min-width: @plone-screen-lg-min) {
+                .tablet-tile;
+            }
+        }
+        @media (min-width: @plone-screen-lg-min) {
+            .desktop-tile;
+        }
+        .plone-toolbar-left-expanded & {
+            @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded)) {
+                .desktop-tile;
+            }
+        }
+        .plone-toolbar-left-default & {
+            @media (min-width: (@plone-screen-lg-min + @plone-left-toolbar)) {
+                .desktop-tile;
+            }
+        }
+        .collection-item {
+            margin-bottom: @plone-line-height-computed/3;
+            h3 {
+                font-size: 90%;
+                margin: 0;
+                margin-bottom: -2px;
+                padding: 0;
+            }
+            time {
+                font-size: 75%;
+                line-height: 0.8;
+                display: inline-block;
+            }
+        }
+    }
+    @media (max-width: @plone-grid-float-breakpoint-max) {
+        margin-top: 15px;
+    }
+}
+
 /* plone.app.imagecropping improvements */
 #content ul.scales {
     max-height: 1000px;
