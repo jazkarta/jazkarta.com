@@ -1,6 +1,6 @@
+/* Include Barceloneta LESS */
 @import "../css/jazkarta-icons.css";
 @import "../fonts/source-sans-pro.css";
-/* Include Barceloneta LESS */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -329,7 +329,7 @@ body {
   font-size: 18px;
   line-height: 1.42857143;
   color: #231f20;
-  background-color: #ffffff;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -378,6 +378,13 @@ hr {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+  color: #fff;
+  background-color: #000;
+}
+.sr-only a,
+.hiddenStructure a {
+  color: #fff;
+  background-color: #000;
 }
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
@@ -447,7 +454,7 @@ p {
 .documentDescription {
   font-size: 23px;
   font-weight: 500;
-  color: #777777;
+  color: #696969;
   margin-bottom: 10px;
 }
 small {
@@ -461,11 +468,11 @@ mark {
   padding: .2em;
 }
 .discreet {
-  color: #777777;
+  color: #696969;
   font-weight: 300;
 }
 .documentByLine {
-  color: #777777;
+  color: #696969;
   font-weight: 300;
   margin-bottom: 12.5px;
 }
@@ -531,8 +538,8 @@ code {
 kbd {
   padding: 2px 4px;
   font-size: 90%;
-  color: #ffffff;
-  background-color: #333333;
+  color: #fff;
+  background-color: #333;
   border-radius: 2px;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -546,7 +553,7 @@ pre {
   word-wrap: break-word;
   color: #4d4d4d;
   background-color: #f5f5f5;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 pre code {
@@ -1260,7 +1267,7 @@ pre code {
 }
 table {
   max-width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 4px;
   font-weight: 300;
   color: #696969;
@@ -1301,7 +1308,7 @@ th {
   border-top: 2px solid #e5e5e5;
 }
 .listing .listing {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .listing > tbody > tr:nth-child(odd) > td,
 .listing > tbody > tr:nth-child(odd) > th {
@@ -1465,9 +1472,9 @@ select {
   font-size: 18px;
   line-height: 1.42857143;
   color: #696969;
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1576,7 +1583,7 @@ fieldset[disabled] input[type="checkbox"] {
 .field.error .input-group-addon {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.5);
-  background-color: #ec9c8d;
+  background-color: #EC9C8D;
 }
 .field.error .form-control-feedback {
   color: rgba(0, 0, 0, 0.5);
@@ -1879,18 +1886,18 @@ button .badge {
   background-color: #4d4d4d;
 }
 .context {
-  color: #ffffff;
-  background-color: #2385c4;
-  border-color: #1b6899;
+  color: #fff;
+  background-color: #007bb1;
+  border-color: #00587e;
 }
 .context:hover,
 .context:focus,
 .context:active,
 .context.active,
 .open > .dropdown-toggle.context {
-  color: #ffffff;
-  background-color: #1b6899;
-  border-color: #124465;
+  color: #fff;
+  background-color: #00587e;
+  border-color: #002d41;
 }
 .context:active,
 .context.active,
@@ -1912,15 +1919,15 @@ fieldset[disabled] .context:active,
 .context.disabled.active,
 .context[disabled].active,
 fieldset[disabled] .context.active {
-  background-color: #2385c4;
-  border-color: #1b6899;
+  background-color: #007bb1;
+  border-color: #00587e;
 }
 .context .badge {
-  color: #2385c4;
-  background-color: #ffffff;
+  color: #007bb1;
+  background-color: #fff;
 }
 .destructive {
-  color: #ffffff;
+  color: #fff;
   background-color: #bb4f45;
   border-color: #963f37;
 }
@@ -1929,7 +1936,7 @@ fieldset[disabled] .context.active {
 .destructive:active,
 .destructive.active,
 .open > .dropdown-toggle.destructive {
-  color: #ffffff;
+  color: #fff;
   background-color: #963f37;
   border-color: #692c26;
 }
@@ -1958,7 +1965,7 @@ fieldset[disabled] .destructive.active {
 }
 .destructive .badge {
   color: #bb4f45;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .link-parent {
   display: inline-block;
@@ -2236,6 +2243,9 @@ fieldset[disabled] .link-parent.active {
   top: -15px;
   padding: 0 !important;
 }
+.plone-breadcrumb ol a {
+  color: #086ca3;
+}
 .plone-breadcrumb ol > #breadcrumbs-current {
   color: #777777;
 }
@@ -2260,7 +2270,7 @@ fieldset[disabled] .link-parent.active {
   line-height: 1.42857143;
   text-decoration: none;
   color: #205c90;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
   margin-left: -1px;
 }
@@ -2286,7 +2296,7 @@ fieldset[disabled] .link-parent.active {
 .listingBar > .active > a:focus {
   z-index: 2;
   font-weight: 300;
-  color: #ffffff;
+  color: #fff;
   background-color: #205c90;
   border-color: #205c90;
   cursor: default;
@@ -2310,7 +2320,7 @@ fieldset[disabled] .link-parent.active {
 }
 .pat-autotoc.autotabs,
 .autotabs {
-  background: #ffffff;
+  background: #fff;
   padding: 6px 12px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
@@ -2341,7 +2351,7 @@ fieldset[disabled] .link-parent.active {
 .pat-autotoc.autotabs .autotoc-nav a:hover,
 .autotabs .autotoc-nav a:hover {
   text-decoration: none;
-  background: #ffffff;
+  background: #fff;
 }
 .pat-autotoc.autotabs .autotoc-nav a.active,
 .autotabs .autotoc-nav a.active,
@@ -2349,8 +2359,8 @@ fieldset[disabled] .link-parent.active {
 .autotabs .autotoc-nav a.active:hover {
   color: #696969;
   cursor: default;
-  background: #ffffff;
-  border-bottom-color: #ffffff;
+  background: #fff;
+  border-bottom-color: #fff;
 }
 .pat-autotoc.autotabs .autotoc-nav .autotab-heading,
 .autotabs .autotoc-nav .autotab-heading {
@@ -2416,6 +2426,19 @@ fieldset[disabled] .link-parent.active {
 .tileFooter {
   clear: both;
   margin-top: 5px;
+}
+.entries::before,
+#content article.entry::after,
+#relatedItemBox ul li::after,
+#searchresults ul li::after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 2px;
+  visibility: hidden;
+}
+.icon-group-right .image-icon {
+  float: none;
 }
 .photoalbumEntryWrapper {
   display: block;
@@ -2520,7 +2543,7 @@ fieldset[disabled] .link-parent.active {
   content: "!";
 }
 .portalMessage.error {
-  background-color: #ec9c8d;
+  background-color: #EC9C8D;
   border: 1px solid #eb9484;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -2567,6 +2590,9 @@ fieldset[disabled] .link-parent.active {
   padding: 13px 15px;
   color: #696969;
 }
+.portlet .portletHeader > a {
+  color: #086ca3;
+}
 .portlet.portletCalendar .portletHeader {
   text-align: center;
   position: relative;
@@ -2587,7 +2613,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet.portletCalendar .portletHeader .calendarPrevious:hover,
 .portlet.portletCalendar .portletHeader .calendarNext:hover {
-  background: #ffffff;
+  background: #fff;
   text-decoration: none;
 }
 .portlet.portletCalendar .portletHeader .calendarNext {
@@ -2597,7 +2623,7 @@ fieldset[disabled] .link-parent.active {
 .portlet .portletContent {
   font-size: 18px;
   border-top: 1px solid #e5e5e5;
-  background: #ffffff;
+  background: #fff;
   font-weight: 300;
 }
 .portlet .portletContent > *,
@@ -2617,6 +2643,7 @@ fieldset[disabled] .link-parent.active {
   padding: 10px 15px 26px 30px;
   position: relative;
   z-index: 1;
+  color: #086ca3;
 }
 .portlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
@@ -2644,7 +2671,7 @@ fieldset[disabled] .link-parent.active {
   position: relative;
   margin-top: -26px;
   font-size: 16px;
-  color: #777777;
+  color: #696969;
 }
 .portlet .portletContent > ul li:hover {
   background: #fcfcfd;
@@ -2667,7 +2694,7 @@ fieldset[disabled] .link-parent.active {
   border-bottom: 1px solid #e5e5e5;
 }
 .portlet .portletContent table thead th {
-  color: #777777;
+  color: #696969;
   font-weight: 100;
   height: 40px;
   text-align: center;
@@ -2701,7 +2728,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet .portletContent table .cal_next_month,
 .portlet .portletContent table .cal_prev_month {
-  color: #cccccc;
+  color: #000;
 }
 .portlet .portletContent table .cal_next_month.cal_has_events > a,
 .portlet .portletContent table .cal_prev_month.cal_has_events > a {
@@ -2723,6 +2750,7 @@ fieldset[disabled] .link-parent.active {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
+  color: #000;
 }
 .portlet .portletContent table tbody tr:first-child td > * {
   margin-top: 10px;
@@ -2858,6 +2886,9 @@ fieldset[disabled] .link-parent.active {
   padding: 13px 15px;
   color: #696969;
 }
+.managedPortlet .portletHeader > a {
+  color: #086ca3;
+}
 .managedPortlet.portletCalendar .portletHeader {
   text-align: center;
   position: relative;
@@ -2878,7 +2909,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet.portletCalendar .portletHeader .calendarPrevious:hover,
 .managedPortlet.portletCalendar .portletHeader .calendarNext:hover {
-  background: #ffffff;
+  background: #fff;
   text-decoration: none;
 }
 .managedPortlet.portletCalendar .portletHeader .calendarNext {
@@ -2888,7 +2919,7 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet .portletContent {
   font-size: 18px;
   border-top: 1px solid #e5e5e5;
-  background: #ffffff;
+  background: #fff;
   font-weight: 300;
 }
 .managedPortlet .portletContent > *,
@@ -2908,6 +2939,7 @@ fieldset[disabled] .link-parent.active {
   padding: 10px 15px 26px 30px;
   position: relative;
   z-index: 1;
+  color: #086ca3;
 }
 .managedPortlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
@@ -2935,7 +2967,7 @@ fieldset[disabled] .link-parent.active {
   position: relative;
   margin-top: -26px;
   font-size: 16px;
-  color: #777777;
+  color: #696969;
 }
 .managedPortlet .portletContent > ul li:hover {
   background: #fcfcfd;
@@ -2958,7 +2990,7 @@ fieldset[disabled] .link-parent.active {
   border-bottom: 1px solid #e5e5e5;
 }
 .managedPortlet .portletContent table thead th {
-  color: #777777;
+  color: #696969;
   font-weight: 100;
   height: 40px;
   text-align: center;
@@ -2992,7 +3024,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletContent table .cal_next_month,
 .managedPortlet .portletContent table .cal_prev_month {
-  color: #cccccc;
+  color: #000;
 }
 .managedPortlet .portletContent table .cal_next_month.cal_has_events > a,
 .managedPortlet .portletContent table .cal_prev_month.cal_has_events > a {
@@ -3014,6 +3046,7 @@ fieldset[disabled] .link-parent.active {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
+  color: #000;
 }
 .managedPortlet .portletContent table tbody tr:first-child td > * {
   margin-top: 10px;
@@ -3250,6 +3283,9 @@ body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-news-item:befor
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"] {
   padding: 5px 15px 5px 50px;
 }
+body#visual-portal-wrapper.pat-plone #edit-zone a {
+  color: #fff;
+}
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"]:after {
   font-family: "Fontello";
   font-size: 100%;
@@ -3288,6 +3324,10 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-event:after {
 }
 body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
   content: '\e80f';
+}
+.image-icon,
+.image-tile {
+  float: right;
 }
 #textAdjust .decrease-text {
   font-size: 16px;
@@ -3522,7 +3562,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
 .picker__holder {
   width: 180px;
   margin: -1px 0 0 0;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   max-height: 300px;
@@ -3634,7 +3674,7 @@ ul.picker__list {
   position: absolute;
   background: #333333;
   background: rgba(0, 0, 0, 0.9);
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.17);
@@ -3800,6 +3840,7 @@ ul.picker__list {
 }
 .plone-navbar {
   background-color: transparent;
+  color: white;
   position: relative;
   min-height: 50px;
   margin-bottom: 25px;
@@ -3961,6 +4002,30 @@ ul.picker__list {
 #content {
   margin-bottom: 48px;
 }
+#content-core a {
+  border-bottom: 1px solid #cccccc;
+}
+#content-core a:hover,
+#content-core a:focus {
+  border-bottom: none;
+}
+#content-core a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#content-core .pat-structure a,
+#content-core .pat-resourceregistry a {
+  border-bottom: none;
+}
+#content-core .pat-structure a.btn,
+#content-core .pat-resourceregistry a.btn,
+#content-core .pat-structure .pagination a {
+  border-bottom: 1px solid #cccccc;
+}
+a.plone-toolbar-logo {
+  color: #fff;
+}
 .container,
 .container-fluid {
   padding-right: 15px;
@@ -4038,6 +4103,10 @@ ul.picker__list {
 #portal-footer-wrapper p {
   border-bottom: 1px solid #cccccc;
   padding-bottom: 28px;
+}
+#portal-footer-wrapper abbr,
+#portal-footer-wrapper ul {
+  color: #cccccc;
 }
 #portal-footer-wrapper a {
   color: white;
@@ -4135,6 +4204,10 @@ body.template-logged_out #content-core .portletHeader {
   padding: 13px 15px;
   color: #696969;
 }
+body.template-login_form #content-core .portletHeader > a,
+body.template-logged_out #content-core .portletHeader > a {
+  color: #086ca3;
+}
 body.template-login_form #content-core.portletCalendar .portletHeader,
 body.template-logged_out #content-core.portletCalendar .portletHeader {
   text-align: center;
@@ -4160,7 +4233,7 @@ body.template-login_form #content-core.portletCalendar .portletHeader .calendarP
 body.template-logged_out #content-core.portletCalendar .portletHeader .calendarPrevious:hover,
 body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext:hover,
 body.template-logged_out #content-core.portletCalendar .portletHeader .calendarNext:hover {
-  background: #ffffff;
+  background: #fff;
   text-decoration: none;
 }
 body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext,
@@ -4172,7 +4245,7 @@ body.template-login_form #content-core .portletContent,
 body.template-logged_out #content-core .portletContent {
   font-size: 18px;
   border-top: 1px solid #e5e5e5;
-  background: #ffffff;
+  background: #fff;
   font-weight: 300;
 }
 body.template-login_form #content-core .portletContent > *,
@@ -4196,6 +4269,7 @@ body.template-logged_out #content-core .portletContent > ul > li a {
   padding: 10px 15px 26px 30px;
   position: relative;
   z-index: 1;
+  color: #086ca3;
 }
 body.template-login_form #content-core .portletContent > ul > li > a,
 body.template-logged_out #content-core .portletContent > ul > li > a {
@@ -4228,7 +4302,7 @@ body.template-logged_out #content-core .portletContent > ul .portletItemDetails 
   position: relative;
   margin-top: -26px;
   font-size: 16px;
-  color: #777777;
+  color: #696969;
 }
 body.template-login_form #content-core .portletContent > ul li:hover,
 body.template-logged_out #content-core .portletContent > ul li:hover {
@@ -4257,7 +4331,7 @@ body.template-logged_out #content-core .portletContent table thead {
 }
 body.template-login_form #content-core .portletContent table thead th,
 body.template-logged_out #content-core .portletContent table thead th {
-  color: #777777;
+  color: #696969;
   font-weight: 100;
   height: 40px;
   text-align: center;
@@ -4298,7 +4372,7 @@ body.template-login_form #content-core .portletContent table .cal_next_month,
 body.template-logged_out #content-core .portletContent table .cal_next_month,
 body.template-login_form #content-core .portletContent table .cal_prev_month,
 body.template-logged_out #content-core .portletContent table .cal_prev_month {
-  color: #cccccc;
+  color: #000;
 }
 body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a,
 body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a,
@@ -4329,6 +4403,7 @@ body.template-logged_out #content-core .portletContent table .today > * {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
+  color: #000;
 }
 body.template-login_form #content-core .portletContent table tbody tr:first-child td > *,
 body.template-logged_out #content-core .portletContent table tbody tr:first-child td > * {
@@ -4429,7 +4504,7 @@ body.template-logged_out #content-core .portletFooter {
   font-weight: 300;
   max-width: 300px;
   float: right;
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
   padding: 12px 12px 12px 36px;
   margin-left: 5px;
@@ -4521,7 +4596,7 @@ body.template-logged_out #content-core .portletFooter {
 .autotabs .autotoc-nav .events-month-prev:hover:after,
 .autotabs .autotoc-nav .events-week-prev:hover:after,
 .autotabs .autotoc-nav .events-day-prev:hover:after {
-  color: #ffffff;
+  color: #fff;
 }
 .autotabs .autotoc-nav .events-month-next,
 .autotabs .autotoc-nav .events-week-next,
@@ -4561,7 +4636,7 @@ body.template-logged_out #content-core .portletFooter {
 .autotabs .autotoc-nav .events-month-next:hover:after,
 .autotabs .autotoc-nav .events-week-next:hover:after,
 .autotabs .autotoc-nav .events-day-next:hover:after {
-  color: #ffffff;
+  color: #fff;
 }
 .image-product {
   margin: 0;
@@ -5738,6 +5813,91 @@ dl.InfoList dd {
 }
 .tile-mouseover-text:hover .cover-basic-tile h2 {
   display: none;
+}
+.cover-collection-tile {
+  border: 1px solid #4d4d4d;
+  margin-top: 25px;
+}
+.cover-collection-tile .tile-header {
+  background-color: #333333;
+  color: #205c90;
+  padding-left: 0.25em;
+}
+.cover-collection-tile .tile-header h1 {
+  margin: 0px;
+}
+.cover-collection-tile .tile-footer {
+  font-size: 90%;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+.cover-collection-tile .collection-wrapper {
+  padding: 5px 5px 0px 5px;
+  overflow-y: scroll;
+  margin-top: 0px;
+}
+@media (max-width: 766px) {
+  .cover-collection-tile .collection-wrapper {
+    height: 176px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 767px) {
+  .cover-collection-tile .collection-wrapper {
+    width: 100%;
+    height: 138px;
+  }
+}
+@media (min-width: 1200px) {
+  .plone-toolbar-left-expanded .cover-collection-tile .collection-wrapper {
+    width: 100%;
+    height: 138px;
+  }
+}
+@media (min-width: 1200px) {
+  .plone-toolbar-left-default .cover-collection-tile .collection-wrapper {
+    width: 100%;
+    height: 138px;
+  }
+}
+@media (min-width: 1200px) {
+  .cover-collection-tile .collection-wrapper {
+    width: 100%;
+    height: 215px;
+  }
+}
+@media (min-width: 1320px) {
+  .plone-toolbar-left-expanded .cover-collection-tile .collection-wrapper {
+    width: 100%;
+    height: 215px;
+  }
+}
+@media (min-width: 1260px) {
+  .plone-toolbar-left-default .cover-collection-tile .collection-wrapper {
+    width: 100%;
+    height: 215px;
+  }
+}
+.cover-collection-tile .collection-wrapper .collection-item {
+  margin-bottom: 8.33333333px;
+}
+.cover-collection-tile .collection-wrapper .collection-item h3 {
+  font-size: 90%;
+  margin: 0;
+  margin-bottom: -2px;
+  padding: 0;
+}
+.cover-collection-tile .collection-wrapper .collection-item time {
+  font-size: 75%;
+  line-height: 0.8;
+  display: inline-block;
+}
+@media (max-width: 766px) {
+  .cover-collection-tile {
+    margin-top: 15px;
+  }
 }
 /* plone.app.imagecropping improvements */
 #content ul.scales {
