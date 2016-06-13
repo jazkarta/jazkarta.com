@@ -29,3 +29,10 @@ src/plone.app.upgrade
 src/plone.app.iterate
 src/plone.app.imagecropping
 src/collective.isotope
+src/Products.CMFPlone
+src/jazkarta.policy
+src/jazkarta.plonetheme
+src/plone.app.caching
+src/plone.app.dexterity
+src/plone.dexterity
+src/plone.scale
