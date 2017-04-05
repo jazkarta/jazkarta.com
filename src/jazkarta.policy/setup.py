@@ -50,6 +50,7 @@ setup(
         'collective.relatedslider',
         'Products.PloneFormGen',
         'collective.isotope',
+        'collective.googleanalytics',
     ],
     extras_require={
         'test': [
