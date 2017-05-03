@@ -51,6 +51,7 @@ setup(
         'Products.PloneFormGen',
         'collective.isotope',
         'collective.googleanalytics',
+        'plone.app.mosaic',
     ],
     extras_require={
         'test': [
