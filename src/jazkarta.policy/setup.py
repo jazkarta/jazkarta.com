@@ -44,6 +44,7 @@ setup(
         'plone.api',
         'setuptools',
         'collective.cover',
+        'plone.app.drafts',
         'jazkarta.contenttypes',
         'jazkarta.plonetheme',
         'Products.RedirectionTool',
