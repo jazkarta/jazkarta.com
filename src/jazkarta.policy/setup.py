@@ -52,6 +52,7 @@ setup(
         'collective.isotope',
         'collective.googleanalytics',
         'plone.app.mosaic',
+        'jazkarta.tesserae',
     ],
     extras_require={
         'test': [
