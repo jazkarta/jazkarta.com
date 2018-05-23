@@ -52,6 +52,7 @@ setup(
         'Products.PloneFormGen',
         'collective.isotope',
         'collective.googleanalytics',
+        'collective.siteimprove',
     ],
     extras_require={
         'test': [

@@ -15,6 +15,10 @@ var
 .mr.developer.cfg
 *.map
 *sublime-*
+node_modules/*
+package.json
+pip-selfcheck.json
+temp_resources/*
 
 src/collective.cover
 src/collective.js.jqueryui
