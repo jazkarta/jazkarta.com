@@ -50,6 +50,8 @@ setup(
         'Products.PloneFormGen',
         'collective.isotope',
         'collective.googleanalytics',
+        'plone.tiles',
+        'plone.app.tiles',
         'plone.app.mosaic',
         'jazkarta.tesserae',
     ],
