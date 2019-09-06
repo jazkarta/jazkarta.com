@@ -40,3 +40,4 @@ src/plone.app.caching
 src/plone.app.dexterity
 src/plone.dexterity
 src/plone.scale
+node_modules
