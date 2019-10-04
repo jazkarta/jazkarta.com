@@ -7364,4 +7364,37 @@ img.ProjectImage {
 .existing-content-tile p:last-of-type {
   margin-bottom: 0;
 }
+.mosaic-row-two-thirds-aspect .colored-background {
+  height: 0;
+  padding: 67% 0 0 0;
+  position: relative;
+}
+.mosaic-row-two-thirds-aspect .colored-background .content-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.mosaic-row-two-thirds-aspect .colored-background .content-container h2,
+.mosaic-row-two-thirds-aspect .colored-background .content-container h3,
+.mosaic-row-two-thirds-aspect .colored-background .content-container h4 {
+  margin: 0.75em 0;
+}
+.mosaic-row-no-padding .mosaic-grid-cell {
+  padding: 0;
+}
+.mosaic-tile-hover-background:hover .colored-background,
+.mosaic-tile-hover-background:hover .mosaic-tile-content {
+  background-color: #205c90 !important;
+}
+.mosaic-tile-hover-background:hover .colored-background h2,
+.mosaic-tile-hover-background:hover .mosaic-tile-content h2,
+.mosaic-tile-hover-background:hover .colored-background h3,
+.mosaic-tile-hover-background:hover .mosaic-tile-content h3,
+.mosaic-tile-hover-background:hover .colored-background h4,
+.mosaic-tile-hover-background:hover .mosaic-tile-content h4,
+.mosaic-tile-hover-background:hover .colored-background h5,
+.mosaic-tile-hover-background:hover .mosaic-tile-content h5 {
+  color: white;
+}
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */
