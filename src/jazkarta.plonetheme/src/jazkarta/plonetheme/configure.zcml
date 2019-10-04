@@ -44,4 +44,13 @@
             />
     </genericsetup:upgradeSteps>
 
+    <genericsetup:upgradeDepends
+        profile="jazkarta.plonetheme:default"
+        source="1001"
+        destination="1002"
+        title="Update cover and tinymce styles."
+        description=""
+        import_steps="plone.app.registry"
+        />
+
 </configure>

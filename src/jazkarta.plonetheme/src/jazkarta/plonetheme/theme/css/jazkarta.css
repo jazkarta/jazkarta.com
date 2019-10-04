@@ -6281,6 +6281,9 @@ dl.InfoList dd {
 .tile-mouseover-basic:hover .cover-basic-tile p:first-of-type {
   display: none;
 }
+.tile-black-border {
+  border: 10px solid black;
+}
 .tile-mouseover-text .cover-basic-tile {
   background-color: #205c90;
 }
