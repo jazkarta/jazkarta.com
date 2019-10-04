@@ -48,7 +48,7 @@
         profile="jazkarta.plonetheme:default"
         source="1001"
         destination="1002"
-        title="Update cover and tinymce styles."
+        title="Update mosaic styles."
         description=""
         import_steps="plone.app.registry"
         />
