@@ -19,4 +19,9 @@
     <value key="weight">110</value>
   </records>
 
+  <record name="plone.app.mosaic.default_available_actions">
+    <value purge="False">
+      <element>tile-black-border</element>
+    </value>
+  </record>
 </registry>
