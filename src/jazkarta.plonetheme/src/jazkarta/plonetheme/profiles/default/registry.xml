@@ -12,7 +12,7 @@
            prefix="plone.app.mosaic.formats.tile_black_border">
     <value key="name">tile-black-border</value>
     <value key="category">tile</value>
-    <value key="label">Black Border</value>
+    <value key="label">Black border</value>
     <value key="action">tile-toggle-class</value>
     <value key="icon">false</value>
     <value key="favorite">false</value>
