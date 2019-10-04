@@ -7355,8 +7355,13 @@ img.ProjectImage {
 #content-core #isotope-grid .isotope-item.horizontal h2 {
   display: none;
 }
+.mosaic-tile-content img,
 .existing-content-tile img {
   max-width: 100%;
   height: auto;
+}
+.mosaic-tile-content p:last-of-type,
+.existing-content-tile p:last-of-type {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */

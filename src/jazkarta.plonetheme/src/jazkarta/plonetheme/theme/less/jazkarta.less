@@ -1389,7 +1389,12 @@ img.ProjectImage {
     }
 }
 
-.existing-content-tile img {
-    max-width: 100%;
-    height: auto;
+.mosaic-tile-content, .existing-content-tile {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    p:last-of-type {
+        margin-bottom: 0;
+    }
 }
