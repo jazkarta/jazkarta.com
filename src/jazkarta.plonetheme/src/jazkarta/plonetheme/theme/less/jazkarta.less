@@ -135,6 +135,7 @@ footer {
 header#content-header {
     background-color: @jazkarta-header-background;
     border-bottom: none;
+    overflow: hidden;
     @media (min-width: @plone-screen-md-min) {
         border-bottom: 15px solid @jazkarta-spacer-background;
     }
@@ -457,7 +458,8 @@ header#content-header {
 }
 #banner-image {
 	width: 100%;
-	max-width: 100%;
+    max-width: 100%;
+    line-height: 0;
 	img {
 		width: 100%;
 		height: auto;
@@ -1383,3 +1385,7 @@ img.ProjectImage {
     }
 }
 
+.existing-content-tile img {
+    max-width: 100%;
+    height: auto;
+}

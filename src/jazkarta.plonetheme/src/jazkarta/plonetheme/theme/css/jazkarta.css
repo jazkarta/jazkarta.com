@@ -5414,6 +5414,7 @@ footer {
 header#content-header {
   background-color: #205c90;
   border-bottom: none;
+  overflow: hidden;
 }
 @media (min-width: 767px) {
   header#content-header {
@@ -5763,6 +5764,7 @@ header#content-header {
 #banner-image {
   width: 100%;
   max-width: 100%;
+  line-height: 0;
   margin-bottom: 30px;
 }
 #banner-image img {
@@ -7349,5 +7351,9 @@ img.ProjectImage {
 }
 #content-core #isotope-grid .isotope-item.horizontal h2 {
   display: none;
+}
+.existing-content-tile img {
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */
