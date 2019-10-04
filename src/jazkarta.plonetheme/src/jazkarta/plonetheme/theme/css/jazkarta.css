@@ -6283,9 +6283,6 @@ dl.InfoList dd {
 .tile-mouseover-basic:hover .cover-basic-tile p:first-of-type {
   display: none;
 }
-.mosaic-tile-black-border {
-  border: 10px solid black;
-}
 .tile-mouseover-text .cover-basic-tile {
   background-color: #205c90;
 }
@@ -7364,20 +7361,24 @@ img.ProjectImage {
 .existing-content-tile p:last-of-type {
   margin-bottom: 0;
 }
-.mosaic-row-two-thirds-aspect .colored-background {
+.mosaic-tile-black-border .mosaic-tile-content {
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+.mosaic-row-two-thirds-aspect .background-image-tile .colored-background {
   height: 0;
   padding: 67% 0 0 0;
   position: relative;
 }
-.mosaic-row-two-thirds-aspect .colored-background .content-container {
+.mosaic-row-two-thirds-aspect .background-image-tile .colored-background .content-container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
 }
-.mosaic-row-two-thirds-aspect .colored-background .content-container h2,
-.mosaic-row-two-thirds-aspect .colored-background .content-container h3,
-.mosaic-row-two-thirds-aspect .colored-background .content-container h4 {
+.mosaic-row-two-thirds-aspect .background-image-tile .colored-background .content-container h2,
+.mosaic-row-two-thirds-aspect .background-image-tile .colored-background .content-container h3,
+.mosaic-row-two-thirds-aspect .background-image-tile .colored-background .content-container h4 {
   margin: 0.75em 0;
 }
 .mosaic-row-no-padding .mosaic-grid-cell {
@@ -7386,6 +7387,7 @@ img.ProjectImage {
 .mosaic-tile-hover-background:hover .colored-background,
 .mosaic-tile-hover-background:hover .mosaic-tile-content {
   background-color: #205c90 !important;
+  color: white;
 }
 .mosaic-tile-hover-background:hover .colored-background h2,
 .mosaic-tile-hover-background:hover .mosaic-tile-content h2,
