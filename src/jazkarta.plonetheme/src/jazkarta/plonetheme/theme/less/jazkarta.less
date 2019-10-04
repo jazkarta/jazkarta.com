@@ -923,7 +923,7 @@ dl.InfoList dd {
 
     li {
         width: 200px;
-        height: 250px;
+        height: auto;
         overflow: hidden;
         float: left;
 
@@ -1092,7 +1092,8 @@ main #related-slider-wrapper {
             font-weight: bold;
             font-size: 26px;
             color: white;
-            margin: 0 0 0 30px;
+            margin: 0 0 20px 0;
+            text-align: left;
         }
         margin: 0 auto;
         .body-width-mixin;
@@ -1145,11 +1146,17 @@ main #related-slider-wrapper {
     */
     .slider {
         margin-top: 30px;
+        ul {
+            scrollbar-width: auto;
+            overflow: -moz-scrollbars-horizontal;
+            overflow-x: scroll;
+        }
     }
-    li.slider-item {
+    .slider li {
+        transform: none;
         .slider-item-mixin;
         position: relative;
-        a.item-caption {
+        .item-caption {
             display: none;
         }
         &.no-image {
@@ -1162,7 +1169,7 @@ main #related-slider-wrapper {
             .missing-image {
                 display: none;
             }
-            a.item-caption {
+            .item-caption {
                 display: block;
                 .slider-item-mixin;
                 span {
@@ -1181,6 +1188,9 @@ main #related-slider-wrapper {
                     text-decoration: none;
                     border: none;
                 }
+            }
+            &:active, &:hover {
+                transform: none;
             }
         }
     }
