@@ -7399,6 +7399,13 @@ img.ProjectImage {
 .mosaic-tile-hover-background:hover .mosaic-tile-content h5 {
   color: white;
 }
+.mosaic-width-quarter .mosaic-plone\.app\.standardtiles\.html-tile p a:only-child {
+  display: block;
+  overflow: hidden;
+}
+.mosaic-width-quarter .mosaic-plone\.app\.standardtiles\.html-tile img.image-inline {
+  vertical-align: initial;
+}
 @media (max-width: 766px) {
   .mosaic-width-quarter .mosaic-plone\.app\.standardtiles\.html-tile a img.image-inline {
     width: 100%;

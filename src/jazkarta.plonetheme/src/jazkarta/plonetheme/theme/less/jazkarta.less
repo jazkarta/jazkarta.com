@@ -1436,6 +1436,13 @@ img.ProjectImage {
 }
 
 .mosaic-width-quarter .mosaic-plone\.app\.standardtiles\.html-tile {
+    p a:only-child {
+        display: block;
+        overflow: hidden;
+    }
+    img.image-inline {
+        vertical-align: initial;
+    }
 	@media (max-width: @plone-grid-float-breakpoint-max) {
         a img.image-inline {
             width: 100%;
