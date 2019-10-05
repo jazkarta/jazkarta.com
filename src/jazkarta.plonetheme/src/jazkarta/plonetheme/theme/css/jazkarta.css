@@ -7404,7 +7404,7 @@ img.ProjectImage {
   overflow: hidden;
 }
 .mosaic-width-quarter .mosaic-plone\.app\.standardtiles\.html-tile img.image-inline {
-  vertical-align: initial;
+  vertical-align: top;
 }
 @media (max-width: 766px) {
   .mosaic-width-quarter .mosaic-plone\.app\.standardtiles\.html-tile a img.image-inline {
