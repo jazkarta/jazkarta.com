@@ -7399,4 +7399,9 @@ img.ProjectImage {
 .mosaic-tile-hover-background:hover .mosaic-tile-content h5 {
   color: white;
 }
+@media (max-width: 766px) {
+  .mosaic-width-quarter .mosaic-plone\.app\.standardtiles\.html-tile a img.image-inline {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */
