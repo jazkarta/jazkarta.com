@@ -7411,4 +7411,44 @@ img.ProjectImage {
     width: 100%;
   }
 }
+.mosaic-row-green,
+.mosaic-row-blue {
+  color: white;
+}
+.mosaic-row-green h1,
+.mosaic-row-blue h1,
+.mosaic-row-green h2,
+.mosaic-row-blue h2,
+.mosaic-row-green h3,
+.mosaic-row-blue h3,
+.mosaic-row-green h4,
+.mosaic-row-blue h4,
+.mosaic-row-green a,
+.mosaic-row-blue a {
+  color: white;
+}
+.mosaic-row-green .mce-edit-focus,
+.mosaic-row-blue .mce-edit-focus {
+  color: black;
+}
+.mosaic-row-green .mce-edit-focus h1,
+.mosaic-row-blue .mce-edit-focus h1,
+.mosaic-row-green .mce-edit-focus h2,
+.mosaic-row-blue .mce-edit-focus h2,
+.mosaic-row-green .mce-edit-focus h3,
+.mosaic-row-blue .mce-edit-focus h3,
+.mosaic-row-green .mce-edit-focus h4,
+.mosaic-row-blue .mce-edit-focus h4 {
+  color: black;
+}
+.mosaic-row-green .mce-edit-focus a,
+.mosaic-row-blue .mce-edit-focus a {
+  color: #205c90;
+}
+.mosaic-row-green {
+  background-color: #80c34f;
+}
+.mosaic-row-blue {
+  background-color: #205c90;
+}
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */

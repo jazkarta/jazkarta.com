@@ -52,12 +52,36 @@
     <value key="weight">110</value>
   </records>
 
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+           prefix="plone.app.mosaic.formats.blue_row">
+    <value key="name">row-blue</value>
+    <value key="category">row</value>
+    <value key="label">Blue Row</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">false</value>
+    <value key="favorite">false</value>
+    <value key="weight">110</value>
+  </records>
+
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+           prefix="plone.app.mosaic.formats.green_row">
+    <value key="name">row-green</value>
+    <value key="category">row</value>
+    <value key="label">Green Row</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">false</value>
+    <value key="favorite">false</value>
+    <value key="weight">110</value>
+  </records>
+
   <record name="plone.app.mosaic.default_available_actions">
     <value purge="False">
       <element>tile-black-border</element>
       <element>tile-hover-background</element>
       <element>row-two-thirds-aspect</element>
       <element>row-no-padding</element>
+      <element>row-blue</element>
+      <element>row-green</element>
     </value>
   </record>
 </registry>

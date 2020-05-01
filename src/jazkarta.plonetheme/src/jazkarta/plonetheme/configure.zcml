@@ -53,4 +53,13 @@
         import_steps="plone.app.registry"
         />
 
+    <genericsetup:upgradeDepends
+        profile="jazkarta.plonetheme:default"
+        source="1002"
+        destination="1003"
+        title="Update mosaic styles."
+        description=""
+        import_steps="plone.app.registry"
+        />
+
 </configure>
