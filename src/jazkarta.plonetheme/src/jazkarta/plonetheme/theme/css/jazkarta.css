@@ -614,7 +614,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1050px;
+    width: 1140px;
   }
 }
 @media (min-width: 1600px) {
@@ -1297,7 +1297,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   #edit-zone.plone-toolbar-top .plone-toolbar-container {
-    width: 1050px;
+    width: 1140px;
   }
 }
 #edit-zone.plone-toolbar-top.compressed .plone-toolbar-container {
@@ -3693,7 +3693,7 @@ a.link-category:focus {
 }
 @media (min-width: 1200px) {
   .plone-modal .plone-modal-content {
-    width: 1050px;
+    width: 1140px;
   }
 }
 @media (min-width: 1600px) {
@@ -4534,12 +4534,12 @@ a.plone-toolbar-logo {
 }
 @media (min-width: 1260px) {
   .plone-toolbar-left-default .container {
-    width: 990px;
+    width: 1080px;
   }
 }
 @media (min-width: 1320px) {
   .plone-toolbar-left-expanded .container {
-    width: 930px;
+    width: 1020px;
   }
 }
 @media (min-width: 1660px) {
@@ -5951,9 +5951,9 @@ dl.InfoList dd {
 }
 @media (min-width: 1200px) {
   .tile-fullwidth .tile-content .banner-text {
-    width: 1050px;
+    width: 1140px;
     left: 50%;
-    margin-left: -525px;
+    margin-left: -570px;
   }
 }
 .tile-fullwidth .tile-content a {
@@ -6451,7 +6451,7 @@ dl.InfoList dd {
 }
 @media (min-width: 1200px) {
   .body-width-mixin {
-    width: 1050px;
+    width: 1140px;
   }
 }
 @media (min-width: 1200px) {
@@ -6461,7 +6461,7 @@ dl.InfoList dd {
 }
 @media (min-width: 1320px) {
   .plone-toolbar-left-expanded .body-width-mixin {
-    width: 1050px;
+    width: 1140px;
   }
 }
 @media (min-width: 1200px) {
@@ -6471,7 +6471,7 @@ dl.InfoList dd {
 }
 @media (min-width: 1260px) {
   .plone-toolbar-left-default .body-width-mixin {
-    width: 1050px;
+    width: 1140px;
   }
 }
 @media (max-width: 766px) {
@@ -6710,7 +6710,7 @@ main #related-slider-wrapper #related-slider .SliderTitle {
 }
 @media (min-width: 1200px) {
   main #related-slider-wrapper #related-slider {
-    width: 1050px;
+    width: 1140px;
   }
 }
 @media (min-width: 1200px) {
@@ -6720,7 +6720,7 @@ main #related-slider-wrapper #related-slider .SliderTitle {
 }
 @media (min-width: 1320px) {
   .plone-toolbar-left-expanded main #related-slider-wrapper #related-slider {
-    width: 1050px;
+    width: 1140px;
   }
 }
 @media (min-width: 1200px) {
@@ -6730,7 +6730,7 @@ main #related-slider-wrapper #related-slider .SliderTitle {
 }
 @media (min-width: 1260px) {
   .plone-toolbar-left-default main #related-slider-wrapper #related-slider {
-    width: 1050px;
+    width: 1140px;
   }
 }
 main #related-slider-wrapper #related-slider .control-wrapper .control {
@@ -7450,5 +7450,14 @@ img.ProjectImage {
 }
 .mosaic-row-blue {
   background-color: #205c90;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  body.template-layout.no-portlet-columns.mosaic-grid .outer-wrapper > .container .mosaic-grid-row,
+  body.mosaic-enabled.no-portlet-columns.mosaic-grid .outer-wrapper > .container .mosaic-grid-row {
+    width: 1140px;
+  }
 }
 /*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */

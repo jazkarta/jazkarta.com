@@ -39,7 +39,7 @@
 @plone-screen-md-min:                       767px;
 @plone-sitenav-padding-horizontal:			30px;
 @plone-sitenav-link-padding:				10px 30px;
-@plone-container-lg:                        1050px;
+@plone-container-lg:                        1140px;
 @plone-container-md:                        717px;
 @plone-container-sm:                        767px;
 @jazkarta-header-width-lg:                  1100px;
@@ -1472,4 +1472,14 @@ img.ProjectImage {
 
 .mosaic-row-blue {
     background-color: #205c90;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: @plone-container-lg;
+    }
+    body.template-layout.no-portlet-columns.mosaic-grid .outer-wrapper > .container .mosaic-grid-row, body.mosaic-enabled.no-portlet-columns.mosaic-grid .outer-wrapper > .container .mosaic-grid-row {
+        width: @plone-container-lg;
+    }
 }
