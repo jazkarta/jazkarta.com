@@ -67,7 +67,7 @@
            prefix="plone.app.mosaic.formats.green_row">
     <value key="name">row-green</value>
     <value key="category">row</value>
-    <value key="label">Green Row</value>
+    <value key="label">Light Blue Row</value>
     <value key="action">row-toggle-class</value>
     <value key="icon">false</value>
     <value key="favorite">false</value>

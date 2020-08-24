@@ -62,6 +62,7 @@
   </replace>
   <after css:theme="#above-content-wrapper" css:content="#banner-image" method="raw" />
   <drop css:content="#banner-image" />
+  <drop css:theme="#banner-image h2" if-not-path="/ /Plone/ /index.html/ /new_mosaic-homepage-3/ /Plone/new_mosaic-homepage-3/" />
 
   <!-- Alert message -->
   <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />

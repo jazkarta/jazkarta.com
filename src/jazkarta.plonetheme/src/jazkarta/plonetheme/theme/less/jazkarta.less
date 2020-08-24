@@ -1,3 +1,15 @@
+@charset "UTF-8";
+.clearfix() {
+    &::before,
+    &::after {
+      content: " "; // 1
+      display: table; // 2
+    }
+    &::after {
+      clear: both;
+    }
+}
+
 /* Include Barceloneta LESS */
 @import url("https://raw.githubusercontent.com/plone/plonetheme.barceloneta/2.1.4/plonetheme/barceloneta/theme/less/barceloneta.plone.local.less");
 
@@ -70,6 +82,7 @@ h2 {
 
 h3 {
     font-size: 20px;
+    margin-top: 15px;
 }
 
 h4 {
@@ -110,7 +123,7 @@ a.button {
 }
 
 /* layout */
-header {
+header, #viewlet-above-content {
     min-width: 320px;
     .container {
         @media (min-width: @plone-screen-sm-min) {
@@ -166,10 +179,13 @@ header#content-header {
 #portal-logo {
 	float: left;
 	position: relative;
-	left: -8px;
+    left: -8px;
+    a {
+        display: block;
+    }
     @media (max-width: @plone-grid-float-breakpoint-max) {
         box-sizing: border-box;
-        padding-top: 5px;
+        padding-top: 0;
         padding-bottom: 5px;
         height: 85px;
     }
@@ -334,7 +350,7 @@ header#content-header {
 
 /* breadcrumbs */
 #portal-breadcrumbs {
-	display: none;
+    margin: 0;
 }
 
 /* fix grid */
@@ -463,6 +479,9 @@ header#content-header {
 	width: 100%;
     max-width: 100%;
     line-height: 0;
+    overflow: hidden;
+    height: 45px;
+    position: relative;
 	img {
 		width: 100%;
 		height: auto;
@@ -473,6 +492,28 @@ header#content-header {
         @media (max-width: @plone-grid-float-breakpoint-max) {
             padding-left: 0;
             padding-right: 0;
+        }
+    }
+    h2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: 280px;
+        box-sizing: content-box;
+        color: white;
+        margin: 0;
+        padding: 0 40px;
+        font-size: 26px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0));
+        @media (max-width: @plone-grid-float-breakpoint-max) {
+            font-size: 20px;
+            padding: 0 20px;
+            width: 100%;
+            box-sizing: border-box;
+            background: rgba(0,0,0,0.45);
         }
     }
 }
@@ -1420,6 +1461,18 @@ img.ProjectImage {
             }
         }
     }
+
+}
+
+.mosaic-width-third, .mosaic-width-quarter {
+    h2, h3, h4 {
+        @media (max-width: @plone-grid-float-breakpoint-max) {
+            font-size: 14px;
+        }
+        @media (max-width: 350px) {
+            font-size: 12px;
+        }
+    }
 }
 
 .mosaic-row-no-padding {
@@ -1455,7 +1508,7 @@ img.ProjectImage {
 
 .mosaic-row-green, .mosaic-row-blue {
     color: white;
-    h1, h2, h3, h4, a {
+    h1, h2, h3, h4, a, a:hover {
         color: white;
     }
     .mce-edit-focus {
@@ -1463,14 +1516,14 @@ img.ProjectImage {
         h1, h2, h3, h4 {
             color: black;
         }
-        a {
+        a, a:hover {
             color: #205c90;
         }
     }
 }
 
 .mosaic-row-green {
-    background-color: #80c34f;
+    background-color: #bdd0e7;
 }
 
 .mosaic-row-blue {
@@ -1484,5 +1537,15 @@ img.ProjectImage {
     }
     body.template-layout.no-portlet-columns.mosaic-grid .outer-wrapper > .container .mosaic-grid-row, body.mosaic-enabled.no-portlet-columns.mosaic-grid .outer-wrapper > .container .mosaic-grid-row {
         width: @plone-container-lg;
+    }
+}
+
+// Homepage stuff
+body.section-homepage, body.section-mosaic-homepage, body.section-new_mosaic-homepage-3 {
+    #portal-breadcrumbs {
+        display: none;
+    }
+    #banner-image {
+        height: auto;
     }
 }
