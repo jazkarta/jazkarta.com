@@ -5537,28 +5537,33 @@ a.button {
 }
 /* layout */
 header,
-#viewlet-above-content {
+#viewlet-above-content,
+#image-heading-wrapper {
   min-width: 320px;
 }
 @media (min-width: 767px) {
   header .container,
-  #viewlet-above-content .container {
+  #viewlet-above-content .container,
+  #image-heading-wrapper .container {
     width: 765px !important;
   }
   header .container .plone-nav > li > a,
-  #viewlet-above-content .container .plone-nav > li > a {
+  #viewlet-above-content .container .plone-nav > li > a,
+  #image-heading-wrapper .container .plone-nav > li > a {
     padding: 10px;
   }
 }
 @media (min-width: 767px) {
   header .container,
-  #viewlet-above-content .container {
+  #viewlet-above-content .container,
+  #image-heading-wrapper .container {
     width: 767px !important;
   }
 }
 @media (min-width: 1200px) {
   header .container,
-  #viewlet-above-content .container {
+  #viewlet-above-content .container,
+  #image-heading-wrapper .container {
     width: 1100px !important;
   }
 }
@@ -5959,28 +5964,36 @@ header#content-header {
     padding-right: 0;
   }
 }
-#banner-image h2 {
+#banner-image #image-heading-wrapper {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  width: 280px;
-  box-sizing: content-box;
-  color: white;
-  margin: 0;
-  padding: 0 40px;
-  font-size: 26px;
+  right: 0;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 @media (max-width: 766px) {
-  #banner-image h2 {
-    font-size: 20px;
-    padding: 0 20px;
+  #banner-image #image-heading-wrapper {
+    background: rgba(0, 0, 0, 0.45);
+  }
+}
+#banner-image #image-heading-wrapper .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#banner-image #image-heading-wrapper h2 {
+  width: 320px;
+  margin: 0;
+  color: white;
+  font-size: 30px;
+}
+@media (max-width: 766px) {
+  #banner-image #image-heading-wrapper h2 {
+    font-size: 22px;
+    padding: 0 15px;
     width: 100%;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.45);
   }
 }
 .jazkarta-banner-tile {
