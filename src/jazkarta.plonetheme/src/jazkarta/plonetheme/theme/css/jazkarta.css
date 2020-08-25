@@ -7377,9 +7377,6 @@ img.ProjectImage {
 .Testimonial {
   margin-left: -1em;
   margin-bottom: 1em;
-  background-image: url(../images/quotation-mark.png);
-  background-size: 60px auto;
-  background-repeat: no-repeat;
   padding: 10px 0 0 60px;
   min-height: 60px;
 }
@@ -7389,6 +7386,18 @@ img.ProjectImage {
 }
 .Testimonial blockquote footer {
   min-width: initial;
+}
+.Testimonial:before {
+  content: '\201C';
+  font-size: 130px;
+  font-weight: bold;
+  color: #205c90;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.mosaic-row-blue .Testimonial:before {
+  color: #bdd0e7;
 }
 .ServiceColumn h4 {
   color: #205c90;
