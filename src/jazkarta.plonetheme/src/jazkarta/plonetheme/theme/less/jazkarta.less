@@ -1540,6 +1540,22 @@ img.ProjectImage {
     }
 }
 
+body.template-layout.mosaic-grid .container {
+	@media (max-width: @plone-grid-float-breakpoint-max) {
+        padding-left: 0;
+        padding-right: 0;
+        .mosaic-grid-row.mosaic-row-full-width {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            width: 100% !important;
+        }
+        .mosaic-tile-full-width {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
 // Homepage stuff
 body.section-homepage, body.section-mosaic-homepage, body.section-new_mosaic-homepage-3 {
     #portal-breadcrumbs {

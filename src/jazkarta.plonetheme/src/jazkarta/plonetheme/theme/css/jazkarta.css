@@ -7697,6 +7697,21 @@ img.ProjectImage {
     width: 1140px;
   }
 }
+@media (max-width: 766px) {
+  body.template-layout.mosaic-grid .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body.template-layout.mosaic-grid .container .mosaic-grid-row.mosaic-row-full-width {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  body.template-layout.mosaic-grid .container .mosaic-tile-full-width {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 body.section-homepage #portal-breadcrumbs,
 body.section-mosaic-homepage #portal-breadcrumbs,
 body.section-new_mosaic-homepage-3 #portal-breadcrumbs {
