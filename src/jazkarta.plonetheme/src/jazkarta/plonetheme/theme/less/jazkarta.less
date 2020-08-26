@@ -48,15 +48,13 @@
 
 /* other overrides */
 @plone-screen-sm-min:                       767px;
-@plone-screen-md-min:                       767px;
+@plone-screen-md-min:                       992px;
+@plone-screen-lg-min:                       1200px;
 @plone-sitenav-padding-horizontal:			30px;
 @plone-sitenav-link-padding:				10px 30px;
 @plone-container-lg:                        1140px;
-@plone-container-md:                        767px;
-@plone-container-sm:                        767px;
-@jazkarta-header-width-lg:                  1100px;
-@jazkarta-header-width-md:                  767px;
-@jazkarta-header-width-sm:                  765px;
+@plone-container-md:                        992px;
+@plone-container-sm:                        768px;
 @plone-grid-float-breakpoint:               @plone-container-sm;
 
 /* base styles */
@@ -127,16 +125,16 @@ header, #viewlet-above-content, #image-heading-wrapper {
     min-width: 320px;
     .container {
         @media (min-width: @plone-screen-sm-min) {
-            width: @jazkarta-header-width-sm !important;
+            width: @plone-container-sm !important;
             .plone-nav > li > a {
                 padding: 10px;
             }
         }
         @media (min-width: @plone-screen-md-min) {
-            width: @jazkarta-header-width-md !important;
+            width: @plone-container-md !important;
         }
         @media (min-width: @plone-screen-lg-min) {
-            width: @jazkarta-header-width-lg !important;
+            width: @plone-container-lg !important;
         }
     }
 }
@@ -356,7 +354,7 @@ header#content-header {
 /* fix grid */
 .row {
 	.clearfix();
-	@media (max-width: @jazkarta-header-width-md) {
+	@media (max-width: @plone-screen-md-min) {
 		margin: 0;
 	}
 }
@@ -1550,7 +1548,7 @@ img.ProjectImage {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: @plone-screen-lg-min) {
     .container {
         width: @plone-container-lg;
     }
