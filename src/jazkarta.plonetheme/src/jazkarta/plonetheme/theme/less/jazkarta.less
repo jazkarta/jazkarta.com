@@ -348,7 +348,14 @@ header#content-header {
 
 /* breadcrumbs */
 #portal-breadcrumbs {
-    margin: 0;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    ol a {
+        color: @plone-link-color;
+        &:hover {
+            color: @plone-link-hover-color;
+        }
+    }
 }
 
 /* fix grid */

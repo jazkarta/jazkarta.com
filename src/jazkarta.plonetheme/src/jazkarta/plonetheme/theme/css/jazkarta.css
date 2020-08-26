@@ -5789,7 +5789,14 @@ header#content-header {
 }
 /* breadcrumbs */
 #portal-breadcrumbs {
-  margin: 0;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+#portal-breadcrumbs ol a {
+  color: #205c90;
+}
+#portal-breadcrumbs ol a:hover {
+  color: #6699cb;
 }
 /* fix grid */
 .row::before,
