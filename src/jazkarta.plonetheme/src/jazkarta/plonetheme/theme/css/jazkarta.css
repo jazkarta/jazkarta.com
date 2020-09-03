@@ -7428,6 +7428,9 @@ img.ProjectImage {
 .light-blue.Testimonial:before {
   background-color: #bdd0e7;
 }
+.mosaic-row-full-width .Testimonial {
+  margin-left: 0;
+}
 .ServiceColumn h4 {
   color: #205c90;
 }
@@ -7760,3 +7763,4 @@ body.section-mosaic-homepage #banner-image,
 body.section-new_mosaic-homepage-3 #banner-image {
   height: auto;
 }
+/*# sourceMappingURL=jazkarta.css.map */
