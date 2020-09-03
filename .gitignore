@@ -32,12 +32,15 @@ src/plone.app.z3cform
 src/plone.app.upgrade
 src/plone.app.iterate
 src/plone.app.imagecropping
+src/jazkarta.tesserae
 src/collective.isotope
 src/Products.CMFPlone
-src/jazkarta.policy
-src/jazkarta.plonetheme
 src/plone.app.caching
 src/plone.app.dexterity
 src/plone.dexterity
 src/plone.scale
+src/collective.googleanalytics/
+src/plone.app.querystring/
+src/plone.app.standardtiles/
+src/mockup
 node_modules

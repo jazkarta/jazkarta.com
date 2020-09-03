@@ -1277,11 +1277,9 @@ img.ProjectImage {
 .Testimonial {
     margin-left: -1em;
     margin-bottom: 1em;
-    //background-image: url(../images/quotation-mark.png);
-    //background-size: 60px auto;
-    //background-repeat: no-repeat;
     padding: 10px 0 0 60px;
     min-height: 60px;
+    position: relative;
     blockquote {
         font-weight: normal;
         margin: 0 10px;
@@ -1290,15 +1288,22 @@ img.ProjectImage {
         }
     }
     &:before {
-        content: '\201C';
-        font-size: 130px;
-        font-weight: bold;
-        color: #205c90;
+        content: " ";
+        display: block;
+        height: 60px;
+        width: 60px;
         position: absolute;
-        top: -10px;
+        top: 0;
         left: 0;
-        .mosaic-row-blue & {
-            color: #bdd0e7;
+        -webkit-mask-image: url(../images/quotation-mark.svg);
+        -webkit-mask-size: 60px auto;
+        -webkit-mask-repeat: no-repeat;
+        mask-image: url(../images/quotation-mark.svg);
+        mask-size: 60px auto;
+        mask-repeat: no-repeat;
+        background-color: #205c90;
+        .mosaic-row-blue &, .light-blue& {
+            background-color: #bdd0e7;
         }
     }
 }

@@ -7399,6 +7399,7 @@ img.ProjectImage {
   margin-bottom: 1em;
   padding: 10px 0 0 60px;
   min-height: 60px;
+  position: relative;
 }
 .Testimonial blockquote {
   font-weight: normal;
@@ -7408,16 +7409,24 @@ img.ProjectImage {
   min-width: initial;
 }
 .Testimonial:before {
-  content: '\201C';
-  font-size: 130px;
-  font-weight: bold;
-  color: #205c90;
+  content: " ";
+  display: block;
+  height: 60px;
+  width: 60px;
   position: absolute;
-  top: -10px;
+  top: 0;
   left: 0;
+  -webkit-mask-image: url(../images/quotation-mark.svg);
+  -webkit-mask-size: 60px auto;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url(../images/quotation-mark.svg);
+  mask-size: 60px auto;
+  mask-repeat: no-repeat;
+  background-color: #205c90;
 }
-.mosaic-row-blue .Testimonial:before {
-  color: #bdd0e7;
+.mosaic-row-blue .Testimonial:before,
+.light-blue.Testimonial:before {
+  background-color: #bdd0e7;
 }
 .ServiceColumn h4 {
   color: #205c90;
