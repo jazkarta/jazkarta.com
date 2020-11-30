@@ -2,7 +2,6 @@
 <metadata>
   <version>1008</version>
   <dependencies>
-    <dependency>profile-collective.cover:default</dependency>
     <dependency>profile-jazkarta.plonetheme:default</dependency>
     <dependency>profile-jazkarta.contenttypes:default</dependency>
     <dependency>profile-Products.RedirectionTool:default</dependency>

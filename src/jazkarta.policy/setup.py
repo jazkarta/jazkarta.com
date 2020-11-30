@@ -48,7 +48,6 @@ setup(
         'Products.RedirectionTool',
         'collective.relatedslider',
         'Products.PloneFormGen',
-        'collective.cover',
         'collective.isotope',
         'collective.googleanalytics',
         'collective.siteimprove',

@@ -10,6 +10,7 @@
 
     <i18n:registerTranslations directory="locales" />
 
+    <!--
     <cache:ruleset
         for="collective.js.jqueryui.resources.JQueryUICustomJS"
         ruleset="plone.resource"
@@ -19,6 +20,7 @@
         for="collective.js.jqueryui.resources.JQueryUICustomCSS"
         ruleset="plone.resource"
         />
+    -->
 
     <cache:ruleset
         for="Products.CMFPlone.resources.browser.configjs.ConfigJsView"

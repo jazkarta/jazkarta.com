@@ -107,6 +107,7 @@
       <element>collective.cover.content</element>
       <element>jazkarta.project</element>
       <element>jazkarta.team_member</element>
+      <element>sliderimage</element>
     </value>
   </record>
 
