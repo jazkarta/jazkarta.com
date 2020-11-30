@@ -51,6 +51,7 @@ setup(
         'collective.cover',
         'collective.isotope',
         'collective.googleanalytics',
+        'collective.siteimprove',
         'plone.tiles',
         'plone.app.tiles',
         'plone.app.mosaic',
