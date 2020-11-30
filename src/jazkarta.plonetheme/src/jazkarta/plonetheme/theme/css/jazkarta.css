@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* Include Barceloneta LESS */
 @import "../css/jazkarta-icons.css";
 @import "../fonts/source-sans-pro.css";
+/* Include Barceloneta LESS */
 @font-face {
   font-family: 'Roboto';
   src: url('roboto/roboto-light.eot');
@@ -361,7 +361,7 @@ body {
   font-weight: 500;
   line-height: 1.42857143;
   color: #231f20;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -497,7 +497,7 @@ cite {
 }
 mark {
   background-color: #ebd380;
-  padding: 0.2em;
+  padding: .2em;
 }
 .discreet {
   color: #696969;
@@ -570,8 +570,8 @@ code {
 kbd {
   padding: 2px 4px;
   font-size: 90%;
-  color: #fff;
-  background-color: #333;
+  color: #ffffff;
+  background-color: #333333;
   border-radius: 2px;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -585,7 +585,7 @@ pre {
   word-wrap: break-word;
   color: #4d4d4d;
   background-color: #f5f5f5;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 4px;
 }
 pre code {
@@ -649,71 +649,13 @@ pre code {
 .row::after {
   clear: both;
 }
-.col-xs-1,
-.col-sm-1,
-.col-md-1,
-.col-lg-1,
-.col-xs-2,
-.col-sm-2,
-.col-md-2,
-.col-lg-2,
-.col-xs-3,
-.col-sm-3,
-.col-md-3,
-.col-lg-3,
-.col-xs-4,
-.col-sm-4,
-.col-md-4,
-.col-lg-4,
-.col-xs-5,
-.col-sm-5,
-.col-md-5,
-.col-lg-5,
-.col-xs-6,
-.col-sm-6,
-.col-md-6,
-.col-lg-6,
-.col-xs-7,
-.col-sm-7,
-.col-md-7,
-.col-lg-7,
-.col-xs-8,
-.col-sm-8,
-.col-md-8,
-.col-lg-8,
-.col-xs-9,
-.col-sm-9,
-.col-md-9,
-.col-lg-9,
-.col-xs-10,
-.col-sm-10,
-.col-md-10,
-.col-lg-10,
-.col-xs-11,
-.col-sm-11,
-.col-md-11,
-.col-lg-11,
-.col-xs-12,
-.col-sm-12,
-.col-md-12,
-.col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.col-xs-1,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
 .col-xs-12 {
@@ -870,18 +812,7 @@ pre code {
   margin-left: 0%;
 }
 @media (min-width: 767px) {
-  .col-sm-1,
-  .col-sm-2,
-  .col-sm-3,
-  .col-sm-4,
-  .col-sm-5,
-  .col-sm-6,
-  .col-sm-7,
-  .col-sm-8,
-  .col-sm-9,
-  .col-sm-10,
-  .col-sm-11,
-  .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
   .col-sm-12 {
@@ -1039,18 +970,7 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1,
-  .col-md-2,
-  .col-md-3,
-  .col-md-4,
-  .col-md-5,
-  .col-md-6,
-  .col-md-7,
-  .col-md-8,
-  .col-md-9,
-  .col-md-10,
-  .col-md-11,
-  .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
   .col-md-12 {
@@ -1208,18 +1128,7 @@ pre code {
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-1,
-  .col-lg-2,
-  .col-lg-3,
-  .col-lg-4,
-  .col-lg-5,
-  .col-lg-6,
-  .col-lg-7,
-  .col-lg-8,
-  .col-lg-9,
-  .col-lg-10,
-  .col-lg-11,
-  .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
   .col-lg-12 {
@@ -1405,7 +1314,7 @@ pre code {
 }
 table {
   max-width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 4px;
   font-weight: 400;
   color: #696969;
@@ -1446,7 +1355,7 @@ th {
   border-top: 2px solid #e5e5e5;
 }
 .listing .listing {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .invisible-grid {
   width: 100%;
@@ -1637,9 +1546,9 @@ select {
   font-size: 18px;
   line-height: 1.42857143;
   color: #696969;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1801,7 +1710,7 @@ fieldset[disabled] input[type="checkbox"] {
 .field.error .input-group-addon {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.5);
-  background-color: #EC9C8D;
+  background-color: #ec9c8d;
 }
 .field.error .form-control-feedback {
   color: rgba(0, 0, 0, 0.5);
@@ -2113,7 +2022,7 @@ button .badge {
   background-color: #4d4d4d;
 }
 .context {
-  color: #fff;
+  color: #ffffff;
   background-color: #007bb1;
   border-color: #00587e;
 }
@@ -2122,7 +2031,7 @@ button .badge {
 .context:active,
 .context.active,
 .open > .dropdown-toggle.context {
-  color: #fff;
+  color: #ffffff;
   background-color: #00587e;
   border-color: #002d41;
 }
@@ -2151,10 +2060,10 @@ fieldset[disabled] .context.active {
 }
 .context .badge {
   color: #007bb1;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .destructive {
-  color: #fff;
+  color: #ffffff;
   background-color: #bb4f45;
   border-color: #963f37;
 }
@@ -2163,7 +2072,7 @@ fieldset[disabled] .context.active {
 .destructive:active,
 .destructive.active,
 .open > .dropdown-toggle.destructive {
-  color: #fff;
+  color: #ffffff;
   background-color: #963f37;
   border-color: #692c26;
 }
@@ -2192,7 +2101,7 @@ fieldset[disabled] .destructive.active {
 }
 .destructive .badge {
   color: #bb4f45;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .link-parent {
   display: inline-block;
@@ -2516,7 +2425,7 @@ fieldset[disabled] .link-parent.active {
   line-height: 1.42857143;
   text-decoration: none;
   color: #205c90;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #e5e5e5 !important;
   margin-left: -1px;
 }
@@ -2546,7 +2455,7 @@ fieldset[disabled] .link-parent.active {
 .pagination li.active > span {
   z-index: 2;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   background-color: #205c90;
   border: 1px solid #205c90 !important;
   cursor: default;
@@ -2568,7 +2477,7 @@ fieldset[disabled] .link-parent.active {
 }
 .pat-autotoc.autotabs,
 .autotabs {
-  background: #fff;
+  background: #ffffff;
   padding: 6px 12px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
@@ -2599,7 +2508,7 @@ fieldset[disabled] .link-parent.active {
 .pat-autotoc.autotabs .autotoc-nav a:hover,
 .autotabs .autotoc-nav a:hover {
   text-decoration: none;
-  background: #fff;
+  background: #ffffff;
 }
 .pat-autotoc.autotabs .autotoc-nav a.active,
 .autotabs .autotoc-nav a.active,
@@ -2607,8 +2516,8 @@ fieldset[disabled] .link-parent.active {
 .autotabs .autotoc-nav a.active:hover {
   color: #696969;
   cursor: default;
-  background: #fff;
-  border-bottom-color: #fff;
+  background: #ffffff;
+  border-bottom-color: #ffffff;
 }
 .pat-autotoc.autotabs .autotoc-nav .autotab-heading,
 .autotabs .autotoc-nav .autotab-heading {
@@ -2836,7 +2745,7 @@ fieldset[disabled] .link-parent.active {
 .portalMessage.alert-error,
 .alert.status.error,
 .portalMessage.error {
-  background-color: #EC9C8D;
+  background-color: #ec9c8d;
   border: 1px solid #eb9484;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -2924,7 +2833,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet.portletCalendar .portletHeader .calendarPrevious:hover,
 .portlet.portletCalendar .portletHeader .calendarNext:hover {
-  background: #fff;
+  background: #ffffff;
   text-decoration: none;
 }
 .portlet.portletCalendar .portletHeader .calendarNext {
@@ -2934,7 +2843,7 @@ fieldset[disabled] .link-parent.active {
 .portlet .portletContent {
   font-size: 18px;
   border-top: 1px solid #e5e5e5;
-  background: #fff;
+  background: #ffffff;
   font-weight: 400;
 }
 .portlet .portletContent > *,
@@ -3004,7 +2913,7 @@ fieldset[disabled] .link-parent.active {
   background: #eeeeee;
 }
 .portlet.portletCalendar table td:hover {
-  background: #fff;
+  background: #ffffff;
 }
 .portlet.portletCalendar table td.today:hover,
 .portlet.portletCalendar table td.cal_has_events:hover {
@@ -3244,7 +3153,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet.portletCalendar .portletHeader .calendarPrevious:hover,
 .managedPortlet.portletCalendar .portletHeader .calendarNext:hover {
-  background: #fff;
+  background: #ffffff;
   text-decoration: none;
 }
 .managedPortlet.portletCalendar .portletHeader .calendarNext {
@@ -3254,7 +3163,7 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet .portletContent {
   font-size: 18px;
   border-top: 1px solid #e5e5e5;
-  background: #fff;
+  background: #ffffff;
   font-weight: 400;
 }
 .managedPortlet .portletContent > *,
@@ -3324,7 +3233,7 @@ fieldset[disabled] .link-parent.active {
   background: #eeeeee;
 }
 .managedPortlet.portletCalendar table td:hover {
-  background: #fff;
+  background: #ffffff;
 }
 .managedPortlet.portletCalendar table td.today:hover,
 .managedPortlet.portletCalendar table td.cal_has_events:hover {
@@ -3567,7 +3476,7 @@ fieldset[disabled] .link-parent.active {
 }
 .link-category {
   display: inline;
-  padding: 0.2em 0.6em 0.3em;
+  padding: .2em .6em .3em;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -3741,13 +3650,13 @@ a.link-category:focus {
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
-  opacity: 0.2;
+  opacity: .2;
 }
 .plone-modal .plone-modal-dialog .plone-modal-header .plone-modal-close:hover,
 .plone-modal .plone-modal-dialog .plone-modal-header .plone-modal-close:focus {
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: .5;
 }
 .plone-modal .plone-modal-dialog .plone-modal-body {
   padding: 12px;
@@ -3817,13 +3726,13 @@ a.link-category:focus {
 }
 .plone-modal.fade {
   opacity: 0;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
 }
 .plone-modal.fade.in {
   opacity: 1;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
 }
 .plone-modal.fade .plone-modal-dialog {
   -webkit-transform: translate(0, -25%);
@@ -3853,8 +3762,8 @@ a.link-category:focus {
   background-color: #428bca;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width 0.6s ease;
-  transition: width 0.6s ease;
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -3884,7 +3793,7 @@ a.link-category:focus {
 .picker__holder {
   width: 180px;
   margin: -1px 0 0 0;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   max-height: 300px;
@@ -3976,7 +3885,7 @@ ul.picker__list {
 }
 .pat-tablesorter .sortdirection {
   font-size: 75%;
-  opacity: 0.5;
+  opacity: .5;
   position: relative;
   top: -1px;
   padding: 2px;
@@ -3985,11 +3894,11 @@ ul.picker__list {
 }
 .tooltips {
   opacity: 0;
-  transition: opacity 0.2s ease 0.5s;
+  transition: opacity .2s ease .5s;
   position: absolute;
   background: #333333;
   background: rgba(0, 0, 0, 0.9);
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.17);
@@ -4001,7 +3910,7 @@ ul.picker__list {
 }
 .tooltips.active {
   opacity: 1;
-  transition: opacity 0.2s ease 0.5s;
+  transition: opacity .2s ease .5s;
 }
 .jqtree-tree {
   list-style: none outside;
@@ -4055,7 +3964,7 @@ ul.picker__list {
   list-style: none;
   font-size: 18px;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -4367,8 +4276,8 @@ ul.picker__list {
     top: 0.5em;
   }
   .plone-nav li label:after {
-    width: 2em;
-    height: 2em;
+    width: 2.0em;
+    height: 2.0em;
     font-size: 0.75em;
     padding: 0.5em 1em 0.5em 0;
     background: transparent;
@@ -4707,7 +4616,7 @@ a.plone-toolbar-logo {
   display: block;
   border-bottom: 1px solid #4d4d4d;
   padding-bottom: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 #portal-footer-wrapper .portlet {
   background: transparent;
@@ -4858,7 +4767,7 @@ body.template-login_form #content-core.portletCalendar .portletHeader .calendarP
 body.template-logged_out #content-core.portletCalendar .portletHeader .calendarPrevious:hover,
 body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext:hover,
 body.template-logged_out #content-core.portletCalendar .portletHeader .calendarNext:hover {
-  background: #fff;
+  background: #ffffff;
   text-decoration: none;
 }
 body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext,
@@ -4870,7 +4779,7 @@ body.template-login_form #content-core .portletContent,
 body.template-logged_out #content-core .portletContent {
   font-size: 18px;
   border-top: 1px solid #e5e5e5;
-  background: #fff;
+  background: #ffffff;
   font-weight: 400;
 }
 body.template-login_form #content-core .portletContent > *,
@@ -4955,7 +4864,7 @@ body.template-logged_out #content-core.portletCalendar table td {
 }
 body.template-login_form #content-core.portletCalendar table td:hover,
 body.template-logged_out #content-core.portletCalendar table td:hover {
-  background: #fff;
+  background: #ffffff;
 }
 body.template-login_form #content-core.portletCalendar table td.today:hover,
 body.template-logged_out #content-core.portletCalendar table td.today:hover,
@@ -5128,7 +5037,7 @@ body.template-logged_out #content-core .portletFooter {
   font-weight: 400;
   max-width: 300px;
   float: right;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
   padding: 12px 12px 12px 36px;
   margin-left: 5px;
@@ -5286,7 +5195,7 @@ body.template-logged_out #content-core .portletFooter {
 }
 .newsImageContainer a {
   display: table;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .newsImageContainer a img {
   display: block;
@@ -5639,7 +5548,7 @@ header#content-header {
   background: none;
   box-shadow: none;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   position: inherit;
   margin-bottom: 0;
 }
@@ -6168,6 +6077,7 @@ dl.InfoList dd {
 }
 .tile-fullwidth .tile-content .banner-text h3 {
   line-height: 150%;
+  margin: 10px 0 5px 0;
 }
 @media (max-width: 767px) {
   .tile-fullwidth .tile-content .banner-text {
@@ -7763,4 +7673,4 @@ body.section-mosaic-homepage #banner-image,
 body.section-new_mosaic-homepage-3 #banner-image {
   height: auto;
 }
-/*# sourceMappingURL=jazkarta.css.map */
+/*# sourceMappingURL=++theme++jazkarta.plonetheme/less/jazkarta.css.map */
