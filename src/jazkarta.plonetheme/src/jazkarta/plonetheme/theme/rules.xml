@@ -24,6 +24,18 @@
     <after theme-children="/html/head" content="/html/head/link" />
     <!-- Script -->
     <after theme-children="/html/head" content="/html/head/script" />
+
+    <before css:theme-children="head">
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEB8407FWH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XEB8407FWH');
+      </script>
+    </before>
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag.
