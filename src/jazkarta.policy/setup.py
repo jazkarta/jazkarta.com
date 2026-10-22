@@ -49,7 +49,6 @@ setup(
         'collective.relatedslider',
         'Products.PloneFormGen',
         'collective.isotope',
-        'collective.googleanalytics',
         'collective.siteimprove',
         'plone.tiles',
         'plone.app.tiles',
